@@ -20,4 +20,5 @@
 - [x] `index.html`, `style.css`, `main.js` 초기화
 - [x] Firebase SDK 연동 및 설정
 - [x] GitHub 저장소(`studycafe`) 연결 및 푸시
+- [x] 다크 모드/라이트 모드 테마 전환 기능 구현 및 푸시
 - [ ] 초기 UI 컴포넌트 구현
