@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WelfareFinder - 맞춤형 복지 정책 검색 서비스</title>
+    <title>WelfareFinder - 따뜻한 손길, 맞춤형 복지 정보</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Firebase SDKs (CDN) -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-        const firebaseConfig = {
-            projectId: "test-06147957",
-        };
-        const app = initializeApp(firebaseConfig);
-        console.log("Firebase app initialized");
+        const firebaseConfig = { projectId: "test-06147957" };
+        initializeApp(firebaseConfig);
     </script>
 </head>
 <body>
     <header>
+        <div class="top-banner">
+            <p><i class="fas fa-bullhorn"></i> 공식 복지 포털 <strong>복지로</strong>와 함께합니다. <a href="https://www.bokjiro.go.kr" target="_blank">바로가기 <i class="fas fa-external-link-alt"></i></a></p>
+        </div>
         <nav class="navbar">
             <div class="logo">
-                <i class="fas fa-hand-holding-heart"></i> Welfare<span>Finder</span>
+                <i class="fas fa-heart"></i> Welfare<span>Finder</span>
             </div>
             <div class="nav-controls">
                 <button class="theme-toggle" id="themeToggle" aria-label="테마 변경">
@@ -32,72 +31,96 @@
     </header>
 
     <main id="app">
-        <!-- 히어로 및 검색 섹션 -->
+        <!-- 히어로 섹션 -->
         <section class="hero-section">
             <div class="hero-content">
-                <h1>당신에게 꼭 맞는 <br>복지 혜택, 지금 확인하세요</h1>
-                <p>생애주기, 소득수준, 관심사에 맞춘 다양한 정부 지원 정책을 쉽고 빠르게 찾아드립니다.</p>
+                <h1>혼자 고민하지 마세요. <br>당신을 위한 <span>국가의 지원</span>이 있습니다.</h1>
+                <p>생애주기, 소득수준, 현재 상황에 꼭 필요한 복지 혜택을 정성껏 찾아드립니다.</p>
                 <div class="search-bar">
                     <i class="fas fa-search"></i>
-                    <input type="text" id="searchInput" placeholder="어떤 복지 정책을 찾고 계신가요? (예: 청년, 주거, 의료)">
-                    <button id="searchBtn" class="search-btn">검색</button>
+                    <input type="text" id="searchInput" placeholder="도움이 필요한 내용을 입력하세요 (예: 긴급복지, 육아, 의료)">
+                    <button id="searchBtn" class="search-btn">맞춤 혜택 찾기</button>
                 </div>
             </div>
         </section>
 
         <!-- 카테고리 필터 섹션 -->
         <section class="filter-section">
+            <div class="section-title">
+                <h3><i class="fas fa-tags"></i> 상황별 맞춤 분류</h3>
+            </div>
             <div class="filter-container">
                 <button class="filter-chip active" data-category="all">전체보기</button>
-                <button class="filter-chip" data-category="youth">청년</button>
-                <button class="filter-chip" data-category="marriage">신혼부부</button>
-                <button class="filter-chip" data-category="family">가족/여성</button>
-                <button class="filter-chip" data-category="elderly">노인</button>
-                <button class="filter-chip" data-category="housing">주거자금</button>
+                <button class="filter-chip" data-category="emergency">긴급지원</button>
+                <button class="filter-chip" data-category="youth">청년/취업</button>
+                <button class="filter-chip" data-category="family">임신/출산/육아</button>
+                <button class="filter-chip" data-category="disability">장애인</button>
+                <button class="filter-chip" data-category="elderly">어르신</button>
+                <button class="filter-chip" data-category="housing">주거/생활</button>
                 <button class="filter-chip" data-category="medical">의료/건강</button>
-                <button class="filter-chip" data-category="job">일자리/창업</button>
             </div>
         </section>
 
-        <!-- 맞춤형 복지 정책 리스트 섹션 -->
+        <!-- 정책 리스트 섹션 -->
         <section class="policy-list-section">
             <div class="section-header">
-                <h2>추천 복지 정책 <span class="result-count" id="resultCount">0</span>건</h2>
+                <h2>실시간 맞춤 혜택 <span class="result-count" id="resultCount">0</span></h2>
+                <div class="sort-options">
+                    <span class="active">최신순</span>
+                    <span>인기순</span>
+                </div>
             </div>
             <div class="policy-grid" id="policyGrid">
-                <!-- <policy-card> 컴포넌트가 JS를 통해 이곳에 렌더링됩니다. -->
+                <!-- JS dynamic render -->
             </div>
             <div id="noResults" class="no-results hidden">
-                <i class="fas fa-exclamation-circle"></i>
-                <p>검색 결과가 없습니다. 다른 키워드나 조건으로 검색해 보세요.</p>
+                <i class="fas fa-heart-broken"></i>
+                <p>찾으시는 혜택이 없으신가요? 보건복지상담센터(129)로 문의하시면 더 자세한 상담이 가능합니다.</p>
+            </div>
+        </section>
+
+        <!-- 공식 사이트 안내 섹션 -->
+        <section class="official-portal-section">
+            <div class="portal-card">
+                <div class="portal-info">
+                    <h3>대한민국 대표 복지 포털, <strong>복지로</strong></h3>
+                    <p>더 상세한 정책 정보와 온라인 신청은 공식 포털 복지로를 이용해 주세요.</p>
+                </div>
+                <a href="https://www.bokjiro.go.kr/ssis-tbu/index.do" target="_blank" class="portal-link-btn">
+                    복지로 공식 사이트 방문하기 <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </section>
     </main>
 
-    <!-- 정책 상세 모달 -->
+    <!-- 모달 -->
     <div id="policyModal" class="modal-overlay hidden">
         <div class="modal-content">
             <button id="closeModal" class="close-modal-btn" aria-label="닫기">&times;</button>
-            <div id="modalBody">
-                <!-- 상세 내용이 동적으로 생성됩니다. -->
-            </div>
+            <div id="modalBody"></div>
         </div>
     </div>
 
     <footer>
         <div class="footer-content">
-            <div class="footer-links">
-                <h3>정부 공식 복지 포털 바로가기</h3>
-                <div class="portal-grid">
-                    <a href="https://www.bokjiro.go.kr" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> 복지로</a>
-                    <a href="https://www.gov.kr" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> 정부24</a>
-                    <a href="https://www.youthcenter.go.kr" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> 온통청년</a>
-                    <a href="https://www.work.go.kr" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> 워크넷</a>
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">Welfare<span>Finder</span></div>
+                    <p>당신의 삶에 힘이 되는 맞춤형 복지 길잡이</p>
+                </div>
+                <div class="footer-links">
+                    <h4>정부 주요 포털</h4>
+                    <a href="https://www.gov.kr" target="_blank">정부24</a>
+                    <a href="https://www.work.go.kr" target="_blank">워크넷</a>
+                    <a href="https://www.youthcenter.go.kr" target="_blank">온통청년</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>도움이 필요하신가요?</h4>
+                    <p><i class="fas fa-phone"></i> 보건복지상담센터: <strong>129</strong></p>
+                    <p><i class="fas fa-phone"></i> 정부민원안내: <strong>110</strong></p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="footer-logo">Welfare<span>Finder</span></div>
-                <p>본 사이트는 국민의 편의를 위해 맞춤형 복지 정보를 제공하는 시뮬레이션 서비스입니다.</p>
                 <p>&copy; 2026 WelfareFinder. All rights reserved.</p>
             </div>
         </div>
