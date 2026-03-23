@@ -163,6 +163,126 @@ img, svg { display: block; max-width: 100%; }
 .search-btn:hover { transform: scale(1.02); }
 
 /* ==========================================================================
+   Notifier Quick Section (Premium Widget)
+   ========================================================================== */
+.notifier-quick-section {
+    padding: 4rem 5%;
+    background-color: var(--surface-color);
+    margin-top: -3rem; /* Hero 섹션과 살짝 겹치게 하여 입체감 부여 */
+    position: relative;
+    z-index: 10;
+}
+
+.notifier-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--surface-color);
+    border-radius: var(--radius-md);
+    padding: 3rem;
+    box-shadow: var(--shadow-premium);
+}
+
+.notifier-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.notifier-header h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.notifier-header h2 span {
+    color: var(--accent-color);
+}
+
+.notifier-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.notifier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.notifier-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.notifier-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-soft);
+    border-color: var(--primary-color);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    flex-shrink: 0;
+}
+
+.gov24 .card-icon { background: linear-gradient(135deg, #1e88e5, #1565c0); }
+.bokjiro .card-icon { background: linear-gradient(135deg, #00897b, #00695c); }
+.crisis .card-icon { background: linear-gradient(135deg, #e53935, #c62828); }
+
+.card-info h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+.card-info p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: gap 0.2s;
+}
+
+.card-btn:hover {
+    gap: 0.8rem;
+}
+
+.notifier-footer {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.notifier-footer i {
+    color: var(--warm-accent);
+}
+
+/* ==========================================================================
    Filter Chips
    ========================================================================== */
 .filter-section { padding: 3rem 5% 1rem; }

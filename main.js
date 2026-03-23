@@ -226,6 +226,32 @@ const mockPolicies = [
             process: "아이돌봄 홈페이지 또는 행정복지센터 방문 신청"
         },
         link: "https://www.idolbom.go.kr"
+    },
+    {
+        id: 11,
+        title: "혜택알리미 (정부24)",
+        category: "youth",
+        description: "연령, 가구 구성, 소득 데이터를 분석해 3,600개 이상의 맞춤형 복지 서비스를 안내합니다.",
+        details: {
+            purpose: "정보 부족으로 놓치는 국가 혜택을 방지하고 상황 변화 시 능동적 알림 제공",
+            benefit: "개인별 맞춤형 혜택 정보 실시간 알림 및 안내",
+            target: "대한민국 국민 누구나 (가족 구성원 혜택 동시 확인 가능)",
+            process: "정부24 홈페이지 또는 앱에서 '혜택알리미' 신청"
+        },
+        link: "https://www.gov.kr/portal/rcvfvrSvc/main"
+    },
+    {
+        id: 12,
+        title: "복지멤버십 (맞춤형 급여 안내)",
+        category: "emergency",
+        description: "복지로에 가입 시 127종 이상의 복지 서비스를 선제적으로 안내받을 수 있는 능동적 복지 서비스입니다.",
+        details: {
+            purpose: "신청주의 제도 하에서 혜택을 몰라 못 받는 일이 없도록 선제적 발굴 및 안내",
+            benefit: "출산, 실직 등 상황 변화 시 받을 수 있는 급여를 시스템이 알아서 추천",
+            target: "복지 수급 희망자 및 대한민국 국민 누구나",
+            process: "복지로 홈페이지/앱 '복지멤버십' 가입 또는 행정복지센터 방문"
+        },
+        link: "https://www.bokjiro.go.kr/ssis-tbu/twataa/wlfareInfo/moveWlfareInfoDetl.do?wlfareInfoId=WLF00004562"
     }
 ];
 
