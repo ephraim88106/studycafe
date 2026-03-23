@@ -252,6 +252,45 @@ const mockPolicies = [
             process: "복지로 홈페이지/앱 '복지멤버십' 가입 또는 행정복지센터 방문"
         },
         link: "https://www.bokjiro.go.kr/ssis-tbu/index.do"
+    },
+    {
+        id: 13,
+        title: "복지위기알림 (이웃 제보)",
+        category: "emergency",
+        description: "경제적 어려움이나 사회적 고립 등으로 위기 상황에 처한 이웃을 쉽고 빠르게 제보하는 서비스입니다.",
+        details: {
+            purpose: "복지 사각지대 발굴 및 위기 상황에 처한 가구의 조기 발견",
+            benefit: "제보된 가구에 대한 신속한 현장 확인 및 맞춤형 복지 서비스 연계 지원",
+            target: "위기 상황이 의심되는 본인 또는 주변 이웃 누구나",
+            process: "복지위기알림 앱 설치 후 제보 또는 복지로 홈페이지 제보"
+        },
+        link: "https://www.bokjiro.go.kr/ssis-tbu/twatdc/wlfareCrisNtce/dclrGdlnPage.do"
+    },
+    {
+        id: 14,
+        title: "아동수당 지원",
+        category: "family",
+        description: "아동의 건강한 성장 환경을 조성하고 아동의 기본적 권리를 보장하기 위해 수당을 지급합니다.",
+        details: {
+            purpose: "아동 양육에 따른 경제적 부담 경감 및 아동 복지 증진",
+            benefit: "아동 1인당 매월 10만원 지급",
+            target: "8세 미만(0~95개월)의 모든 아동",
+            process: "복지로 또는 정부24 온라인 신청, 행정복지센터 방문"
+        },
+        link: "https://www.bokjiro.go.kr/ssis-tbu/index.do"
+    },
+    {
+        id: 15,
+        title: "기초생활보장 (주거급여)",
+        category: "housing",
+        description: "저소득층의 주거비를 지원하여 주거 안정을 도모하고 주거 수준을 향상시킵니다.",
+        details: {
+            purpose: "수급자의 주거 안정과 주거 수준 향상을 위한 임차료 및 수선유지비 지원",
+            benefit: "지역 및 가구원 수별 기준임대료 내에서 실제 임차료 지급",
+            target: "소득인정액이 기준 중위소득 48% 이하인 가구",
+            process: "읍·면·동 행정복지센터 방문 신청"
+        },
+        link: "https://www.bokjiro.go.kr/ssis-tbu/index.do"
     }
 ];
 
