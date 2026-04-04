@@ -8,63 +8,863 @@ export const newsArticles = [
     title: "26.2조원 추경 의결, 소득 하위 70% 국민에 고유가 피해지원금 지급",
     date: "2026-03-31",
     summary: "이재명 정부가 중동전쟁에 따른 고유가 위기에 대응해 26.2조원 규모 추경을 의결했습니다. 소득 하위 70% 국민 약 3,580만 명에게 10만~60만원의 피해지원금이 차등 지급되며, 취약계층 무상 먹거리 시설 '그냥드림센터'가 300개소로 확대됩니다.",
-    content: "<p>2026년 3월 31일 국무회의에서 26.2조원 규모의 추가경정예산안이 의결되었습니다. 국채를 발행하지 않는 '빚 없는 추경'으로 편성되었으며, 고유가로 인한 국민 생활 부담을 완화하기 위한 종합 대책입니다.</p><h4>고유가 피해지원금 (4.8조원)</h4><ul><li>대상: 소득 하위 70% 국민 약 3,580만 명</li><li>기초생활수급자·차상위계층·한부모 가정: 45만~60만원</li><li>나머지 하위 70% 국민: 10만~25만원 차등 지급</li></ul><h4>민생 안정 지원</h4><ul><li>그냥드림센터 150개소 → 300개소 확대 (먹거리·생필품 무상 제공)</li><li>민생 안정 2.8조원 / 고유가 대응 10.1조원 / 산업 피해 최소화 2.6조원</li></ul>"
+    content: `
+      <p>2026년 3월 31일, 국무회의에서 <strong>26.2조원 규모의 추가경정예산안</strong>이 의결되었습니다. 국채를 발행하지 않는 이른바 <strong>'빚 없는 추경'</strong>으로 편성된 이번 대책은, 중동전쟁 장기화로 인한 국제유가 급등이 국민 생활 전반에 미치는 충격을 완화하기 위한 종합 대응입니다.</p>
+
+      <p>정부는 이번 추경의 핵심 목표를 <strong>"고유가 충격으로부터 국민 생활을 보호하는 것"</strong>이라고 밝혔습니다. 에너지 가격 상승은 교통비, 난방비뿐 아니라 식료품·생필품 물가 전반을 끌어올리기 때문에, 저소득층일수록 체감 부담이 큽니다.</p>
+
+      <h3>추경 예산 배분 구조</h3>
+      <p>26.2조원은 크게 네 가지 분야에 배분됩니다. 가장 큰 비중은 고유가 직접 대응이며, 민생 안정과 산업 피해 최소화가 뒤따릅니다.</p>
+
+      <div class="bar-chart">
+        <div class="bar-item">
+          <div class="bar-label"><span>고유가 대응</span><span class="bar-value">10.1조원 (38.5%)</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 38.5%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>고유가 피해지원금</span><span class="bar-value">4.8조원 (18.3%)</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 18.3%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>민생 안정</span><span class="bar-value">2.8조원 (10.7%)</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 10.7%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>산업 피해 최소화</span><span class="bar-value">2.6조원 (9.9%)</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 9.9%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>기타 (예비비 등)</span><span class="bar-value">5.9조원 (22.6%)</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 22.6%"></div></div>
+        </div>
+      </div>
+
+      <h3>고유가 피해지원금 상세</h3>
+      <p>이번 추경의 가장 큰 관심사인 피해지원금은 <strong>소득 하위 70% 국민 약 3,580만 명</strong>을 대상으로 차등 지급됩니다. 소득이 낮을수록 더 많은 금액을 받게 됩니다.</p>
+
+      <table>
+        <thead>
+          <tr><th>대상 구분</th><th>지급 금액</th><th>대상 인원(약)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>기초생활수급자</td><td class="td-highlight">60만원</td><td>약 250만 명</td></tr>
+          <tr><td>차상위계층</td><td class="td-highlight">50만원</td><td>약 150�� 명</td></tr>
+          <tr><td>한부모 가정</td><td class="td-highlight">45만원</td><td>약 25만 명</td></tr>
+          <tr><td>소득 하위 50%</td><td class="td-highlight">25만원</td><td>약 1,400만 명</td></tr>
+          <tr><td>소득 하위 50~70%</td><td class="td-highlight">10만원</td><td>약 1,755만 명</td></tr>
+        </tbody>
+      </table>
+
+      <div class="info-box blue">
+        <div class="info-title">신청 방법 안내</div>
+        <p>별도 신청 없이 기존 복지 수급자는 자동 지급되며, 그 외 대상자는 주민센터·복지로·정부24에서 간편 신청할 수 있습니다. 4월 중순부터 순차 지급 예정입니다.</p>
+      </div>
+
+      <h3>그냥드림센터 확대</h3>
+      <p>취약계층을 위한 무상 먹거리·생필품 제공 시설인 <strong>'그냥드림센터'</strong>가 기존 150개소에서 <strong>300개소로 두 배 확대</strong>됩니다. 사전 자격심사 없이 누구나 이용할 수 있어 긴급한 상황에 즉시 도움을 받을 수 있습니다.</p>
+
+      <div class="compare-grid">
+        <div class="compare-card before">
+          <div class="compare-label">2025년</div>
+          <div class="compare-value">150개소</div>
+          <div class="compare-desc">전국 그냥드림센터</div>
+        </div>
+        <div class="compare-card after">
+          <div class="compare-label">2026년 확대</div>
+          <div class="compare-value">300개소</div>
+          <div class="compare-desc">2배 확대 운영</div>
+        </div>
+      </div>
+
+      <h3>향후 일정</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">3월 31일</div>
+          <div class="tl-title">국무회의 추경안 의결</div>
+          <div class="tl-desc">26.2조원 빚 없는 추경 확정</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">4월 초</div>
+          <div class="tl-title">국회 제출 및 심의</div>
+          <div class="tl-desc">여야 협의를 통한 신속 처리 추진</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">4월 중순</div>
+          <div class="tl-title">피해지원금 순차 지급 시작</div>
+          <div class="tl-desc">기초생활수급자·차상위 우선 지급</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">5월</div>
+          <div class="tl-title">전체 대상자 지급 완료 목표</div>
+          <div class="tl-desc">3,580만 명 지급 완료</div>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>26.2조원 추경: 국채 없이 세수 여분 등으로 편성</li>
+          <li>소득 하위 70% 국민 3,580만 명에 10만~60만원 차등 지급</li>
+          <li>그냥드림센터 300개소 확대, 유류세 인하 연장</li>
+          <li>4월 중순부터 순차 지급 예정</li>
+        </ul>
+      </div>
+    `
   },
   {
     id: 8,
     title: "2026년 기준중위소득 6.51% 역대 최대 인상, 복지 수급 범위 대폭 확대",
     date: "2026-01-01",
     summary: "2026년도 기준중위소득이 4인 가구 기준 649만 4,738원으로 역대 최대인 6.51% 인상되었습니다. 생계·의료·주거·교육급여 수급 범위가 확대되어 약 4만 명이 새롭게 생계급여를 받을 수 있게 됩니다.",
-    content: "<p>2026년 기준중위소득이 역대 최대 폭으로 인상되면서, 기초생활보장 수급 범위가 크게 넓어졌습니다. 특히 1인 가구는 7.20%로 더 높은 인상률이 적용되었습니다.</p><h4>기준중위소득 변화</h4><ul><li>4인 가구: 609만 7,773원 → 649만 4,738원 (6.51% 인상)</li><li>1인 가구: 239만 2,013원 → 256만 4,238원 (7.20% 인상)</li></ul><h4>급여별 선정기준 (4인 가구)</h4><ul><li>생계급여(32%): 195만 1,287원 → 207만 8,316원</li><li>의료급여(40%): 243만 9,108원 → 259만 7,895원</li><li>주거급여(48%): 292만 6,930원 → 311만 7,474원</li><li>교육급여(50%): 304만 8,887원 → 324만 7,369원</li></ul><p>약 <strong>4만 명</strong>이 새롭게 생계급여 수급 대상에 포함됩니다.</p>"
+    content: `
+      <p><strong>기준중위소득</strong>은 대한민국 복지 제도의 기준선 역할을 하는 핵심 지표입니다. 기초생활보장, 긴급복지, 장학금, 각종 바우처 등 수십 가지 복지 사업의 수급 자격이 이 숫자에 연동됩니다. 2026년 기준중위소득이 <strong>역대 최대 폭인 6.51%</strong> 인상됨에 따라, 더 많은 국민이 복지 혜택을 받을 수 있게 되었습니다.</p>
+
+      <h3>기준중위소득이란?</h3>
+      <p>기준중위소득은 전체 가구를 소득 순으로 줄 세웠을 때 정확히 가운데에 위치하는 가구의 소득을 말합니다. 보건복지부 산하 중앙생활보장위원회가 매년 결정하며, 이 금액의 일정 비율(32%, 40%, 48%, 50%)이 각 급여의 선정 기준이 됩���다.</p>
+
+      <div class="info-box blue">
+        <div class="info-title">왜 6.51% 인상이 중요한가요?</div>
+        <p>기준중위소득이 오르면 각 급여의 선정 기준선도 동반 상승하여, 그동안 기준선 바로 위에서 탈락했던 '사각지대' 가구들이 새롭게 수급 자격을 얻게 됩니다. 6.51%는 제도 시행 이래 가장 큰 인상 폭으로, 약 4만 명이 새로 생계급여를 받을 수 있게 됩니다.</p>
+      </div>
+
+      <h3>가구 규모별 기준중위소득 변화</h3>
+      <table>
+        <thead>
+          <tr><th>가구 규모</th><th>2025년</th><th>2026년</th><th>인상률</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1인 가구</td><td>239만 2,013원</td><td class="td-highlight">256만 4,238원</td><td class="td-highlight">+7.20%</td></tr>
+          <tr><td>2인 가구</td><td>393만 2,658원</td><td class="td-highlight">419만 4,491원</td><td class="td-highlight">+6.66%</td></tr>
+          <tr><td>3인 가구</td><td>502만 5,353원</td><td class="td-highlight">535만 4,246원</td><td class="td-highlight">+6.55%</td></tr>
+          <tr><td>4인 가구</td><td>609만 7,773원</td><td class="td-highlight">649만 4,738원</td><td class="td-highlight">+6.51%</td></tr>
+          <tr><td>5인 가구</td><td>710만 8,192원</td><td class="td-highlight">756만 3,862원</td><td class="td-highlight">+6.41%</td></tr>
+        </tbody>
+      </table>
+
+      <p>특히 <strong>1인 가구의 인상률이 7.20%로 가장 높습니다.</strong> 1인 가구 비율이 빠르게 증가하는 인구 구조 변화를 반영한 결과입니다.</p>
+
+      <h3>급여별 선정기준 (4인 가구 기준)</h3>
+      <p>기준중위소득에서 일정 비율을 적용한 금액이 각 급여의 선정기준입니다. 해당 금액 이하의 소득인 가구가 급여를 받을 수 있습니다.</p>
+
+      <div class="bar-chart">
+        <div class="bar-item">
+          <div class="bar-label"><span>생계급여 (32%)</span><span class="bar-value">207만 8,316원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 32%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>의료급여 (40%)</span><span class="bar-value">259만 7,895원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 40%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>주거급여 (48%)</span><span class="bar-value">311만 7,474원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 48%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>교육급여 (50%)</span><span class="bar-value">324만 7,369원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 50%"></div></div>
+        </div>
+      </div>
+
+      <h3>생계급여 선정기준 변화 (1인 가구)</h3>
+      <div class="compare-grid">
+        <div class="compare-card before">
+          <div class="compare-label">2025년</div>
+          <div class="compare-value">76.5만원</div>
+          <div class="compare-desc">월 생계급여 선정기준</div>
+        </div>
+        <div class="compare-card after">
+          <div class="compare-label">2026년</div>
+          <div class="compare-value">82.1만원</div>
+          <div class="compare-desc">5.6만원 상향</div>
+        </div>
+      </div>
+
+      <h3>핵심 수혜 예상</h3>
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">+4만 명</span><span class="num-label">신규 생계급여 수급</span></div>
+        <div class="key-num"><span class="num">6.51%</span><span class="num-label">역대 최대 인상률</span></div>
+        <div class="key-num"><span class="num">649만원</span><span class="num-label">4인 가구 기준</span></div>
+        <div class="key-num"><span class="num">7.20%</span><span class="num-label">1인 가구 인상률</span></div>
+      </div>
+
+      <div class="info-box">
+        <div class="info-title">내가 해당되는지 확인하려면?</div>
+        <p>복지로(www.bokjiro.go.kr)의 '복지서비스 모의계산'에서 가구원 수와 소득·재산을 입력하면 수급 가능 여부를 간편하게 확인할 수 있습니다. 또한 주민센터에 방문하면 상세 상담을 받을 수 있습니다.</p>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>2026년 기준중위소득 4인 가구 649만 4,738원 (6.51% 인상, 역대 최대)</li>
+          <li>1인 가구 256만 4,238원 (7.20% 인상)</li>
+          <li>약 4만 명 신규 생계급여 수급 가능</li>
+          <li>생계 32%, 의료 40%, 주거 48%, 교육 50% 선정기준 동시 상향</li>
+        </ul>
+      </div>
+    `
   },
   {
     id: 7,
     title: "기초연금 인상 및 저소득 노인 월 40만원 지급 시작",
     date: "2026-01-01",
-    summary: "2026년 기초연금 기준연금액이 월 34만 9,700원으로 인상되고, 저소득 노인부터 월 40만원 지급이 시작됩니다. 수급 대상도 779만 명으로 확대되어 더 많은 어르신이 혜택을 받게 됩니다.",
-    content: "<p>2026년부터 기초연금이 소비자물가상승률 2.1%를 반영하여 인상되었으며, 저소득 노인 대상 월 40만원 지급이 새롭게 시작됩니다.</p><h4>주요 변화</h4><ul><li>기준연금액: 34만 2,510원 → 34만 9,700원 (2.1% 인상)</li><li>선정기준액: 단독가구 228만원 → 247만원 / 부부가구 376만원 → 395만 2,000원</li><li>근로소득 공제액: 112만원 → 116만원 상향</li><li>수급 대상: 736만 명 → 779만 명 (약 43만 명 확대)</li></ul><h4>저소득 노인 40만원 지급</h4><ul><li>2026년: 저소득 노인부터 월 40만원 선지급</li><li>2027년: 전체 기초연금 수급자로 확대 예정</li></ul>"
+    summary: "2026년 기초연금 기준연금액이 월 34만 9,700원으로 인상되고, 저소득 노인부터 월 40만원 지급이 ��작됩니다. 수급 대상도 779만 명으로 확대되어 더 많은 어르신이 혜택을 받게 됩니다.",
+    content: `
+      <p>2026년부터 기초연금이 소비자물가상승률 2.1%를 반영하여 인상되었습니다. 더불어 <strong>저소득 노인 대상 월 40만원 지급</strong>이 새롭게 시작되며, 이는 '국민 노후 기본소득'을 향한 중요한 첫걸음으로 평가됩니다.</p>
+
+      <h3>기초연금이란?</h3>
+      <p>기초연금은 만 65세 이상의 소득 하위 70% 노인에게 매월 지급되는 연금입니다. 국민연금과 별도로 지급되며, 노후 소득 보장의 기초 역할을 합니다. 2014년 월 20만원으로 시작한 이래 꾸준히 인상되어 왔습니다.</p>
+
+      <h3>기초연금 인상 추이</h3>
+      <div class="bar-chart">
+        <div class="bar-item">
+          <div class="bar-label"><span>2014년 도입</span><span class="bar-value">20만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 50%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>2019년</span><span class="bar-value">25만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 62.5%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>2021년</span><span class="bar-value">30만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 75%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>2025년</span><span class="bar-value">34만 2,510원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 85.6%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>2026년</span><span class="bar-value">34만 9,700원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 87.4%"></div></div>
+        </div>
+      </div>
+
+      <h3>2026년 주요 변화 한눈에 보기</h3>
+      <table>
+        <thead>
+          <tr><th>항목</th><th>2025년</th><th>2026년</th><th>변화</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>기준연금액</td><td>34만 2,510원</td><td class="td-highlight">34만 9,700원</td><td class="td-highlight">+2.1%</td></tr>
+          <tr><td>선정기준(단독)</td><td>228만원</td><td class="td-highlight">247만원</td><td class="td-highlight">+19만원</td></tr>
+          <tr><td>선정���준(부부)</td><td>376만원</td><td class="td-highlight">395만 2,000원</td><td class="td-highlight">+19만 2,000원</td></tr>
+          <tr><td>근로소득 공제</td><td>112만원</td><td class="td-highlight">116만원</td><td class="td-highlight">+4만원</td></tr>
+          <tr><td>수급 대상</td><td>736만 명</td><td class="td-highlight">779만 명</td><td class="td-highlight">+43만 명</td></tr>
+        </tbody>
+      </table>
+
+      <h3>저소득 노인 월 40만원 지급</h3>
+      <p>2026년의 가장 큰 변화는 <strong>저소득 노인부터 월 40만원 지급</strong>이 시작된다는 점입니다. 이는 기존 기준연금액(34만 9,700원)보다 약 5만원 높은 금액으로, 소득이 가장 낮은 노인층의 생활 안정에 기여할 것으로 기대됩니다.</p>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">2026년 상반기</div>
+          <div class="tl-title">저소득 노인 40만원 선지급 시작</div>
+          <div class="tl-desc">생계급여 수급 노인 등 최저소득층부터 적용</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026년 하반기</div>
+          <div class="tl-title">대상 단계적 확대</div>
+          <div class="tl-desc">차상위 노인까지 점진적 확대 예정</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2027년</div>
+          <div class="tl-title">전체 기초연금 수급자 40만원 적용 목표</div>
+          <div class="tl-desc">779만 명 전원 40만원 수령</div>
+        </div>
+      </div>
+
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">779만 명</span><span class="num-label">수급 대상</span></div>
+        <div class="key-num"><span class="num">34.97만���</span><span class="num-label">기준연금액</span></div>
+        <div class="key-num"><span class="num">40만���</span><span class="num-label">저소득 노인 지급</span></div>
+        <div class="key-num"><span class="num">+43만 명</span><span class="num-label">신규 수급자</span></div>
+      </div>
+
+      <div class="info-box">
+        <div class="info-title">신청 안내</div>
+        <p>만 65세 생일이 속하는 달의 1개월 전부터 신청 가능합니다. 주민센터, 국민연금공단 지사, 또는 복지로(www.bokjiro.go.kr)에서 온라인 신청할 수 있습니다. 필요 서류: 신분증, 통장사본, 금융정보 제공 동의서.</p>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>기준연금액 34만 9,700원 (전년 대비 2.1% 인상)</li>
+          <li>수급 대상 779만 명으로 43만 명 확대</li>
+          <li>저소득 노인부터 월 40만원 지급 시작 (2027년 전체 확대 예정)</li>
+          <li>선정기준액·근로소득 공제액 동시 상향</li>
+        </ul>
+      </div>
+    `
   },
   {
     id: 6,
     title: "육아휴직 급여 월 최대 250만원 인상, 기간도 1년 6개월로 확대",
     date: "2026-01-01",
-    summary: "2026년부터 육아휴직 급여가 대폭 인상되어 12개월 사용 시 총 2,310만원까지 지급됩니다. 사후지급금 제도가 폐지되고, 육아휴직 기간도 최대 1년 6개월로 확대되어 일·가정 양립이 크게 개선됩니다.",
-    content: "<p>2026년부터 육아휴직 급여가 단계별로 인상되고, 휴직 기간도 확대되어 영유아 가정의 양육 부담이 크게 줄어들 전망입니다.</p><h4>육아휴직 급여 인상</h4><ul><li>1~3개월: 월 최대 250만원 (통상임금 100%)</li><li>4~6개월: 월 최대 200만원 (통상임금 100%)</li><li>7개월 이후: 월 최대 160만원 (통상임금 80%)</li><li>연간 총액: 기존 1,800만원 → 최대 2,310만원</li></ul><h4>제도 개편 사항</h4><ul><li>사후지급금(25%) 제도 폐지 - 전액 즉시 지급</li><li>육아휴직 기간: 최대 1년 → 최대 1년 6개월 확대</li><li>6+6 부모육아휴직제: 부부 동시 사용 시 합산 최대 5,920만원</li></ul>"
+    summary: "2026년부터 육아휴직 급여가 대폭 인상되어 12개월 사용 시 총 2,310만원까지 지급됩니다. 사후지급금 제도가 폐지되고, 육아휴�� 기간도 최대 1년 6개월로 확대되어 일·가정 양립이 크게 개선됩���다.",
+    content: `
+      <p>2026년 1월부터 시행된 육아휴직 제도 개편은 <strong>"대한민국 역대 가장 파격적인 육아 지원"</strong>이라는 평가를 받고 있습니다. 급여 대폭 인상, 사후지급금 폐지, 휴직 기간 확대라는 세 가지 핵심 변화가 동시에 이루어졌습니다.</p>
+
+      <p>저출생 위기에 대응하기 위한 이번 개편은, 육아휴직을 사용하고 싶어도 경제적 부담 때문에 포기하는 부모를 줄이는 데 초점을 맞추고 있습니다.</p>
+
+      <h3>육아휴직 급여 단계별 인상</h3>
+      <p>사용 기간에 따라 단계적으로 지급 금액이 달라집니다. 초반 3개월은 통상임금의 100%를 월 250만원 한도로 받을 수 있어, 소득 단절 부담을 크게 줄였습니다.</p>
+
+      <table>
+        <thead>
+          <tr><th>기간</th><th>지급률</th><th>월 상한액</th><th>월 하한액</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1~3개월</td><td>통상임금 100%</td><td class="td-highlight">250만원</td><td>70만원</td></tr>
+          <tr><td>4~6개월</td><td>통상임금 100%</td><td class="td-highlight">200만원</td><td>70만원</td></tr>
+          <tr><td>7~12개월</td><td>통상임금 80%</td><td class="td-highlight">160만원</td><td>70��원</td></tr>
+          <tr><td>13~18개월</td><td>통상임금 50%</td><td class="td-highlight">120만원</td><td>70만원</td></tr>
+        </tbody>
+      </table>
+
+      <h3>12개월 사용 시 총 수령액 비교</h3>
+      <div class="compare-grid">
+        <div class="compare-card before">
+          <div class="compare-label">2025년</div>
+          <div class="compare-value">1,800만원</div>
+          <div class="compare-desc">12개월 최대 수령액</div>
+        </div>
+        <div class="compare-card after">
+          <div class="compare-label">2026년</div>
+          <div class="compare-value">2,310만��</div>
+          <div class="compare-desc">510만원 증가</div>
+        </div>
+      </div>
+
+      <h3>3대 핵심 변화</h3>
+
+      <div class="info-box blue">
+        <div class="info-title">변화 1: 사후지급금 폐지</div>
+        <p>기존에는 육아휴직 급여의 25%를 복직 후 6개월 근무해야 받을 수 있었습니다. 2026년부터는 이 사후지급금 제도가 폐지되어, <strong>매월 전액 즉시 지급</strong>됩니다. 경제적 부담 없이 온전히 육아에 집중할 수 있게 되었습니다.</p>
+      </div>
+
+      <div class="info-box">
+        <div class="info-title">변화 2: 휴직 기간 1년 6개월로 확대</div>
+        <p>육아휴직 기간이 기존 최대 1년에서 <strong>최대 1년 6개월</strong>로 확대됩니다. 특히 영아기 집중 돌봄이 필요한 시기에 부모가 더 오래 함께할 수 있습니다.</p>
+      </div>
+
+      <div class="info-box amber">
+        <div class="info-title">변화 3: 6+6 부모육아휴직제 강화</div>
+        <p>생후 18개월 이내 자녀를 둔 부부가 동시에 육아휴직을 사용하면, 부부 합산 <strong>최대 5,920만원</strong>을 수령할 수 있습니다. 아빠도 엄마도 함께 아이를 돌보는 문화를 만들어가는 제도입니다.</p>
+      </div>
+
+      <h3>월별 급여 수령 흐름도</h3>
+      <div class="bar-chart">
+        <div class="bar-item">
+          <div class="bar-label"><span>1~3개월차</span><span class="bar-value">월 250만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>4~6개월차</span><span class="bar-value">월 200만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 80%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>7~12개월차</span><span class="bar-value">월 160만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 64%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>13~18개월차</span><span class="bar-value">월 120만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 48%"></div></div>
+        </div>
+      </div>
+
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">250만원</span><span class="num-label">월 최대 급여</span></div>
+        <div class="key-num"><span class="num">2,310만원</span><span class="num-label">12개월 총액</span></div>
+        <div class="key-num"><span class="num">18개월</span><span class="num-label">최대 휴직 기간</span></div>
+        <div class="key-num"><span class="num">5,920만원</span><span class="num-label">부부 동시 최대</span></div>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>육아휴직 급여 월 최대 250만원 (통상임금 100%)</li>
+          <li>12개월 사용 시 최대 2,310만원 (전년 대비 510만원 증가)</li>
+          <li>사후지급금(25%) 폐지 → 매월 전액 즉시 지급</li>
+          <li>휴직 기간 1년 → 1년 6개월 확대</li>
+          <li>6+6 부부동시 사용 시 합산 최대 5,920만원</li>
+        </ul>
+      </div>
+    `
   },
   {
     id: 10,
     title: "장애인 활동지원 월 258시간으로 확대, 개인예산제 전국 시행",
     date: "2026-03-27",
-    summary: "2026년 장애인 활동지원 서비스가 월 258시간으로 확대되고, 시범사업이던 개인예산제가 전국 본사업으로 전환됩니다. 고용장려금 증액 등 장애인 고용 지원도 대폭 강화됩니다.",
-    content: "<p>2026년 장애인 복지 정책이 전면 강화되었습니다. 활동지원 서비스 확대, 개인예산제 전국 전환, 고용 지원 강화 등 다방면에서 변화가 이루어졌습니다.</p><h4>활동지원 서비스 확대</h4><ul><li>중증장애인 월 지원시간: 205시간 → 258시간 확대</li><li>시간당 단가: 16,620원 → 약 17,270원 인상</li><li>활동지원 대상: 14만 명으로 확대</li></ul><h4>개인예산제 전국 시행</h4><ul><li>2024~2025년 시범사업 → 2026년 전국 본사업 전환</li><li>활동지원 급여 일부를 현금성 예산으로 수령 가능</li><li>의료, 보조기기, 주거환경 개선 등 직접 선택 구매</li></ul><h4>고용 지원 강화</h4><ul><li>고용장려금: 4,014억원 (전년 대비 293억 증액)</li><li>지원고용 훈련수당: 일 1만 8,000원 → 3만 5,000원</li><li>장애인 일자리: 3만 3,546명 → 3만 5,846명 확대</li></ul>"
+    summary: "2026년 장애인 활동지원 서비스가 월 258시간으로 확대되고, 시범사업이던 개인예산���가 전국 본사업으로 전환됩니다. 고용장려금 증액 등 장애인 고용 지원도 대폭 강화됩니다.",
+    content: `
+      <p>2026년은 장애인 복지 역사에서 <strong>'자기결정권 원년'</strong>이라 불릴 만합니다. 활동지원 시간 확대와 함께, 장애인 스스로 예산을 설계하는 <strong>개인예산제</strong>가 전국 본사업으로 전환되었기 때문입니다. 이는 '공급자 중심'에서 '당사자 중심'으로의 패러다임 전환을 의미합니다.</p>
+
+      <h3>활동지원 서비스 확���</h3>
+      <p>중증장애인의 일상생활과 사회활동을 돕는 활동지원 서비스가 양적·질적으로 모두 강화됩니다.</p>
+
+      <table>
+        <thead>
+          <tr><th>항목</th><th>2025년</th><th>2026년</th><th>변화</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>월 최대 지원시간</td><td>205시간</td><td class="td-highlight">258시간</td><td class="td-highlight">+53시간</td></tr>
+          <tr><td>시간당 단가</td><td>16,620��</td><td class="td-highlight">17,270원</td><td class="td-highlight">+650원</td></tr>
+          <tr><td>지원 대상 인원</td><td>약 12만 명</td><td class="td-highlight">14만 명</td><td class="td-highlight">+2만 명</td></tr>
+          <tr><td>월 최대 지원금액</td><td>약 341만원</td><td class="td-highlight">약 446만원</td><td class="td-highlight">+약 105만원</td></tr>
+        </tbody>
+      </table>
+
+      <div class="compare-grid">
+        <div class="compare-card before">
+          <div class="compare-label">2025년 월 지원시간</div>
+          <div class="compare-value">205시간</div>
+          <div class="compare-desc">하루 약 6.8시간</div>
+        </div>
+        <div class="compare-card after">
+          <div class="compare-label">2026년 월 지원시간</div>
+          <div class="compare-value">258시간</div>
+          <div class="compare-desc">하루 약 8.6시간</div>
+        </div>
+      </div>
+
+      <h3>개인예산제란?</h3>
+      <p>개인예산제는 기존의 정해진 서비스 대신, 장애인에게 <strong>현금성 예산을 직접 배정</strong>하여 본인이 필요한 서비스를 직접 선택·구매할 수 있도록 하는 제도입니다.</p>
+
+      <div class="info-box blue">
+        <div class="info-title">개인예산제로 이용 가능한 서비스</div>
+        <p>활동지원 급여의 일부를 현금으로 전환하여, 보조기기 구입·수리, 주거환경 개선, 건강관리, 외출 지원, 정보통신 보조기기 등을 장애인 당사자가 직접 결정하여 사용합니다.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">2024~2025년</div>
+          <div class="tl-title">시범사업 운영</div>
+          <div class="tl-desc">서울·경기 등 일부 지역에서 시범 운영</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026년 1��</div>
+          <div class="tl-title">전국 본사업 전환</div>
+          <div class="tl-desc">전국 시·군·구로 확대 시행</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026년 3월 27일</div>
+          <div class="tl-title">통합돌봄사업 본격 시행</div>
+          <div class="tl-desc">지역사회 중심 장애인 통합돌봄 시작</div>
+        </div>
+      </div>
+
+      <h3>장애인 고용 지원 강화</h3>
+      <p>활동지원뿐 아니라 장애인의 경제활동 참여를 위한 고용 지원도 대폭 강화되었습니다.</p>
+
+      <table>
+        <thead>
+          <tr><th>항목</th><th>2025년</th><th>2026년</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>고용장려금</td><td>3,721억원</td><td class="td-highlight">4,014억원 (+293억)</td></tr>
+          <tr><td>지원고용 훈련수당 (일)</td><td>18,000원</td><td class="td-highlight">35,000원 (약 2배)</td></tr>
+          <tr><td>취업성공패키지 수당 (월)</td><td>50만원</td><td class="td-highlight">60만원</td></tr>
+          <tr><td>장애인 일자리</td><td>33,546명</td><td class="td-highlight">35,846명 (+2,300명)</td></tr>
+        </tbody>
+      </table>
+
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">258시간</span><span class="num-label">월 활동지원</span></div>
+        <div class="key-num"><span class="num">14만 명</span><span class="num-label">지원 대상</span></div>
+        <div class="key-num"><span class="num">4,014억</span><span class="num-label">고용장려금</span></div>
+        <div class="key-num"><span class="num">35,846명</span><span class="num-label">장애인 일자리</span></div>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>활동지원 월 258시간으로 확대, 시간당 단가 17,270원 인상</li>
+          <li>개인예산제 전국 본사업 전환 - 장애인 자기결정권 강��</li>
+          <li>통합돌봄사업 3월 27일 본격 시행</li>
+          <li>고용장려금 4,014억원, 훈련수당 약 2배 인상</li>
+        </ul>
+      </div>
+    `
   },
   {
     id: 11,
     title: "국민취업지원제도 구직촉진수당 월 60만원 인상, 대상도 확대",
     date: "2026-01-01",
-    summary: "국민취업지원제도 1유형 구직촉진수당이 월 50만원에서 60만원으로 인상되었습니다. 재신청이 가능해지고, 50~60대 중장년층까지 대상이 확대되어 더 많은 구직자가 지원받을 수 있게 됩니다.",
-    content: "<p>2026년부터 국민취업지원제도가 대폭 개편되어 구직촉진수당이 인상되고 지원 대상이 확대되었습니다.</p><h4>주요 변화</h4><ul><li>1유형 구직촉진수당: 월 50만원 → 60만원 인상 (최대 6개월)</li><li>재신청: 기존 1회 한정 → 일정 조건 충족 시 재신청 가능</li><li>자격요건: 가구 소득·재산 기준 상향, 신청 문턱 낮춤</li></ul><h4>대상 확대</h4><ul><li>기존 청년 중심 → 50~60대 중장년 구직자까지 확대</li><li>고령층, 장기 실직자 포함</li><li>전문 상담사 1:1 맞춤형 취업 상담 강화</li><li>직업훈련 프로그램 다양화</li></ul>"
+    summary: "국��취업지원제도 1유형 구직촉진수당이 월 50만원에�� 60만원으로 인상되었습니다. 재신청이 가능해지고, 50~60대 중장년층까지 대상이 확대되어 더 많은 구직자가 지원받을 수 있게 됩니다.",
+    content: `
+      <p><strong>국민취업지원제도</strong>는 고용보험 사각지대에 있는 구직자에게 취업 지원 서비스와 생활 안정 자금을 함께 제공하는 '한국형 실업부조'입니다. 2026년 개편으로 지원 금액과 대상이 모두 확대되어, 더 촘촘한 고용 안전망으로 진화합니다.</p>
+
+      <h3>제도 구조 이해하기</h3>
+      <p>국민취업지원제도는 소득·재산 수준에 따라 두 가지 유형으로 나뉩니다.</p>
+
+      <table>
+        <thead>
+          <tr><th>구분</th><th>1유형</th><th>2유형</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>대상</td><td>저소득 구직자 (기준중위소득 60% 이하)</td><td>청년, 중장년, 특정 계층</td></tr>
+          <tr><td>구직촉진수당</td><td class="td-highlight">월 60만원 x 6개월 = 360만원</td><td>해당 없음</td></tr>
+          <tr><td>취업활동비</td><td>최대 195만 4,000원</td><td class="td-highlight">최대 195만 4,000원</td></tr>
+          <tr><td>취업지원서비스</td><td>1:1 맞춤형 상담</td><td>1:1 맞춤형 상담</td></tr>
+          <tr><td>직업훈련</td><td>훈련비 지원</td><td>훈련비 지원</td></tr>
+        </tbody>
+      </table>
+
+      <h3>구직촉진수당 인상</h3>
+      <div class="compare-grid">
+        <div class="compare-card before">
+          <div class="compare-label">2025년</div>
+          <div class="compare-value">월 50만���</div>
+          <div class="compare-desc">6개월 합계 300만원</div>
+        </div>
+        <div class="compare-card after">
+          <div class="compare-label">2026년</div>
+          <div class="compare-value">월 60만원</div>
+          <div class="compare-desc">6개��� 합계 360만원</div>
+        </div>
+      </div>
+
+      <h3>2026년 주요 개편 사항</h3>
+
+      <div class="info-box blue">
+        <div class="info-title">재신청 가능</div>
+        <p>기존에는 1회 수급 후 재신청이 불가했으나, 2026년부터는 일정 조건을 충족하면 <strong>재신청이 가능</strong>합니다. 장기 실직자나 반복적 고용불안을 겪는 취약 구직자에게 큰 도움이 됩니다.</p>
+      </div>
+
+      <div class="info-box">
+        <div class="info-title">대상 확대 - 중장년층 포함</div>
+        <p>기존 청년 중심에서 <strong>50~60대 중장년 구직자, 고령층, 장기 실직자</strong>까지 대상이 확대되었습니다. 인구 고령화로 늘어나는 중장년 구직 수요에 적극 대응합���다.</p>
+      </div>
+
+      <div class="info-box amber">
+        <div class="info-title">자격요건 완화</div>
+        <p>가구 소득 및 재산 기준이 상향되어 신청 문턱이 낮아졌습니다. 기준중위소득 인상(6.51%)에 연동하여 선정기준이 함께 올라, 더 많은 구직자가 1유형 자격을 얻게 됩니다.</p>
+      </div>
+
+      <h3>지원 내용 종합</h3>
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">월 60만원</span><span class="num-label">구직촉진수당</span></div>
+        <div class="key-num"><span class="num">360만원</span><span class="num-label">6개월 최대</span></div>
+        <div class="key-num"><span class="num">195만원</span><span class="num-label">취업활동비</span></div>
+        <div class="key-num"><span class="num">300만원</span><span class="num-label">훈련장려금</span></div>
+      </div>
+
+      <h3>신청 방법</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">1단계</div>
+          <div class="tl-title">온라인 사전 신청</div>
+          <div class="tl-desc">워크넷(www.work.go.kr)에서 온라인 신청 또는 고용센터 방문</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2단계</div>
+          <div class="tl-title">자격 심사 및 수급자격 결정</div>
+          <div class="tl-desc">소득·재산 조사 후 1유형 또는 2유형 결정</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">3단계</div>
+          <div class="tl-title">취업활동계획 수립</div>
+          <div class="tl-desc">전담 상담사와 1:1 맞춤형 취업 계획 수립</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">4단계</div>
+          <div class="tl-title">구직활동 + 수당 지급</div>
+          <div class="tl-desc">구직활동 이행 확인 후 매월 60만원 지급</div>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>구직촉진수당 월 50만원 → 60만원 인상 (6개월 최대 360만원)</li>
+          <li>1회 한정 → 재신청 가능으로 변경</li>
+          <li>대상: 청년 + 50~60대 중장년 + 장기 실직자까지 확대</li>
+          <li>가구 소득·재산 기준 상향으로 신청 문턱 완화</li>
+        </ul>
+      </div>
+    `
   },
   {
     id: 12,
     title: "청년미래적금 6월 출시 예정, 정부 기여금 2배 확대",
     date: "2026-04-01",
-    summary: "청년도약계좌를 대체하는 '청년미래적금'이 2026년 6월 출시 예정입니다. 월 50만원씩 3년 납입 시 최대 2,200만원 마련이 가능하며, 정부 기여금이 기존 대비 2배로 확대됩니다.",
-    content: "<p>청년의 자산 형성을 지원하는 새로운 금융 상품 '청년미래적금'이 2026년 6월 출시를 앞두고 있습니다. 기존 청년도약계좌보다 더 강화된 혜택을 제공합니다.</p><h4>청년미래적금 개요</h4><ul><li>대상: 만 19~34세, 개인소득 연 6,000만원 이하 & 기준중위소득 200% 이하</li><li>납입한도: 월 최대 50만원, 3년 만기</li><li>만기 시 최대 약 2,200만원 수령 가능</li><li>정부 기여금: 월 최대 6만원 (우대형, 기존 대비 약 2배)</li></ul><h4>함께 확대되는 청년 복지</h4><ul><li>청년 월세 지원: 한시사업 → 상시 제도 전환, 월 최대 20만원 (최대 2년)</li><li>청년 추가 공제: 대상 29세 이하 → 34세 이하 확대, 공제금 40만원 → 60만원</li><li>비수도권 중소기업 취업 청년: 지역별 480만~720만원 차등 지원</li></ul>"
+    summary: "청년도약계좌를 대체하는 '청년미래적금'이 2026년 6월 출시 예정입니다. 월 50만원씩 3년 납입 시 최대 2,200만원 마련이 가능하며, 정��� 기여금이 기존 대비 2배로 확대��니다.",
+    content: `
+      <p>청년의 자산 형성을 돕는 새로운 금융 상품 <strong>'청년미래적금'</strong>이 2026년 6월 출시를 앞두고 있습니다. 기존 청년도약계좌의 성과와 한계를 반영하여 설계된 이 상품은, 정부 기여금이 <strong>2배로 확대</strong>되고 가입 기간이 단축되어 청년들이 더 빠르게 목돈을 마련할 수 있도록 설계되었습니다.</p>
+
+      <h3>청년미래적금 vs 청년도약계좌 비교</h3>
+      <table>
+        <thead>
+          <tr><th>항목</th><th>청년도약계좌 (기존)</th><th>청년미래적금 (신규)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>가입 연령</td><td>만 19~34���</td><td>만 19~34세</td></tr>
+          <tr><td>소득 요건</td><td>연 7,500만원 이하</td><td class="td-highlight">연 6,000만원 이하</td></tr>
+          <tr><td>월 납입한도</td><td>70만원</td><td class="td-highlight">50만원</td></tr>
+          <tr><td>만기</td><td>5년</td><td class="td-highlight">3년</td></tr>
+          <tr><td>정부 기여금 (월)</td><td>최대 3.3만원</td><td class="td-highlight">최대 6만원 (약 2배)</td></tr>
+          <tr><td>만기 수령액</td><td>최대 약 5,000만원</td><td class="td-highlight">최대 약 2,200만원</td></tr>
+          <tr><td>이자소득 비과세</td><td>O</td><td>O</td></tr>
+        </tbody>
+      </table>
+
+      <div class="info-box blue">
+        <div class="info-title">왜 만기가 짧아졌을까?</div>
+        <p>기존 5년 만기는 중간 해지율이 높다는 문제가 있었습니다. 청년미래적금은 3년으로 단축하되 정부 기여금을 높여, <strong>실제 수령 가능성</strong>을 크게 높인 것이 핵심 전략입니다.</p>
+      </div>
+
+      <h3>정부 기여금 구조</h3>
+      <p>소득 수준에 따라 기여금이 차등 지급됩니다. 소득이 낮을수록 정부가 더 많이 지원합니다.</p>
+
+      <div class="bar-chart">
+        <div class="bar-item">
+          <div class="bar-label"><span>우대형 (소득 3,600만원 이하)</span><span class="bar-value">월 6만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>일반형 (소득 3,600~4,800만원)</span><span class="bar-value">월 4만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 67%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>기본형 (소득 4,800~6,000만원)</span><span class="bar-value">월 2만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 33%"></div></div>
+        </div>
+      </div>
+
+      <h3>3년 만기 시뮬레이션 (우대형 기준)</h3>
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">1,800만원</span><span class="num-label">본인 납입 (50만x36개월)</span></div>
+        <div class="key-num"><span class="num">216��원</span><span class="num-label">정부 기여금 (6만x36개월)</span></div>
+        <div class="key-num"><span class="num">~184만원</span><span class="num-label">이자 수익 (비과세)</span></div>
+        <div class="key-num"><span class="num">~2,200만원</span><span class="num-label">만기 수령액</span></div>
+      </div>
+
+      <h3>함께 확대되는 청년 복지</h3>
+
+      <table>
+        <thead>
+          <tr><th>제도</th><th>변경 내용</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>청년 월세 지원</td><td class="td-highlight">한시사업 → 상시 제도 전환, 월 최대 20만원 (최대 2년)</td></tr>
+          <tr><td>청년 추가 공제</td><td class="td-highlight">대상 29세 이하 → 34세 이하 확대, 공제금 40만 → 60만원</td></tr>
+          <tr><td>비수도권 취업 청년</td><td class="td-highlight">지역별 480만~720만원 차등 지원 (신규)</td></tr>
+        </tbody>
+      </table>
+
+      <h3>출시 일정</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">4월</div>
+          <div class="tl-title">상품 세부 설계 확정 및 금융위 인가</div>
+          <div class="tl-desc">취급 은행 선정, 금리 조건 확정</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">5월</div>
+          <div class="tl-title">사전 안내 및 가입 예약</div>
+          <div class="tl-desc">은행 앱·워크넷 등에서 사전 정보 공개</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">6월</div>
+          <div class="tl-title">정식 출시 및 가입 시작</div>
+          <div class="tl-desc">취급 은행 앱 또는 영업점에서 가입</div>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>만 19~34세, 연소득 6,000만원 이하 청년 대상</li>
+          <li>월 50만원, 3년 만기 → 최대 약 2,200만원 수령</li>
+          <li>정부 기여금 월 최대 6만원 (기존 대비 약 2배)</li>
+          <li>2026년 6월 출시 예정</li>
+          <li>청년 월세 지원 상시화, 추가 공제 확대 동시 시행</li>
+        </ul>
+      </div>
+    `
   },
   {
     id: 13,
     title: "긴급복지 생계지원금 인상, 위기 가구 안전망 강화",
     date: "2026-01-01",
     summary: "실직·단전 등 갑작스러운 위기 상황의 가구에 지급되는 긴급복지 생계지원금이 인상되었습니다. 1인 가구 월 78만원, 4인 가구 월 199만원으로 올라 위기 가구 보호가 한층 두터워집니다.",
-    content: "<p>2026년부터 긴급복지 지원제도의 생계지원금이 기준중위소득 인상에 연동하여 올라갔습니다. 실직, 사망, 행방불명, 단전 등 갑작스러운 위기 상황에 처한 가구를 더 든든히 보호합니다.</p><h4>생계지원금 인상</h4><ul><li>1인 가구: 월 73만원 → 78만원</li><li>4인 가구: 월 187만 2,700원 → 199만 4,600원</li></ul><h4>신청 기준</h4><ul><li>소득 기준(4인 가구): 중위소득 75% = 487만 1,054원 이하</li><li>금융재산 기준: 1,249만 4,000원 이하</li><li>신청 방법: 주민센터 또는 129 보건복지상담센터</li></ul><p>위기 상황 발생 시 <strong>사후 신청도 가능</strong>하며, 먼저 지원 후 나중에 서류를 보완하는 '선지원 후처리' 원칙이 적용됩니다.</p>"
+    content: `
+      <p><strong>긴급복지 지원제도</strong>는 갑작스러운 위기 상황(실직, 사망, 단전, 가정폭력 등)으로 생계가 어려워진 가구에 신속하게 지원금을 지급하는 제도입니다. 복잡한 심사 없이 <strong>'선지원 후처리'</strong> 원칙으로 운영되어, 위기 상황에서 가장 빠르게 도움을 받을 수 있는 제도 중 하나입니다.</p>
+
+      <h3>긴급복지 지원, 어떤 상황에서 받을 수 있나요?</h3>
+      <p>아래 위기 사유 중 하나에 해당하면 긴급복지 지원을 신청할 수 있습니다.</p>
+
+      <table>
+        <thead>
+          <tr><th>위기 사유</th><th>구체적 상황</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>주소득자의 사망·실종</td><td>가구의 주 수입원인 가족이 사망하거나 행방불명된 경우</td></tr>
+          <tr><td>주소득자의 실직</td><td>갑작스러운 해고, 폐업 등으로 소득이 끊긴 경우</td></tr>
+          <tr><td>중한 질병·부상</td><td>가구원의 중대 질환·사고로 경제적 위기에 처한 경우</td></tr>
+          <tr><td>가정폭력·성폭력</td><td>폭력 피해로 기존 주거지에서 이탈한 경우</td></tr>
+          <tr><td>화재 등 재난</td><td>자연재해, 화재로 주거지를 잃은 경우</td></tr>
+          <tr><td>단전·단수·단가스</td><td>요금 체납으로 에너지 공급이 중단된 경우</td></tr>
+        </tbody>
+      </table>
+
+      <h3>2026년 생계지원금 인상</h3>
+
+      <table>
+        <thead>
+          <tr><th>가구 규모</th><th>2025년</th><th>2026년</th><th>인상액</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1인 ��구</td><td>73만 1,600원</td><td class="td-highlight">78만원</td><td class="td-highlight">+4만 8,400원</td></tr>
+          <tr><td>2인 가구</td><td>120만 2,700원</td><td class="td-highlight">128만 4,000원</td><td class="td-highlight">+8만 1,300원</td></tr>
+          <tr><td>3인 가구</td><td>153만 8,800원</td><td class="td-highlight">164만원</td><td class="td-highlight">+10만 1,200원</td></tr>
+          <tr><td>4인 가구</td><td>187만 2,700원</td><td class="td-highlight">199만 4,600원</td><td class="td-highlight">+12만 1,900원</td></tr>
+          <tr><td>5인 가구</td><td>217만 5,500원</td><td class="td-highlight">231만 7,000원</td><td class="td-highlight">+14만 1,500원</td></tr>
+        </tbody>
+      </table>
+
+      <h3>소득·재산 기준 (4인 가구)</h3>
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">487만원</span><span class="num-label">소득 기준 (중위소득 75%)</span></div>
+        <div class="key-num"><span class="num">1,249만원</span><span class="num-label">금융재산 기준</span></div>
+        <div class="key-num"><span class="num">최대 6회</span><span class="num-label">생계지원 횟수</span></div>
+        <div class="key-num"><span class="num">즉시지급</span><span class="num-label">선지원 후처리</span></div>
+      </div>
+
+      <h3>지원 종류와 내용</h3>
+      <p>긴급복지는 생계지원 외에도 의료·주거·교육 등 다양한 지원을 동시에 받을 수 있습니다.</p>
+
+      <table>
+        <thead>
+          <tr><th>지원 종류</th><th>내용</th><th>지원 기간</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>생계지원</td><td class="td-highlight">가구 규모별 현금 지급</td><td>최대 6회</td></tr>
+          <tr><td>의료지원</td><td>300만원 이내 의료비 지원</td><td>최대 2회</td></tr>
+          <tr><td>주거지원</td><td>임시거소 제공 또는 주거비 지원</td><td>최대 12회</td></tr>
+          <tr><td>교육지원</td><td>초·중·고 학비, 수업료, 입학금</td><td>최대 2회</td></tr>
+          <tr><td>연료비 지원</td><td>월 10만원 이내</td><td>최대 6회</td></tr>
+        </tbody>
+      </table>
+
+      <h3>신청 ��법</h3>
+      <div class="info-box blue">
+        <div class="info-title">긴급할 때 이렇게 신청하세요</div>
+        <p><strong>129 보건복지상담센터</strong> (24시간 운영)에 전화하거나, 가까운 주민센터에 방문하면 됩니다. 본인뿐 아니라 이웃, 친인척, 공무원도 발견 즉시 신고·신청할 수 있습니다. 서류가 없어도 먼저 지원하고 나중에 보완하는 '선지원 후처리' 원칙이 적용됩니다.</p>
+      </div>
+
+      <div class="info-box red">
+        <div class="info-title">주의: 부정수급 시 환수</div>
+        <p>거짓이나 부정한 방법으로 지원을 받은 경우 지원금 전액이 환수되며, 향후 5년간 긴급복지 신청이 제한됩니다.</p>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>위기 사유 발생 시 '선지원 후처리'로 즉시 지급</li>
+          <li>1인 가구 월 78만원, 4인 가구 월 199만원 (전년 대비 인상)</li>
+          <li>생계·의료·주거·교육·연료비 동시 지원 가능</li>
+          <li>129 (24시간) 또는 주민센터에서 신청</li>
+        </ul>
+      </div>
+    `
   },
   {
     id: 5,
     title: "청년도약계좌 가입 조건 완화, 월 최대 70만원 정부 지원",
     date: "2026-04-04",
-    summary: "만 19~34세 청년이라면 연소득 7,500만원 이하 시 청년도약계좌에 가입 가능합니다. 정부 기여금 포함 월 최대 70만원까지 납입 지원되며, 5년 만기 시 최대 5,000만원 목돈 마련이 가능합니다.",
-    content: "<p>청년의 자산 형성을 지원하는 청년도약계좌의 가입 조건이 완화되어 더 많은 청년이 혜택을 누릴 수 있게 되었습니다.</p><ul><li>가입 대상: 만 19~34세, 개인소득 연 7,500만원 이하</li><li>납입한도: 월 최대 70만원 (정부 기여금 포함)</li><li>만기: 5년, 최대 약 5,000만원 수령 가능</li><li>혜택: 정부 기여금 + 이자소득 비과세</li><li>신청: 취급 은행 앱 또는 영업점 방문</li></ul>"
+    summary: "만 19~34세 청년이라면 연소득 7,500만�� 이하 시 청년���약계좌에 가입 가���합니다. 정부 기여금 포함 월 최대 70��원까지 납입 지원되며, 5년 만��� 시 최대 5,000만원 목돈 마련이 가능합니다.",
+    content: `
+      <p>청년의 자산 형성을 지원하는 <strong>청년도약계좌</strong>의 가입 조건이 완화되어 더 많은 청년이 혜택을 누릴 수 있게 되었습니다. 정부 기여금과 이자소득 비과세 혜택이 결합되어, 5년 만기 시 최대 5,000만원의 목돈 마련이 가능합니다.</p>
+
+      <h3>청년도약계좌 개요</h3>
+      <table>
+        <thead>
+          <tr><th>항목</th><th>내용</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>가입 대상</td><td class="td-highlight">만 19~34세, 개인소득 연 7,500만원 이하</td></tr>
+          <tr><td>가구소득 요건</td><td>기준중위소득 180% 이하</td></tr>
+          <tr><td>월 납입한도</td><td class="td-highlight">최대 70만원 (정부 기여금 포함)</td></tr>
+          <tr><td>만기</td><td>5년</td></tr>
+          <tr><td>만기 수령액</td><td class="td-highlight">최대 약 5,000만원</td></tr>
+          <tr><td>세제 혜택</td><td>이자소득 비과세</td></tr>
+        </tbody>
+      </table>
+
+      <h3>소득 구간별 정부 기여금</h3>
+      <div class="bar-chart">
+        <div class="bar-item">
+          <div class="bar-label"><span>소득 2,400만원 이하</span><span class="bar-value">월 최대 3.3만원 (6%)</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>소득 2,400~3,600만원</span><span class="bar-value">월 최대 2.3만원 (4.6%)</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 70%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>소득 3,600~4,800만원</span><span class="bar-value">월 최대 1.5만원 (3.7%)</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 45%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>소득 4,800~6,000만원</span><span class="bar-value">월 최대 1만원 (3%)</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 30%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>소득 6,000~7,500만원</span><span class="bar-value">기여금 없음 (비과세만)</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 5%"></div></div>
+        </div>
+      </div>
+
+      <h3>5년 만기 수령 시뮬레이션</h3>
+      <p>매월 70만원 납입, 소득 2,400만원 이하 기준으로 계산한 예시입니다.</p>
+
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">4,200만원</span><span class="num-label">본인 납입 (70만x60개월)</span></div>
+        <div class="key-num"><span class="num">~198만원</span><span class="num-label">정부 기여금 합계</span></div>
+        <div class="key-num"><span class="num">~602만원</span><span class="num-label">이자 수익 (비과세)</span></div>
+        <div class="key-num"><span class="num">~5,000만원</span><span class="num-label">만기 수령액</span></div>
+      </div>
+
+      <div class="info-box amber">
+        <div class="info-title">청년미래적금과 비교하세요</div>
+        <p>2026년 6월 출시 예정인 '청년미래적금'은 만기가 3년으로 짧고 정부 기여금이 월 최대 6만원(약 2배)입니다. 5년 장기 저축이 가능하다면 도약계좌, 3년 내 목돈이 필요하다면 미래적금이 유리합니다. 두 상품 동시 가입은 불가합니다.</p>
+      </div>
+
+      <h3>신청 방법</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">1단계</div>
+          <div class="tl-title">자격 확인</div>
+          <div class="tl-desc">연령, 개인소득, 가구소득 요건 충족 여부 확인</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2단계</div>
+          <div class="tl-title">은행 앱에서 가입 신청</div>
+          <div class="tl-desc">취급 은행 모바일 앱 또는 영업점 방문</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">3단계</div>
+          <div class="tl-title">서민금융진흥원 자격 심사</div>
+          <div class="tl-desc">소득·가구 요건 심사 (약 2~3주 소요)</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">4단계</div>
+          <div class="tl-title">계좌 개설 완료 및 적립 시작</div>
+          <div class="tl-desc">심사 통과 후 자동 개설, 매월 자유롭게 납입</div>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>만 19~34세, 연소득 7,500만원 이하 청년 대상</li>
+          <li>월 최대 70만원 납입, 5년 만기 시 최대 약 5,000만원</li>
+          <li>소득 구간별 정부 기여금 차등 지급 + 이자소득 비과세</li>
+          <li>취급 은행 앱 또는 영업점에서 가입 신청</li>
+        </ul>
+      </div>
+    `
   }
 ];
 
@@ -75,22 +875,22 @@ export const insightArticles = [
     tagLabel: "따뜻한 공감",
     title: "복지, '도움'을 넘어 '당연한 권리'가 되는 세상",
     paragraphs: [
-      "우리는 살아가면서 누구나 한 번쯤 예기치 못한 비바람을 맞곤 합니다. 갑작스러운 질병, 경제적인 어려움, 혹은 홀로 감당하기 벅찬 육아나 노후의 무게까지. 이때 사회복지는 단순히 누군가에게 베푸는 '자선'이 아닙니다.",
+      "우리는 살아가면서 누구나 한 번쯤 예기치 못한 비바람을 맞곤 합���다. 갑작스러운 질병, 경제적인 어려움, 혹은 홀로 감당하기 벅찬 육아나 노후의 무게까지. 이때 사회복지는 단순히 누군가에게 베푸는 '자선'이 아닙니다.",
       "복지는 우리가 대한민국 국민으로서 당당하게 누려야 할 <strong>'사회적 안전망'</strong>입니다. \"내가 이런 지원을 받아도 될까?\"라는 망설임 대신, \"나의 어려움을 국가와 사회가 함께 짊어지고 있구나\"라는 안도감을 드리는 것이 복지의 진짜 목적입니다."
     ],
-    highlight: "복지헬퍼는 그 막막한 순간에 여러분의 손을 잡아주는 이정표가 되고자 합니다. 복잡한 서류와 어려운 용어 뒤에 숨겨진 당신의 권리를 찾아드리는 일, 그것이 우리가 존재하는 이유입니다."
+    highlight: "복지헬퍼는 그 막막한 순간에 여러분의 손을 잡아주는 이정표가 되고자 합니다. ���잡한 서류와 어려운 용어 뒤에 숨겨진 당신의 권리를 찾아드리는 일, 그것이 우리가 존재하는 이유입니다."
   },
   {
     id: 2,
     tag: "practical",
     tagLabel: "실용 정보",
-    title: "모르면 손해! 내 상황에 딱 맞는 복지 서비스 찾는 법",
+    title: "모르면 손해! 내 상황에 딱 맞는 ���지 서비스 찾는 법",
     paragraphs: [
       "매년 수많은 복지 정책이 쏟아져 나오지만, 정작 나에게 필요한 혜택이 무엇인지 몰라 지나치는 경우가 많습니다. '복지 사각지대'는 정보의 부재에서 시작됩니다."
     ],
     list: [
       { strong: "생애주기별 맞춤 지원:", text: "영유아 보육료 지원부터 청년 내일채움공제, 노인 기초연금까지 인생의 단계마다 준비된 혜택을 확인하세요." },
-      { strong: "가구 특성별 혜택:", text: "다자녀 가구, 한부모 가족, 장애인 가구 등 상황에 따라 가산되는 지원금과 바우처 제도가 다양합니다." },
+      { strong: "가구 특성별 혜택:", text: "다자녀 가구, ��부모 가족, 장애인 가구 등 상황에 따라 가산되는 지원금과 바우처 제도가 다양합니다." },
       { strong: "지자체 특화 서비스:", text: "중앙정부뿐만 아니라 내가 살고 있는 지역에서만 제공하는 숨은 복지 포인트를 놓치지 마세요." }
     ],
     highlight: "복지는 신청하는 사람에게 열리는 문입니다. 오늘 바로 복지헬퍼에서 당신의 이름으로 준비된 혜택을 검색해 보세요."
@@ -104,7 +904,7 @@ export const insightArticles = [
       "4차 산업혁명 시대, 복지도 변화하고 있습니다. 이제는 단순히 사후에 지원하는 것을 넘어, 데이터와 AI를 통해 위기 가구를 미리 예측하고 돌보는 <strong>'선제적 복지'</strong>가 실현되고 있습니다.",
       "고독사를 예방하는 스마트 플러그, 거동이 불편한 어르신을 돕는 돌봄 로봇, 그리고 복잡한 복지 정보를 한눈에 찾아주는 지능형 큐레이션 서비스까지. 기술은 차갑지만, 그 기술이 향하는 곳은 가장 낮은 곳의 따뜻한 사람이어야 합니다."
     ],
-    highlight: "저희는 기술을 통해 복지의 문턱을 낮추고, 단 한 사람도 소외되지 않는 '디지털 포용 사회'를 꿈꿉니다. 복지의 온기가 구석구석 퍼질 수 있도록 앞장서겠습니다."
+    highlight: "저희는 기술을 통해 복지의 문턱을 낮추고, 단 한 사람도 소외되지 않는 '디지털 포용 사회'를 꿈꿉니다. 복지의 온기가 구석구석 퍼질 수 있도록 앞장서겠��니다."
   },
   {
     id: 4,
@@ -112,7 +912,7 @@ export const insightArticles = [
     tagLabel: "실용 정보",
     title: "청년이 꼭 챙겨야 할 취업 지원금 총정리: 내일채움공제부터 국민취업지원제도까지",
     paragraphs: [
-      "취업 준비 중인 청년이라면 정부가 지원하는 다양한 취업 지원 제도를 반드시 확인해야 합니다. 제대로 활용하면 수백만 원에서 최대 수천만 원의 목돈을 마련할 수 있습니다.",
+      "취업 준비 중인 청년이라면 정부가 지원��는 다양한 취업 지원 제도를 반드시 확인해야 ��니다. 제대로 활용하면 수백만 원에서 최대 수천만 원의 목돈을 마련할 ��� 있습니다.",
       "핵심은 내가 어떤 상황에 있는지를 먼저 파악하는 것입니다. 재직자라면 <strong>청년내일채움공제</strong>, 구직자라면 <strong>국민취업지원제도</strong>가 출발점이 됩니다."
     ],
     list: [
@@ -120,7 +920,7 @@ export const insightArticles = [
       { strong: "국민취업지원제도:", text: "구직활동 지원금 월 50만원(최대 6개월)과 취업 알선 서비스 제공. 소득·재산 요건 충족 시 1유형으로 신청 가능." },
       { strong: "청년 일자리 도약 장려금:", text: "취업 취약 청년을 채용한 기업에 최대 월 60만원 지원, 청년 입장에서는 더 많은 채용 기회로 연결됩니다." }
     ],
-    highlight: "지원금은 '알고 신청하는 사람'에게만 돌아갑니다. 오늘 워크넷과 복지헬퍼에서 내 조건에 맞는 취업 지원 제도를 확인해 보세요."
+    highlight: "지원금은 '알고 신청하는 사람'에게만 돌아갑니다. 오늘 워크넷과 복지헬퍼에서 내 조��에 맞는 취업 지원 제도를 확인해 보세요."
   },
   {
     id: 5,
