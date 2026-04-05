@@ -997,6 +997,305 @@ export const newsArticles = [
         </ul>
       </div>
     `
+  },
+  {
+    id: 15,
+    title: "아동수당 만 13세까지 단계적 확대, 인구감소지역 최대 월 13만원",
+    date: "2026-04-05",
+    summary: "2026년 4월부터 아동수당 지급 대상이 만 9세 미만으로 확대되며, 2030년까지 만 13세 미만으로 단계적으로 넓어집니다. 비수도권은 월 10만 5천원, 인구감소지역은 최대 월 13만원까지 받을 수 있습니다.",
+    content: `
+      <p><strong>아동수당</strong>은 만 8세 미만(2025년 기준) 아동에게 월 10만원을 지급하는 보편적 복지 제도입니다. 2026년부터 아동수당법이 개정되어 <strong>지급 연령이 단계적으로 만 13세까지 확대</strong>되고, 거주 지역에 따라 추가 지원까지 받을 수 있게 됩니다.</p>
+
+      <div class="info-box blue">
+        <div class="info-title">왜 확대되었나요?</div>
+        <p>저출생 시대에 양육비 부담을 줄이고, 아동의 기본적 권리를 보장하기 위한 조치입니다. 특히 초등학교 입학 후에도 양육비가 지속되는 현실을 반영하여, 만 8세에서 끊기던 아동수당을 점차 확대하는 것입니다.</p>
+      </div>
+
+      <h3>단계적 확대 일정</h3>
+      <p>매년 1세씩 확대하여 2030년에 만 13세 미만까지 완성됩니다.</p>
+
+      <table>
+        <thead>
+          <tr><th>연도</th><th>지급 대상</th><th>신규 포함 학년</th><th>예상 수혜 아동</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2025년</td><td>만 8세 미만</td><td>-</td><td>약 300만 명</td></tr>
+          <tr><td>2026년</td><td class="td-highlight">만 9세 미만</td><td>초등 2학년</td><td class="td-highlight">약 340만 명</td></tr>
+          <tr><td>2027년</td><td>만 10세 미만</td><td>초등 3학년</td><td>약 380만 명</td></tr>
+          <tr><td>2028년</td><td>만 11세 미만</td><td>초등 4학년</td><td>약 415만 명</td></tr>
+          <tr><td>2029년</td><td>만 12세 미만</td><td>초등 5학년</td><td>약 450만 명</td></tr>
+          <tr><td>2030년</td><td class="td-highlight">만 13세 미만</td><td>초등 6학년</td><td class="td-highlight">약 480만 명</td></tr>
+        </tbody>
+      </table>
+
+      <div class="bar-chart">
+        <div class="bar-item">
+          <div class="bar-label"><span>2025년 (만 8세 미만)</span><span class="bar-value">약 300만 명</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 62.5%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>2026년 (만 9세 미만)</span><span class="bar-value">약 340만 명</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 70.8%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>2028년 (만 11세 미만)</span><span class="bar-value">약 415만 명</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 86.5%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>2030년 (만 13세 미만)</span><span class="bar-value">약 480만 명</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div>
+        </div>
+      </div>
+
+      <h3>지역별 차등 지급 — 최대 월 13만원</h3>
+      <p>2026년부터 거주 지역에 따라 아동수당 금액이 달라집니다. 인구감소지역에 거주하는 아동에게 더 많은 금액을 지원하여 <strong>지방 정착을 유도</strong>하는 것이 목적입니다.</p>
+
+      <table>
+        <thead>
+          <tr><th>거주 지역</th><th>월 지급액</th><th>지역사랑상품권 추가</th><th>합계</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>수도권</td><td>10만원</td><td>-</td><td>10만원</td></tr>
+          <tr><td>비수도권</td><td class="td-highlight">10만 5천원</td><td>-</td><td class="td-highlight">10만 5천원</td></tr>
+          <tr><td>인구감소지역 (우대)</td><td class="td-highlight">11만원</td><td>+1만원</td><td class="td-highlight">12만원</td></tr>
+          <tr><td>인구감소지역 (특별)</td><td class="td-highlight">12만원</td><td>+1만원</td><td class="td-highlight">최대 13만원</td></tr>
+        </tbody>
+      </table>
+
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">13만원</span><span class="num-label">인구감소 특별지역 최대</span></div>
+        <div class="key-num"><span class="num">만 9세</span><span class="num-label">2026년 지급 대상</span></div>
+        <div class="key-num"><span class="num">340만 명</span><span class="num-label">2026년 수혜 아동</span></div>
+        <div class="key-num"><span class="num">1월 소급</span><span class="num-label">2026년 1월분부터</span></div>
+      </div>
+
+      <div class="info-box amber">
+        <div class="info-title">지역사랑상품권 추가 지원 안내</div>
+        <p>인구감소지역에서 아동수당을 <strong>지역사랑상품권</strong>으로 수령하면 월 1만원 상당액을 추가로 받을 수 있습니다. 해당 지원은 지자체 조례 제정을 거쳐 <strong>2026년 하반기</strong>부터 순차 시행 예정입니다.</p>
+      </div>
+
+      <h3>함께 알아두면 좋은 육아 지원금 총정리</h3>
+      <p>아동수당 외에도 연령대별로 다양한 지원금이 있습니다. 중복 수령이 가능한 항목이 많으니 빠짐없이 챙기세요.</p>
+
+      <table>
+        <thead>
+          <tr><th>제도</th><th>대상</th><th>금액</th><th>비고</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>부모급여</td><td>만 0세</td><td class="td-highlight">월 100만원</td><td>아동수당과 중복 수령 가능</td></tr>
+          <tr><td>부모급여</td><td>만 1세</td><td class="td-highlight">월 50만원</td><td>아동수당과 중복 수령 가능</td></tr>
+          <tr><td>첫만남이용권</td><td>출생아</td><td class="td-highlight">첫째 200만원 / 둘째+ 300만원</td><td>출생 후 1회 지급</td></tr>
+          <tr><td>아동수당</td><td>만 9세 미만 (2026년)</td><td class="td-highlight">월 10만~13만원</td><td>지역별 차등</td></tr>
+          <tr><td>조부모 돌봄수당</td><td>영아</td><td class="td-highlight">월 최대 60만원</td><td>2026년 신설</td></tr>
+        </tbody>
+      </table>
+
+      <div class="info-box">
+        <div class="info-title">0세 아동을 둔 가정의 월 지원금 합산 예시</div>
+        <p>수도권 거주, 만 0세 아동 기준: <strong>부모급여 100만원 + 아동수당 10만원 = 월 110만원</strong><br>
+        인구감소 특별지역 거주: <strong>부모급여 100만원 + 아동수당 13만원 = 월 113만원</strong></p>
+      </div>
+
+      <h3>지급 일정 및 신청 방법</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">2026년 4월</div>
+          <div class="tl-title">확대 대상(만 8~9세 미만) 지급 시작</div>
+          <div class="tl-desc">2026년 1월분부터 소급 지급 (4개월치 일괄)</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">매월 25일</div>
+          <div class="tl-title">정기 지급일</div>
+          <div class="tl-desc">신청한 계좌로 매월 25일 자동 입금</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026년 하반기</div>
+          <div class="tl-title">지역사랑상품권 추가 지원 시작</div>
+          <div class="tl-desc">인구감소지역 지자체별 순차 시행</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2027년 1월</div>
+          <div class="tl-title">만 10세 미만으로 2차 확대</div>
+          <div class="tl-desc">매년 1세씩 확대하여 2030년 만 13세 완성</div>
+        </div>
+      </div>
+
+      <div class="info-box blue">
+        <div class="info-title">신청 방법 안내</div>
+        <p><strong>온라인:</strong> 복지로(bokjiro.go.kr) 또는 정부24(gov.kr)에서 신청<br>
+        <strong>오프라인:</strong> 주민센터 방문 신청<br>
+        <strong>필요 서류:</strong> 신청인 신분증, 아동 통장 사본<br>
+        <strong>기존 수급자:</strong> 만 8세 이상 확대분은 별도 신청 없이 자동 지급됩니다.</p>
+      </div>
+
+      <div class="compare-grid">
+        <div class="compare-card before">
+          <div class="compare-label">2025년</div>
+          <div class="compare-value">만 8세 미만</div>
+          <div class="compare-desc">전국 일괄 월 10만원</div>
+        </div>
+        <div class="compare-card after">
+          <div class="compare-label">2030년 완성 시</div>
+          <div class="compare-value">만 13세 미만</div>
+          <div class="compare-desc">지역별 최대 월 13만원</div>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>2026년 4월부터 아동수당 만 9세 미만으로 확대 (1월분 소급 지급)</li>
+          <li>2030년까지 매년 1세씩 확대 → 최종 만 13세 미만</li>
+          <li>수도권 10만원 / 비수도권 10.5만원 / 인구감소지역 최대 13만원</li>
+          <li>부모급여(0세 100만원, 1세 50만원)와 중복 수령 가능</li>
+          <li>기존 수급자 확대분은 별도 신청 없이 자동 지급</li>
+        </ul>
+      </div>
+    `
+  },
+  {
+    id: 16,
+    title: "2026년 아이돌봄서비스 대폭 확대, 4월 23일부터 달라지는 5가지",
+    date: "2026-04-05",
+    summary: "4월 23일부터 아이돌봄사 국가자격제가 도입되고, 지원 대상이 기준중위소득 250% 이하로 확대됩니다. 취약가구 지원시간은 연 1,080시간으로 늘어나며, 영아·야간긴급 돌봄수당이 새롭게 신설됩니다.",
+    content: `
+      <p><strong>아이돌봄서비스</strong>는 만 12세 이하 아동이 있는 가정에 돌봄사를 파견하여 부모의 양육 부담을 덜어주는 정부 지원 제도입니다. 2026년에는 <strong>역대 가장 큰 폭의 개편</strong>이 이루어져, 더 많은 가정이 더 안심하고 이용할 수 있게 됩니다.</p>
+
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">250%</span><span class="num-label">지원 대상 확대 (중위소득)</span></div>
+        <div class="key-num"><span class="num">1,080시간</span><span class="num-label">취약가구 연간 지원</span></div>
+        <div class="key-num"><span class="num">12,790원</span><span class="num-label">시간당 돌봄 단가</span></div>
+        <div class="key-num"><span class="num">4.23</span><span class="num-label">국가자격제 시행일</span></div>
+      </div>
+
+      <h3>변화 1: 아이돌봄사 국가자격제 도입</h3>
+      <p>4월 23일부터 아이돌봄 인력의 전문성과 신뢰성을 높이기 위한 <strong>'아이돌봄사' 국가자격제</strong>가 시행됩니다. 정해진 교육과정을 이수하고 적성·인성 검사를 통과해야만 자격을 부여받을 수 있습니다.</p>
+
+      <div class="info-box blue">
+        <div class="info-title">부모가 안심할 수 있는 이유</div>
+        <p>범죄경력조회 근거가 법적으로 마련되고, 건강 상태 확인 절차가 강화됩니다. 기존에 활동 중이던 아이돌보미는 개정된 규정에 따라 자격을 취득한 것으로 인정되므로 서비스 공백은 없습니다.</p>
+      </div>
+
+      <h3>변화 2: 지원 대상 대폭 확대</h3>
+      <p>지원 가구의 소득 기준이 기준중위소득 200%에서 <strong>250% 이하</strong>로 상향됩니다. 4인 가구 기준 월 소득 약 1,624만원 이하면 정부 지원을 받을 수 있어, 중산층 맞벌이 가정까지 폭넓게 포함됩니다.</p>
+
+      <div class="compare-grid">
+        <div class="compare-card before">
+          <div class="compare-label">2025년 지원 기준</div>
+          <div class="compare-value">중위소득 200%</div>
+          <div class="compare-desc">4인 가구 약 1,299만원</div>
+        </div>
+        <div class="compare-card after">
+          <div class="compare-label">2026년 지원 기준</div>
+          <div class="compare-value">중위소득 250%</div>
+          <div class="compare-desc">4인 가구 약 1,624만원</div>
+        </div>
+      </div>
+
+      <h3>소득유형별 정부 지원 비율</h3>
+      <p>소득 수준에 따라 4개 유형으로 나뉘며, 소득이 낮을수록 정부가 더 많이 부담합니다. 맞벌이 가구는 합산 소득의 25%가 감경되어 판정되므로 유리합니다.</p>
+
+      <table>
+        <thead>
+          <tr><th>유형</th><th>소득 기준 (4인 가구)</th><th>정부 지원</th><th>본인 부담(시간당)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>가형 (75% 이하)</td><td>약 487만원 이하</td><td class="td-highlight">85%</td><td>약 1,918원</td></tr>
+          <tr><td>나형 (120% 이하)</td><td>약 779만원 이하</td><td class="td-highlight">60%</td><td>약 5,116원</td></tr>
+          <tr><td>다형 (200% 이하)</td><td>약 1,299만원 이하</td><td class="td-highlight">30%</td><td>약 8,953원</td></tr>
+          <tr><td>라형 (250% 이하)</td><td>약 1,624만원 이하</td><td class="td-highlight">15%</td><td>약 10,871원</td></tr>
+        </tbody>
+      </table>
+
+      <div class="info-box amber">
+        <div class="info-title">다자녀 가정 추가 혜택</div>
+        <p>2자녀 이상 다자녀 가정은 모든 서비스에 대해 본인부담금의 <strong>10%를 추가 감면</strong>받습니다. 한부모·장애부모·청소년부모 가정은 가형 기준으로 정부지원이 5% 추가 적용됩니다.</p>
+      </div>
+
+      <h3>변화 3: 취약가구 지원시간 확대</h3>
+      <div class="compare-grid">
+        <div class="compare-card before">
+          <div class="compare-label">2025년 취약가구</div>
+          <div class="compare-value">연 960시간</div>
+          <div class="compare-desc">월 약 80시간</div>
+        </div>
+        <div class="compare-card after">
+          <div class="compare-label">2026년 취약가구</div>
+          <div class="compare-value">연 1,080시간</div>
+          <div class="compare-desc">월 약 90시간 (+120시간)</div>
+        </div>
+      </div>
+      <p>한부모·조손·장애·청소년부모 등 <strong>취약가구의 지원시간이 연 960시간에서 1,080시간으로 120시간 확대</strong>됩니다.</p>
+
+      <h3>변화 4: 돌봄수당 인상 및 신규 수당 신설</h3>
+      <table>
+        <thead>
+          <tr><th>항목</th><th>2025년</th><th>2026년</th><th>변화</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>기본 돌봄수당 (시간당)</td><td>12,180원</td><td class="td-highlight">12,790원</td><td class="td-highlight">+5% 인상</td></tr>
+          <tr><td>영아돌봄수당 (시간당)</td><td>1,500원</td><td class="td-highlight">2,000원</td><td class="td-highlight">+33% 인상</td></tr>
+          <tr><td>유아돌봄수당 (시간당)</td><td>없음</td><td class="td-highlight">1,000원</td><td class="td-highlight">신설</td></tr>
+          <tr><td>야간긴급돌봄수당 (1일)</td><td>없음</td><td class="td-highlight">5,000원</td><td class="td-highlight">신설</td></tr>
+        </tbody>
+      </table>
+
+      <h3>변화 5: 서비스 종류별 안내</h3>
+      <table>
+        <thead>
+          <tr><th>서비스 유형</th><th>대상 아동</th><th>서비스 내용</th><th>이용 시간</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>시간제 돌봄</td><td>만 3개월~만 12세</td><td>일시적 돌봄 (놀이, 식사 보조 등)</td><td class="td-highlight">연 840시간</td></tr>
+          <tr><td>영아종일제</td><td>만 3개월~만 36개월</td><td>이유식, 목욕, 수유 등 전반 돌봄</td><td class="td-highlight">월 200시간</td></tr>
+          <tr><td>질병감염아동 돌봄</td><td>만 12세 이하</td><td>질병 아동 특별 돌봄</td><td>필요 시</td></tr>
+          <tr><td>기관연계 돌봄</td><td>만 12세 이하</td><td>어린이집·학교 등하원 대행</td><td>필요 시</td></tr>
+        </tbody>
+      </table>
+
+      <h3>시행 일정</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">2026년 1월</div>
+          <div class="tl-title">지원 대상 중위소득 250%로 확대</div>
+          <div class="tl-desc">돌봄수당 인상 및 신규 수당 적용 시작</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026년 3월</div>
+          <div class="tl-title">소득 재판정 신청 기간</div>
+          <div class="tl-desc">기존 이용자 및 신규 신청자 소득유형 재산정</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026년 4월 23일</div>
+          <div class="tl-title">아이돌봄사 국가자격제 시행</div>
+          <div class="tl-desc">범죄경력조회·인성검사 의무화, 민간 돌봄기관 등록제 시행</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026년 하반기</div>
+          <div class="tl-title">서비스 품질 모니터링 강화</div>
+          <div class="tl-desc">국가자격제 정착 상황 점검 및 보완</div>
+        </div>
+      </div>
+
+      <h3>신청 방법</h3>
+      <div class="info-box blue">
+        <div class="info-title">이렇게 신청하세요</div>
+        <p><strong>온라인:</strong> 아이돌봄서비스 홈페이지(idolbom.go.kr) 또는 복지로(bokjiro.go.kr)에서 신청<br>
+        <strong>오프라인:</strong> 주민센터 방문 신청<br>
+        <strong>필요 서류:</strong> 신분증, 건강보험료 납부확인서, 가족관계증명서, 맞벌이 증빙서류(해당 시)</p>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>4월 23일 아이돌봄사 국가자격제 시행 — 범죄경력조회·인성검사 의무화</li>
+          <li>지원 대상 중위소득 200% → 250%로 확대 (4인 가구 약 1,624만원)</li>
+          <li>취약가구 지원시간 연 960 → 1,080시간 (+120시간)</li>
+          <li>돌봄수당 5% 인상 + 유아돌봄·야간긴급 수당 신설</li>
+          <li>다자녀 가정 본인부담금 10% 추가 감면</li>
+        </ul>
+      </div>
+    `
   }
 ];
 
