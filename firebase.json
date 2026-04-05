@@ -6,9 +6,20 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "headers": [
+      {
+        "source": "/ads.txt",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "text/plain; charset=utf-8"
+          }
+        ]
+      }
+    ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "!/@(ads.txt|*.html|*.js|*.css|*.json|*.png|*.jpg|*.ico)",
         "destination": "/index.html"
       }
     ]
