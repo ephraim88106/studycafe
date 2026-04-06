@@ -1296,6 +1296,177 @@ export const newsArticles = [
         </ul>
       </div>
     `
+  },
+  {
+    id: 17,
+    title: "2026 고유가 피해지원금, 전국민 70%에 1인당 최대 10만원",
+    date: "2026-04-06",
+    summary: "국제 유가 급등에 따른 가계 부담 완화를 위해 정부가 전국민 70%를 대상으로 1인당 최대 10만원의 고유가 피해지원금을 지급합니다. 취약계층은 4월 우선 지급, 일반 대상자는 6~7월 순차 지급되며 선별 기준은 건강보험료입니다.",
+    content: `
+      <p>국제 유가 급등에 따른 가계 부담 완화를 위해 정부가 전국민 70%를 대상으로 <strong>1인당 최대 10만원</strong>의 고유가 피해지원금을 지급합니다. 취약계층은 4월 우선 지급, 일반 대상자는 6~7월 순차 지급될 예정이며 선별 기준은 건강보험료입니다.</p>
+
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">10만원</span><span class="num-label">1인당 최대 지원</span></div>
+        <div class="key-num"><span class="num">70%</span><span class="num-label">지원 대상 비율</span></div>
+        <div class="key-num"><span class="num">4월</span><span class="num-label">취약계층 우선 지급</span></div>
+      </div>
+
+      <h3>지원 대상 및 선별 기준</h3>
+      <p>이번 고유가 피해지원금은 기초생활수급자와 차상위계층을 시작으로, 건강보험료 납부액 기준 <strong>소득 하위 70% 가구</strong>에 지급됩니다. 작년 2차 소비쿠폰이 상위 10%를 제외한 90% 가구를 대상으로 건보료 약 51만원을 기준으로 활용했던 것과 달리, 이번에는 70% 기준으로 더 정밀하게 선별됩니다. 수도권과 비수도권의 생활비 차이를 반영해 지역별로도 일부 차등이 적용될 수 있습니다.</p>
+
+      <table>
+        <thead>
+          <tr><th>구분</th><th>지원 금액</th><th>지급 시기</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>기초수급자</td><td class="td-highlight">10만원</td><td>2026년 4월</td></tr>
+          <tr><td>차상위계층</td><td class="td-highlight">10만원</td><td>2026년 4월</td></tr>
+          <tr><td>소득 하위 70%</td><td>10만원</td><td>2026년 6~7월</td></tr>
+          <tr><td>상위 30%</td><td>지원 제외</td><td>-</td></tr>
+        </tbody>
+      </table>
+
+      <h3>지급 일정 타임라인</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">2026년 4월</div>
+          <div class="tl-title">취약계층 우선 지급</div>
+          <div class="tl-desc">기초수급자·차상위 자동 지급 시작</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026년 5월</div>
+          <div class="tl-title">대상자 산정 및 통보</div>
+          <div class="tl-desc">건강보험료 기준 산정</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026년 6~7월</div>
+          <div class="tl-title">일반 대상자 순차 지급</div>
+          <div class="tl-desc">정부24 신청 접수</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026년 8월</div>
+          <div class="tl-title">이의신청 및 마무리</div>
+          <div class="tl-desc">추가 지급 종료</div>
+        </div>
+      </div>
+
+      <h3>신청 방법</h3>
+      <div class="info-box blue">
+        <div class="info-title">신청 채널</div>
+        <p><strong>정부24(gov.kr)</strong> 온라인 신청 또는 주민센터 방문 신청. 기초수급자·차상위는 별도 신청 없이 자동 지급됩니다.</p>
+      </div>
+      <div class="info-box amber">
+        <div class="info-title">유의사항</div>
+        <p>건강보험료 기준은 2026년 3월 부과액을 기준으로 산정되며, 직장·지역 가입자가 함께 있는 가구는 합산 처리됩니다.</p>
+      </div>
+      <div class="info-box red">
+        <div class="info-title">사기 주의</div>
+        <p>지원금 신청을 사유로 비밀번호·OTP를 요구하는 문자·전화는 100% 사기입니다. 절대 응답하지 마세요.</p>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>전국민 70%에 1인당 최대 10만원 지급</li>
+          <li>기초수급자·차상위 4월 자동 지급</li>
+          <li>일반 대상자 6~7월 정부24 신청</li>
+          <li>건강보험료(2026년 3월 부과액) 기준 선별</li>
+        </ul>
+      </div>
+    `
+  },
+  {
+    id: 18,
+    title: "2026 청년월세지원, 상시 신청 전환 최대 480만원 지원",
+    date: "2026-04-06",
+    summary: "2026년부터 청년월세지원이 한시 사업에서 상시 신청 제도로 전환되어, 만 19~34세 무주택 청년이 월 최대 20만원씩 최대 24개월(총 480만원)을 지원받을 수 있습니다. 1차 신청은 3월 30일부터 5월 29일까지 청년몽땅정보통·복지로에서 접수합니다.",
+    content: `
+      <p>2026년부터 <strong>청년월세지원</strong>이 한시 사업에서 상시 신청 제도로 전환됩니다. 만 19~34세 무주택 청년이 월 최대 20만원씩 최대 24개월(총 480만원)을 지원받을 수 있으며, 1차 신청 기간은 <strong>3월 30일부터 5월 29일</strong>까지입니다.</p>
+
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">20만원</span><span class="num-label">월 최대 지원</span></div>
+        <div class="key-num"><span class="num">24개월</span><span class="num-label">최대 지원 기간</span></div>
+        <div class="key-num"><span class="num">480만원</span><span class="num-label">총 지원 한도</span></div>
+      </div>
+
+      <h3>지원 대상 및 자격</h3>
+      <p>지원 대상은 부모와 별도 거주 중인 만 19~34세 무주택 청년으로, <strong>보증금 5,000만원 이하·월세 70만원 이하</strong>의 주택에 거주해야 합니다. 본인 소득은 중위소득 60% 이하, 원가구(부모 포함) 소득은 중위소득 100% 이하여야 하며, 2026년부터는 자산 기준이 일부 완화되어 청년가구 1억 2,200만원, 원가구 4억 7,000만원 이하로 적용됩니다.</p>
+
+      <h3>2025 vs 2026 비교</h3>
+      <div class="compare-grid">
+        <div class="compare-card before">
+          <div class="compare-label">2025년 (한시)</div>
+          <div class="compare-value">최대 240만원</div>
+          <div class="compare-desc">연 1회 한정·최대 12개월</div>
+        </div>
+        <div class="compare-card after">
+          <div class="compare-label">2026년 (상시)</div>
+          <div class="compare-value">최대 480만원</div>
+          <div class="compare-desc">상시 신청·최대 24개월</div>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr><th>구분</th><th>2025년 (한시)</th><th>2026년 (상시)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>신청 방식</td><td>연 1회 한정</td><td class="td-highlight">상시 신청</td></tr>
+          <tr><td>지원 금액</td><td>월 20만원</td><td>월 20만원</td></tr>
+          <tr><td>지원 기간</td><td>최대 12개월</td><td class="td-highlight">최대 24개월</td></tr>
+          <tr><td>총 지원액</td><td>240만원</td><td class="td-highlight">480만원</td></tr>
+          <tr><td>보증금 기준</td><td>5,000만원</td><td>5,000만원</td></tr>
+        </tbody>
+      </table>
+
+      <h3>신청 일정 타임라인</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">2026년 3월 30일</div>
+          <div class="tl-title">1차 신청 접수 시작</div>
+          <div class="tl-desc">복지로·청년몽땅정보통</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026년 5월 29일</div>
+          <div class="tl-title">1차 신청 마감</div>
+          <div class="tl-desc">서류 제출 완료</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026년 6월</div>
+          <div class="tl-title">소득·자산 조사 및 선정</div>
+          <div class="tl-desc">대상자 발표</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026년 7월</div>
+          <div class="tl-title">첫 월세 지원금 지급</div>
+          <div class="tl-desc">계좌 입금 시작</div>
+        </div>
+      </div>
+
+      <h3>신청 방법</h3>
+      <div class="info-box blue">
+        <div class="info-title">온라인 신청</div>
+        <p><strong>복지로(bokjiro.go.kr)</strong> 또는 <strong>청년몽땅정보통(youth.seoul.go.kr)</strong>에 공동인증서로 로그인 후 '청년월세지원' 메뉴에서 신청. 임대차계약서, 월세 이체 증빙, 가족관계증명서가 필요합니다.</p>
+      </div>
+      <div class="info-box amber">
+        <div class="info-title">자주 놓치는 조건</div>
+        <p>주민등록상 부모와 분리되어 있어야 하며, 실제 거주지와 등본 주소가 일치해야 합니다. 전입신고를 미루면 탈락 사유가 됩니다.</p>
+      </div>
+      <div class="info-box red">
+        <div class="info-title">중복 수혜 불가</div>
+        <p>주거급여, 행복주택 등 다른 공공 주거지원을 받고 있다면 청년월세지원과 중복 수령이 제한됩니다.</p>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>한시 사업 → 상시 신청 제도로 전환</li>
+          <li>최대 24개월·총 480만원까지 지원 (2배 확대)</li>
+          <li>1차 신청: 2026년 3월 30일 ~ 5월 29일</li>
+          <li>복지로·청년몽땅정보통에서 온라인 접수</li>
+        </ul>
+      </div>
+    `
   }
 ];
 
