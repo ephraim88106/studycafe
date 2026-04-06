@@ -1467,6 +1467,209 @@ export const newsArticles = [
         </ul>
       </div>
     `
+  },
+  {
+    id: 19,
+    title: "2026 육아휴직 급여 대폭 개편 — 통상임금 100%·사후지급금 폐지",
+    date: "2026-04-06",
+    summary: "2026년부터 육아휴직 급여가 '초기 집중 지원형'으로 전면 개편됩니다. 1~3개월 차에 통상임금의 100%(최대 월 250만원)를 받고, 복직 6개월 후 지급되던 사후지급금(25%)은 폐지되어 휴직 중 전액 수령합니다. 0세 부모급여도 월 120만원으로 인상됩니다.",
+    content: `
+      <p>2026년부터 <strong>육아휴직 급여 체계</strong>가 전면 개편되었습니다. 휴직 1~3개월 차에는 통상임금의 <strong>100%(최대 월 250만원)</strong>가 지급되고, 기존의 사후지급금 제도(25%를 복직 6개월 후 지급)는 <strong>완전히 폐지</strong>되어 휴직 기간 중 전액을 받습니다.</p>
+
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">250만원</span><span class="num-label">1~3개월 월 최대</span></div>
+        <div class="key-num"><span class="num">100%</span><span class="num-label">통상임금 지급률</span></div>
+        <div class="key-num"><span class="num">0원</span><span class="num-label">사후지급금(폐지)</span></div>
+      </div>
+
+      <h3>월차별 지급액</h3>
+      <div class="bar-chart">
+        <div class="bar-item">
+          <div class="bar-label"><span>1~3개월 (통상임금 100%)</span><span class="bar-value">최대 250만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>4~6개월</span><span class="bar-value">최대 200만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 80%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>7개월 이후</span><span class="bar-value">최대 160만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 64%"></div></div>
+        </div>
+      </div>
+
+      <h3>개편 전후 비교</h3>
+      <table>
+        <thead>
+          <tr><th>구분</th><th>개편 전 (~2025)</th><th>개편 후 (2026~)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1~3개월 급여</td><td>통상임금 80% (상한 150만원)</td><td class="td-highlight">통상임금 100% (상한 250만원)</td></tr>
+          <tr><td>사후지급금</td><td>25% 복직 6개월 후 지급</td><td class="td-highlight">폐지 — 전액 휴직 중 지급</td></tr>
+          <tr><td>0세 부모급여</td><td>월 100만원</td><td>월 120만원</td></tr>
+          <tr><td>1세 부모급여</td><td>월 50만원</td><td>월 60만원</td></tr>
+        </tbody>
+      </table>
+
+      <h3>신청 방법 및 일정</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-title">1단계</div>
+          <div class="tl-desc">회사에 육아휴직 개시일 30일 전 신청서 제출</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-title">2단계</div>
+          <div class="tl-desc">휴직 시작 후 고용24(work24.go.kr) 또는 관할 고용센터에 급여 신청</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-title">3단계</div>
+          <div class="tl-desc">매월 단위로 급여 지급 (사후지급금 없이 전액)</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-title">부모급여</div>
+          <div class="tl-desc">출생 후 60일 이내 복지로 또는 행정복지센터에서 신청</div>
+        </div>
+      </div>
+
+      <div class="info-box blue">
+        <div class="info-title">꿀팁 — 6+6 부모육아휴직제</div>
+        <p>부부가 모두 육아휴직을 사용하면 첫 6개월 동안 부모 각각 월 최대 450만원까지 받을 수 있어, 맞벌이 가구는 합산 시 매우 큰 효과를 볼 수 있습니다.</p>
+      </div>
+      <div class="info-box amber">
+        <div class="info-title">주의</div>
+        <p>통상임금 250만원 상한은 1~3개월 차에만 적용되며, 이후 단계적으로 줄어듭니다. 사업장의 통상임금 산정 기준(기본급+고정수당)을 미리 확인하세요.</p>
+      </div>
+      <div class="info-box red">
+        <div class="info-title">유의사항</div>
+        <p>자영업자·특수고용직 등 고용보험 미가입자는 본 제도의 직접 적용 대상이 아닙니다. 별도의 '특고·예술인 출산전후급여' 제도를 확인해야 합니다.</p>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>1~3개월 차 통상임금 100%·월 최대 250만원</li>
+          <li>사후지급금(25%) 완전 폐지 — 휴직 중 전액 수령</li>
+          <li>0세 부모급여 월 120만원, 1세 월 60만원 인상</li>
+          <li>6+6 부모육아휴직제 활용 시 월 최대 450만원</li>
+        </ul>
+      </div>
+    `
+  },
+  {
+    id: 20,
+    title: "2026 청년월세 특별지원 — 연중 상시 신청, 최대 480만원",
+    date: "2026-04-06",
+    summary: "2026년 청년월세 특별지원이 연중 상시 신청 체계로 전환되었습니다. 만 19~34세 무주택 청년이 월 최대 20만원씩 최대 24개월간 총 480만원을 지원받을 수 있으며, 2026년 신규 모집 규모는 전국 6만 명, 지급은 2028년 12월까지 이어집니다.",
+    content: `
+      <p>2026년부터 <strong>청년월세 특별지원</strong>이 연중 상시 신청 체계로 전환되었습니다. 만 19~34세 무주택 청년이 월 최대 20만원을 최대 24개월 동안 지원받아 총 <strong>480만원</strong>까지 받을 수 있습니다.</p>
+
+      <div class="key-numbers">
+        <div class="key-num"><span class="num">480만원</span><span class="num-label">최대 총 지원금</span></div>
+        <div class="key-num"><span class="num">24개월</span><span class="num-label">최대 지원 기간</span></div>
+        <div class="key-num"><span class="num">6만 명</span><span class="num-label">2026 신규 모집</span></div>
+      </div>
+
+      <h3>지원 규모 한눈에 보기</h3>
+      <div class="bar-chart">
+        <div class="bar-item">
+          <div class="bar-label"><span>월 지원 한도</span><span class="bar-value">월 20만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 42%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>연간 최대</span><span class="bar-value">240만원</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 60%"></div></div>
+        </div>
+        <div class="bar-item">
+          <div class="bar-label"><span>총 최대</span><span class="bar-value">480만원 (24개월)</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width: 100%"></div></div>
+        </div>
+      </div>
+
+      <h3>2025 vs 2026 제도 비교</h3>
+      <table>
+        <thead>
+          <tr><th>구분</th><th>2025년</th><th>2026년</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>신청 기간</td><td>한정 모집(특정 기간)</td><td class="td-highlight">연중 상시 신청</td></tr>
+          <tr><td>월 지원 금액</td><td>최대 20만원</td><td>최대 20만원</td></tr>
+          <tr><td>지원 기간</td><td>최대 12개월</td><td class="td-highlight">최대 24개월</td></tr>
+          <tr><td>총 한도</td><td>240만원</td><td class="td-highlight">480만원</td></tr>
+          <tr><td>지급 종료</td><td>2026년 말</td><td>2028년 12월</td></tr>
+        </tbody>
+      </table>
+
+      <h3>신청 자격</h3>
+      <div class="compare-grid">
+        <div class="compare-card before">
+          <div class="compare-label">연령</div>
+          <div class="compare-value">만 19~34세</div>
+          <div class="compare-desc">무주택 청년 (신청일 기준)</div>
+        </div>
+        <div class="compare-card after">
+          <div class="compare-label">소득</div>
+          <div class="compare-value">중위 60% 이하</div>
+          <div class="compare-desc">원가구 중위 100% 이하</div>
+        </div>
+        <div class="compare-card before">
+          <div class="compare-label">재산</div>
+          <div class="compare-value">1.22억 이하</div>
+          <div class="compare-desc">원가구 4.7억 원 이하</div>
+        </div>
+        <div class="compare-card after">
+          <div class="compare-label">주거</div>
+          <div class="compare-value">보증금 5천·월세 70만</div>
+          <div class="compare-desc">이하 임차 거주</div>
+        </div>
+      </div>
+
+      <h3>신청 일정 타임라인</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">2026.03.30</div>
+          <div class="tl-title">1차 모집 개시</div>
+          <div class="tl-desc">09:00 복지로 접수 시작</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2026.05.29</div>
+          <div class="tl-title">1차 모집 마감</div>
+          <div class="tl-desc">이후 연중 상시 접수 전환</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">심사</div>
+          <div class="tl-title">소득·재산 조사</div>
+          <div class="tl-desc">약 2개월 소요</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">지급</div>
+          <div class="tl-title">심사 완료 후 소급 지급</div>
+          <div class="tl-desc">최대 2028년 12월까지</div>
+        </div>
+      </div>
+
+      <div class="info-box blue">
+        <div class="info-title">신청 경로</div>
+        <p>복지로(bokjiro.go.kr) 온라인 신청 또는 주소지 관할 행정복지센터 방문 신청. 모바일은 '복지로 앱'에서 가능합니다.</p>
+      </div>
+      <div class="info-box amber">
+        <div class="info-title">준비 서류</div>
+        <p>임대차계약서, 월세 이체 증빙(최근 3개월), 가족관계증명서, 통장 사본. 분리거주 청년은 '가족관계 분리' 입증이 핵심입니다.</p>
+      </div>
+      <div class="info-box red">
+        <div class="info-title">제외 대상</div>
+        <p>주택 소유자, 직계존속·형제자매 주택 임차인, 공공임대주택 거주자, 보증금 5천만원 초과 거주자는 신청할 수 없습니다.</p>
+      </div>
+
+      <div class="summary-card">
+        <h4>핵심 요약</h4>
+        <ul>
+          <li>연중 상시 신청 체계로 전환</li>
+          <li>최대 24개월·총 480만원 지원</li>
+          <li>2026년 신규 모집 6만 명</li>
+          <li>지급은 2028년 12월까지 이어짐</li>
+        </ul>
+      </div>
+    `
   }
 ];
 
