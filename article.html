@@ -153,11 +153,13 @@ data-ad-height="600"></ins>
       container.innerHTML = '<div class="not-found">글을 찾을 수 없습니다.</div>';
     } else if (type === 'news') {
       document.title = article.title + ' | WelfareFinder';
+      const { newsContent } = await import('./posts-content.js');
+      const body = newsContent[id] || '<p>' + article.summary + '</p>';
       container.innerHTML = `
         <div class="article-tag">복지 뉴스</div>
         <h1 class="article-title">${article.title}</h1>
         <div class="article-meta">${article.date}</div>
-        <div class="article-body">${article.content || '<p>' + article.summary + '</p>'}</div>
+        <div class="article-body">${body}</div>
       `;
     } else {
       document.title = article.title + ' | WelfareFinder';
