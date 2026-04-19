@@ -115,20 +115,54 @@ class PolicyCard extends HTMLElement {
 customElements.define('policy-card', PolicyCard);
 
 // ==========================================================================
-// 홈 탭 - 최신 뉴스 & 인사이트 카드 렌더링
+// 홈 탭 (뉴스레터 이번 호) - 헤드라인 / 리스트 / 인사이트 렌더링
 // ==========================================================================
-function renderHomeNews() {
-    const grid = document.getElementById('homeNewsGrid');
-    if (!grid) return;
-    // 최신순 정렬, 최대 3개 표시
+function renderNewsletterMasthead() {
     const sorted = [...newsArticles].sort((a, b) => new Date(b.date) - new Date(a.date));
-    const latest = sorted.slice(0, 3);
-    grid.innerHTML = latest.map(article => `
-        <a href="article.html?type=news&id=${article.id}" class="home-news-card">
-            <div class="card-date"><i class="fas fa-calendar-alt"></i> ${article.date}</div>
-            <div class="card-title">${article.title}</div>
-            <div class="card-summary">${article.summary}</div>
-            <div class="card-read-more">자세히 보기 <span>→</span></div>
+    const latestDate = sorted[0]?.date;
+    const volEl = document.getElementById('issueVol');
+    const dateEl = document.getElementById('issueDate');
+    if (latestDate) {
+        // 발행호: 가장 이른 뉴스 날짜부터 최신 뉴스 날짜까지 주 단위 계산
+        const earliest = new Date([...sorted].sort((a, b) => new Date(a.date) - new Date(b.date))[0].date);
+        const latest = new Date(latestDate);
+        const weeks = Math.max(1, Math.floor((latest - earliest) / (7 * 24 * 3600 * 1000)) + 1);
+        if (volEl) volEl.textContent = `Vol.${weeks}`;
+        if (dateEl) {
+            const d = new Date(latestDate);
+            dateEl.textContent = `${d.getFullYear()}년 ${d.getMonth() + 1}월 ${d.getDate()}일 발행`;
+        }
+    }
+}
+
+function renderHomeNews() {
+    const feature = document.getElementById('newsletterFeature');
+    const list = document.getElementById('newsletterList');
+    if (!feature || !list) return;
+    const sorted = [...newsArticles].sort((a, b) => new Date(b.date) - new Date(a.date));
+    const [headline, ...rest] = sorted;
+    const listItems = rest.slice(0, 5);
+
+    if (headline) {
+        feature.innerHTML = `
+            <a href="article.html?type=news&id=${headline.id}" class="feature-card">
+                <span class="feature-kicker"><i class="fas fa-star"></i> TOP STORY</span>
+                <div class="feature-date"><i class="fas fa-calendar-alt"></i> ${headline.date}</div>
+                <h3 class="feature-title">${headline.title}</h3>
+                <p class="feature-summary">${headline.summary}</p>
+                <span class="feature-read-more">전문 읽기 <i class="fas fa-arrow-right"></i></span>
+            </a>
+        `;
+    }
+
+    list.innerHTML = listItems.map(article => `
+        <a href="article.html?type=news&id=${article.id}" class="newsletter-list-item">
+            <div class="list-item-date">${article.date}</div>
+            <div class="list-item-body">
+                <h4 class="list-item-title">${article.title}</h4>
+                <p class="list-item-summary">${article.summary}</p>
+            </div>
+            <div class="list-item-arrow"><i class="fas fa-arrow-right"></i></div>
         </a>
     `).join('');
 }
@@ -136,14 +170,73 @@ function renderHomeNews() {
 function renderHomeInsights() {
     const grid = document.getElementById('homeInsightGrid');
     if (!grid) return;
-    grid.innerHTML = insightArticles.map(article => `
-        <a href="article.html?type=insight&id=${article.id}" class="home-insight-card">
+    grid.innerHTML = insightArticles.slice(0, 3).map(article => `
+        <a href="article.html?type=insight&id=${article.id}" class="newsletter-insight-card">
             <div class="insight-card-tag ${article.tag}">${article.tagLabel}</div>
             <div class="insight-card-title">${article.title}</div>
             <div class="insight-card-excerpt">${(article.paragraphs || [])[0] || ''}</div>
-            <div class="card-read-more">자세히 보기 <span>→</span></div>
+            <div class="card-read-more">전문 읽기 <span>→</span></div>
         </a>
     `).join('');
+}
+
+// ==========================================================================
+// 구독 폼 핸들러 — Google Forms 연동
+// --------------------------------------------------------------------------
+// 연동 순서:
+//  1) Google Forms에서 "이메일" 단답형 질문 하나짜리 폼을 만든다
+//  2) 상단 "보내기 → <>" 버튼으로 임베드 HTML을 열어본다
+//  3) action URL에서 `/forms/d/e/{FORM_ID}/formResponse` 부분의 FORM_ID 복사
+//  4) 폼 응답 페이지에서 개발자도구 → <input name="entry.XXXXXX"> 값 복사
+//  5) 아래 두 상수에 붙여넣는다
+// ==========================================================================
+const GOOGLE_FORM_ID = '1FAIpQLSc2Hd_KxVNJFgj3ffH_SimsKr9OkIZ8afnecu7iE5z4fovKlA';
+const GOOGLE_FORM_EMAIL_FIELD = 'entry.596837271';
+
+function setupSubscribeForm() {
+    const form = document.getElementById('subscribeForm');
+    const note = document.getElementById('subscribeNote');
+    if (!form) return;
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const input = form.querySelector('#subscribeEmail');
+        const email = (input.value || '').trim();
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            note.textContent = '올바른 이메일 주소를 입력해 주세요.';
+            note.classList.remove('success');
+            note.classList.add('error');
+            return;
+        }
+        if (GOOGLE_FORM_ID.startsWith('REPLACE_') || GOOGLE_FORM_EMAIL_FIELD.startsWith('entry.REPLACE_')) {
+            console.warn('[subscribe] Google Form 연동값이 설정되지 않았습니다. main.js 상단의 GOOGLE_FORM_ID / GOOGLE_FORM_EMAIL_FIELD 상수를 채워 주세요.');
+            note.textContent = `"${email}" 주소가 확인되었습니다. (개발자 메모: Google Form 연동 필요)`;
+            note.classList.remove('error');
+            note.classList.add('success');
+            form.reset();
+            return;
+        }
+        try {
+            const endpoint = `https://docs.google.com/forms/d/e/${GOOGLE_FORM_ID}/formResponse`;
+            const body = new URLSearchParams();
+            body.append(GOOGLE_FORM_EMAIL_FIELD, email);
+            // Google Forms는 CORS 응답을 주지 않으므로 no-cors 모드로 전송하고 응답은 읽지 않음
+            await fetch(endpoint, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body
+            });
+            note.textContent = `"${email}" 주소로 구독 신청이 접수되었습니다. 곧 만나요!`;
+            note.classList.remove('error');
+            note.classList.add('success');
+            form.reset();
+        } catch (err) {
+            console.error('[subscribe] submit failed', err);
+            note.textContent = '구독 신청에 실패했습니다. 잠시 후 다시 시도해 주세요.';
+            note.classList.remove('success');
+            note.classList.add('error');
+        }
+    });
 }
 
 // ==========================================================================
@@ -221,9 +314,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const homeSearchInput = document.getElementById('homeSearchInput');
     const homeSearchBtn = document.getElementById('homeSearchBtn');
 
-    // 홈 탭 카드 렌더링
+    // 홈 탭 (뉴스레터 이번 호) 렌더링
+    renderNewsletterMasthead();
     renderHomeNews();
     renderHomeInsights();
+    setupSubscribeForm();
 
     // 뉴스 탭 렌더링
     renderNews();
