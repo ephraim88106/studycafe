@@ -30,6 +30,8 @@
       { "source": "/2026-04-11-복지뉴스.html", "destination": "/archive/2026-04-11-복지뉴스.html", "type": 301 },
       { "source": "/2026-04-12-복지뉴스.html", "destination": "/archive/2026-04-12-복지뉴스.html", "type": 301 },
       { "source": "/2026-04-13-복지뉴스.html", "destination": "/archive/2026-04-13-복지뉴스.html", "type": 301 },
+      { "source": "/2026-04-19-1-복지뉴스.html", "destination": "/archive/2026-04-19-1-복지뉴스.html", "type": 301 },
+      { "source": "/2026-04-19-2-복지뉴스.html", "destination": "/archive/2026-04-19-2-복지뉴스.html", "type": 301 },
       { "source": "/아이돌봄서비스_2026년_대폭_확대.html", "destination": "/archive/아이돌봄서비스_2026년_대폭_확대.html", "type": 301 },
       { "source": "/2026_청년월세지원.html", "destination": "/archive/2026_청년월세지원.html", "type": 301 },
       { "source": "/2026_육아휴직_개편.html", "destination": "/archive/2026_육아휴직_개편.html", "type": 301 },
