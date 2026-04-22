@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"치매 걸려도 재산은 안 뺏깁니다" — 오늘부터 국민연금이 최대 10억까지 지켜준다 | 공공신탁 시범사업 가동</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+    line-height: 1.7; color: #222; background: #f5f5f7; padding: 20px;
+  }
+  .container {
+    max-width: 720px; margin: 0 auto; background: #fff;
+    border-radius: 16px; padding: 36px 32px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+  }
+  .meta-top { display: flex; gap: 10px; align-items: center; margin-bottom: 22px; font-size: 13px; color: #777; }
+  .date-tag { background: #6a1b9a; color: #fff; padding: 4px 10px; border-radius: 4px; font-weight: 700; }
+  .section-badge {
+    display: inline-block; background: #f3e5f5; color: #6a1b9a;
+    padding: 6px 14px; border-radius: 20px; font-size: 12px;
+    font-weight: 700; margin-bottom: 14px; letter-spacing: 0.5px;
+  }
+  .sub-title { font-size: 14px; color: #6a1b9a; font-weight: 700; margin-bottom: 10px; }
+  .main-title { font-size: 30px; font-weight: 900; line-height: 1.35; margin-bottom: 18px; color: #1a1a1a; }
+  .hook {
+    border-left: 5px solid #6a1b9a; padding: 10px 16px;
+    font-size: 16px; color: #444; margin: 24px 0 26px; background: #faf5fc;
+  }
+  .highlight { background: linear-gradient(transparent 55%, #e1bee7 55%); font-weight: 800; color: #4a148c; }
+  .summary-box {
+    background: #e8f5e9; border-radius: 12px; padding: 18px 22px;
+    margin: 26px 0; border-left: 5px solid #2e7d32;
+  }
+  .summary-box h3 { color: #1b5e20; margin-bottom: 10px; font-size: 15px; font-weight: 900; }
+  .summary-box p { font-size: 14px; color: #2e4030; margin-bottom: 6px; }
+  h2 {
+    font-size: 19px; font-weight: 800; margin: 34px 0 14px;
+    color: #4a148c; padding-bottom: 6px; border-bottom: 3px solid #6a1b9a; display: inline-block;
+  }
+  p { font-size: 15px; color: #333; margin-bottom: 12px; }
+  table {
+    width: 100%; border-collapse: collapse; margin: 18px 0;
+    font-size: 14px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    border-radius: 8px; overflow: hidden;
+  }
+  th { background: #6a1b9a; color: #fff; padding: 10px; text-align: left; font-weight: 700; }
+  td { padding: 10px; border-bottom: 1px solid #eee; }
+  tr:last-child td { border-bottom: none; }
+  tr:nth-child(even) td { background: #faf5fc; }
+  .infographic { background: #faf5fc; border-radius: 12px; padding: 20px; margin: 24px 0; text-align: center; }
+  .steps { counter-reset: step; margin: 20px 0; }
+  .step {
+    position: relative; padding: 12px 14px 12px 54px; background: #f8f4fb;
+    border-radius: 10px; margin-bottom: 10px; font-size: 14px;
+  }
+  .step::before {
+    counter-increment: step; content: counter(step);
+    position: absolute; left: 14px; top: 50%; transform: translateY(-50%);
+    width: 30px; height: 30px; background: #6a1b9a; color: #fff;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800;
+  }
+  .deadline-box {
+    background: #fff4e6; border: 2px dashed #f57c00;
+    border-radius: 10px; padding: 16px 18px; margin: 20px 0; text-align: center;
+  }
+  .deadline-box strong { color: #e65100; font-size: 17px; }
+  .checklist { background: #fafafa; border-radius: 10px; padding: 18px 22px; margin: 20px 0; }
+  .checklist li { list-style: none; padding: 6px 0 6px 28px; position: relative; font-size: 14px; color: #333; }
+  .checklist li::before { content: '✓'; position: absolute; left: 6px; color: #6a1b9a; font-weight: 900; }
+  .cautions { background: #fff8e1; border-left: 5px solid #f9a825; border-radius: 8px; padding: 16px 20px; margin: 20px 0; font-size: 14px; color: #5c4a00; }
+  .contact-box { background: #6a1b9a; color: #fff; border-radius: 12px; padding: 18px 22px; margin: 24px 0; }
+  .contact-box h3 { font-size: 16px; margin-bottom: 8px; font-weight: 800; }
+  .contact-box p { color: #f3e5f5; font-size: 14px; margin-bottom: 4px; }
+  .opinion-section { margin: 30px 0; }
+  .opinion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .opinion-pro, .opinion-con { border-radius: 12px; padding: 20px; }
+  .opinion-pro { background: #e8f5e9; border-left: 5px solid #2e7d32; }
+  .opinion-con { background: #fff3e0; border-left: 5px solid #c62828; }
+  .opinion-pro h3 { color: #1b5e20; margin-bottom: 14px; font-weight: 900; font-size: 17px; border: none; padding: 0; }
+  .opinion-con h3 { color: #b71c1c; margin-bottom: 14px; font-weight: 900; font-size: 17px; border: none; padding: 0; }
+  .opinion-card { background: #fff; padding: 14px 16px; border-radius: 8px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+  .opinion-card:last-child { margin-bottom: 0; }
+  .opinion-card .quote { font-size: 14px; line-height: 1.7; color: #333; font-style: italic; margin-bottom: 8px; }
+  .opinion-card .author { font-size: 12px; color: #777; text-align: right; font-weight: 700; margin: 0; }
+  .hashtags { margin: 26px 0 20px; font-size: 13px; color: #6a1b9a; line-height: 1.9; }
+  .hashtags span { display: inline-block; background: #f3e5f5; padding: 4px 10px; border-radius: 20px; margin: 3px 3px 3px 0; }
+  .disclaimer { background: #f0f0f0; color: #555; font-size: 12px; padding: 12px 16px; border-radius: 8px; margin-top: 24px; line-height: 1.6; }
+  .meta-bottom { font-size: 12px; color: #999; text-align: right; margin-top: 18px; }
+  @media (max-width: 600px) {
+    body { padding: 10px; } .container { padding: 22px 18px; }
+    .main-title { font-size: 23px; } h2 { font-size: 17px; }
+    .opinion-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="meta-top">
+    <span class="date-tag">2026.04.22 수</span>
+    <span>오늘의 복지 뉴스 · 제1보</span>
+  </div>
+  <span class="section-badge">📣 오늘 시행 · 치매·노인보호</span>
+  <div class="sub-title">보건복지부 공공신탁 시범사업</div>
+  <h1 class="main-title">"치매 걸려도 재산은 안 뺏깁니다" — 오늘부터 국민연금이 최대 10억까지 지켜준다</h1>
+
+  <div class="hook">
+    "엄마 통장이 비었어요. 요양보호사 손에 카드가…" 이런 가슴 아픈 사연, 이제 <span class="highlight">국가가 법적으로 차단</span>합니다. 보건복지부가 <strong>바로 오늘 4월 22일</strong> 전국 국민연금공단 7개 지역본부에서 <span class="highlight">'치매안심재산관리서비스' 시범사업</span>을 시작했습니다. 치매·경도인지장애 어르신의 현금, 연금, 임대보증금까지 <strong>최대 10억 원</strong>을 공공기관이 직접 지킵니다. 2028년 본사업 전환을 앞둔 핵심 시범사업, 첫해 정원은 단 750명.
+  </div>
+
+  <div class="summary-box">
+    <h3>📌 이것만 알면 됩니다</h3>
+    <p>① <strong>대상:</strong> 치매·경도인지장애가 있는 <strong>기초연금수급자</strong> (경제적 학대 위험 어르신)</p>
+    <p>② <strong>한도:</strong> 신탁재산 최대 <strong>10억 원</strong>, 올해 정원 <strong>750명</strong> 선착순</p>
+    <p>③ <strong>신청:</strong> 오늘 4/22부터 <strong>국민연금공단 7개 지역본부</strong> 상담 → 신탁계약 체결</p>
+  </div>
+
+  <h2>왜 지금, 왜 이 제도인가</h2>
+  <p>치매 어르신의 통장은 가장 먼저 털립니다. 경찰청 통계상 노인 대상 재산범죄는 해마다 최고치를 갈아치우는데, 피해자의 상당수가 치매 또는 경도인지장애 진단을 받은 분들입니다. 자녀가 외면하거나, 이웃·간병인·낯선 '자칭 도우미'가 카드와 도장을 가져가 <strong>수억 원 단위 재산이 한순간에 증발</strong>하는 일이 반복되어 왔습니다. 그런데 민간 신탁은 최소 수억 이상부터 받거나 수수료가 비싸 서민층이 쓰기 어려웠습니다.</p>
+  <p>이번 '치매안심재산관리서비스'는 이 공백을 채우기 위한 공공신탁 제도입니다. <strong>국민연금공단이 수탁자가 되어</strong>, 어르신의 재산을 별도 신탁계좌에 보관하고 본인이 사전에 정한 계획대로만 돈이 나가도록 설계합니다. 공공기관의 이름을 걸고 움직이니 사기·갈취·무단인출 리스크가 사실상 0에 수렴합니다.</p>
+
+  <h2>지원 대상 및 신탁 가능 재산</h2>
+  <table>
+    <tr><th>항목</th><th>세부 내용</th></tr>
+    <tr><td>대상자</td><td>치매·경도인지장애 진단을 받은 기초연금수급자 중 <strong>경제적 학대 위험군</strong></td></tr>
+    <tr><td>신탁재산 상한</td><td>1인당 최대 <strong>10억 원</strong></td></tr>
+    <tr><td>신탁 가능 자산</td><td>① 현금 ② 지명채권(임대차보증금 반환채권 등) ③ 주택연금</td></tr>
+    <tr><td>수탁기관</td><td><strong>국민연금공단</strong> (공공기관 직접 관리)</td></tr>
+    <tr><td>시범사업 정원</td><td>2026년 <strong>750명</strong> (지역별 선착순 배정)</td></tr>
+    <tr><td>전환 일정</td><td>2026~2027년 시범 → <strong>2028년 전국 본사업</strong></td></tr>
+  </table>
+
+  <div class="infographic">
+    <svg width="100%" height="220" viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg">
+      <rect x="20" y="40" width="170" height="140" rx="10" fill="#ef9a9a"/>
+      <text x="105" y="70" text-anchor="middle" font-size="14" fill="#b71c1c" font-weight="800">기존 (민간만)</text>
+      <text x="105" y="100" text-anchor="middle" font-size="13" fill="#444">수수료 연 1~2%</text>
+      <text x="105" y="125" text-anchor="middle" font-size="13" fill="#444">최소 수억 예치</text>
+      <text x="105" y="150" text-anchor="middle" font-size="13" fill="#444">사각지대 多</text>
+      <text x="105" y="170" text-anchor="middle" font-size="24" fill="#b71c1c" font-weight="900">❌</text>
+
+      <text x="250" y="115" text-anchor="middle" font-size="36" fill="#6a1b9a">➡</text>
+
+      <rect x="310" y="40" width="260" height="140" rx="10" fill="#ce93d8"/>
+      <text x="440" y="70" text-anchor="middle" font-size="14" fill="#4a148c" font-weight="800">2026.4.22~ (공공신탁)</text>
+      <text x="440" y="100" text-anchor="middle" font-size="13" fill="#222">국민연금공단 직접 관리</text>
+      <text x="440" y="125" text-anchor="middle" font-size="13" fill="#222">최대 10억 보호</text>
+      <text x="440" y="150" text-anchor="middle" font-size="13" fill="#222">공공수수료 저렴</text>
+      <text x="440" y="170" text-anchor="middle" font-size="24" fill="#1b5e20" font-weight="900">✓</text>
+    </svg>
+    <p style="font-size: 12px; color: #666; margin-top: 10px;">▲ 민간 신탁 vs 공공 치매안심재산관리서비스 비교</p>
+  </div>
+
+  <h2>신청 절차 (5단계)</h2>
+  <div class="steps">
+    <div class="step">국민연금공단 <strong>7개 지역본부</strong> 방문 상담 예약 (1577-1000)</div>
+    <div class="step">본인·보호자 동행 상담 → 재정 상황·돌봄 욕구 파악</div>
+    <div class="step">맞춤 <strong>재정지원계획</strong> 수립 (월 생활비·요양비·의료비 자동 집행 설계)</div>
+    <div class="step">공단과 <strong>신탁계약</strong> 체결, 지정 계좌로 재산 이전</div>
+    <div class="step">매달 계획대로만 출금 — 임의 인출·타인 접근 차단, 정기 점검</div>
+  </div>
+
+  <div class="deadline-box">
+    <strong>⏰ 오늘 4월 22일(수) 상담 개시!</strong><br>
+    정원 <strong>750명</strong>은 지역별 선착순. 치매진단서·가족관계증명서 미리 준비하면 대기시간 단축.
+  </div>
+
+  <h2>자가 진단 체크리스트</h2>
+  <ul class="checklist">
+    <li>부모님(또는 본인)이 <strong>치매 또는 경도인지장애</strong> 진단을 받았다</li>
+    <li>기초연금을 수령 중이다</li>
+    <li>현금·임대보증금·주택연금 등 관리 필요 재산이 있다</li>
+    <li>최근 통장에서 <strong>본인 기억에 없는 인출·송금</strong> 이력이 있다</li>
+    <li>자녀·친척·간병인 간 재산 분쟁 우려가 있다</li>
+  </ul>
+  <p style="font-size: 14px; color: #555;">→ 3개 이상 해당되면 <strong>반드시 지역본부 상담 권장</strong></p>
+
+  <h2>주의사항</h2>
+  <div class="cautions">
+    ① 시범사업 정원 750명은 <strong>전국 합산</strong>이며 조기 마감될 수 있습니다.<br>
+    ② 부동산(주택·토지 자체)은 이번 신탁 대상에서 제외됩니다(주택연금 형태는 가능).<br>
+    ③ 신탁은 본인 의사 확인이 원칙. 이미 의사능력을 완전 상실한 경우 <strong>성년후견제도</strong> 병행 검토가 필요합니다.<br>
+    ④ 계약 해지·변경 시 공단 절차가 필요 — 수시 임의 인출은 불가합니다.
+  </div>
+
+  <div class="contact-box">
+    <h3>📞 담당 기관 및 문의처</h3>
+    <p>• 주관: <strong>보건복지부 노인정책관</strong></p>
+    <p>• 상담·접수: <strong>국민연금공단 7개 지역본부</strong> (1577-1000)</p>
+    <p>• 참고: 보건복지부 공식 보도자료(korea.kr 정책브리핑) 2026.4.22자</p>
+    <p>• 지역본부 위치 확인: www.nps.or.kr</p>
+  </div>
+
+  <h2>💬 전문가 찬반 론평</h2>
+  <div class="opinion-section">
+    <div class="opinion-grid">
+      <div class="opinion-pro">
+        <h3>🟢 찬성</h3>
+        <div class="opinion-card">
+          <p class="quote">"민간 금융이 외면해 온 저·중자산 치매노인층을 공공이 직접 보호한다는 점에서 복지와 금융의 경계를 허문 의미 있는 시도다."</p>
+          <p class="author">— 고령복지 정책 연구자</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"노인 경제학대는 가족 내부에서 발생하는 경우가 많아 피해 신고조차 어렵다. 공공신탁은 사전 예방 장치로 가장 효율적이다."</p>
+          <p class="author">— 노인인권 현장 활동가</p>
+        </div>
+      </div>
+      <div class="opinion-con">
+        <h3>🔴 반대 / 우려</h3>
+        <div class="opinion-card">
+          <p class="quote">"정원 750명이라는 규모는 치매 환자 100만 명 시대에 비해 상징적 수준에 불과하다. 시범사업 2년간 체감 효과가 제한적일 수 있다."</p>
+          <p class="author">— 재정정책 연구자</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"신탁 가능 재산이 현금·연금 중심이라 대다수 고령자 자산의 핵심인 부동산은 빠진다. 실효성을 위해 범위 확대 로드맵이 필요하다."</p>
+          <p class="author">— 사회복지학과 교수</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hashtags">
+    <span>#치매안심재산관리서비스</span>
+    <span>#공공신탁</span>
+    <span>#국민연금공단</span>
+    <span>#기초연금수급자</span>
+    <span>#경제적학대방지</span>
+    <span>#치매노인보호</span>
+    <span>#노인복지</span>
+    <span>#보건복지부</span>
+    <span>#2026복지개편</span>
+    <span>#재산지킴이</span>
+  </div>
+
+  <div class="disclaimer">
+    이 기사는 공개된 정보(보건복지부 보도자료·정책브리핑·언론보도)를 바탕으로 작성되었습니다. 정확한 지원 여부·정원 현황·신청 자격은 국민연금공단 지역본부 또는 보건복지부 상담센터(129)에 반드시 확인하세요.
+  </div>
+  <div class="meta-bottom">작성일 2026.04.22 · 오늘의 복지 뉴스</div>
+</div>
+</body>
+</html>
