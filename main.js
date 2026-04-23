@@ -176,20 +176,18 @@ function renderHomeNews() {
     const list = document.getElementById('newsletterList');
     if (!feature || !list) return;
     const sorted = [...newsArticles].sort((a, b) => new Date(b.date) - new Date(a.date));
-    const [headline, ...rest] = sorted;
-    const listItems = rest.slice(0, 5);
+    const headlines = sorted.slice(0, 2);
+    const listItems = sorted.slice(2, 7);
 
-    if (headline) {
-        feature.innerHTML = `
-            <a href="article.html?type=news&id=${headline.id}" class="feature-card">
-                <span class="feature-kicker"><i class="fas fa-star"></i> TOP STORY</span>
-                <div class="feature-date"><i class="fas fa-calendar-alt"></i> ${headline.date}</div>
-                <h3 class="feature-title">${headline.title}</h3>
-                <p class="feature-summary">${headline.summary}</p>
-                <span class="feature-read-more">전문 읽기 <i class="fas fa-arrow-right"></i></span>
-            </a>
-        `;
-    }
+    feature.innerHTML = headlines.map(headline => `
+        <a href="article.html?type=news&id=${headline.id}" class="feature-card">
+            <span class="feature-kicker"><i class="fas fa-star"></i> TOP STORY</span>
+            <div class="feature-date"><i class="fas fa-calendar-alt"></i> ${headline.date}</div>
+            <h3 class="feature-title">${headline.title}</h3>
+            <p class="feature-summary">${headline.summary}</p>
+            <span class="feature-read-more">전문 읽기 <i class="fas fa-arrow-right"></i></span>
+        </a>
+    `).join('');
 
     list.innerHTML = listItems.map(article => `
         <a href="article.html?type=news&id=${article.id}" class="newsletter-list-item">

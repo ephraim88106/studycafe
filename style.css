@@ -1472,7 +1472,16 @@ footer {
 }
 
 /* Feature (top story) card */
-.newsletter-feature { margin-bottom: 1rem; }
+.newsletter-feature {
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .newsletter-feature { grid-template-columns: 1fr; }
+}
 
 .feature-card {
     display: block;
