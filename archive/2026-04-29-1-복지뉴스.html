@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"카페 알바만 시키던 시대 끝났다" — 오늘부터 저소득 청년에 역량강화비 300만원·삼성 인턴까지 꽂힌다 | 청년자활 대개편 | 오늘의 복지 뉴스</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    line-height: 1.7;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f5;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+  }
+  .top-header {
+    padding: 18px 24px 6px;
+    color: #777;
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+  }
+  .date-tag {
+    background: #2e7d32; color: #fff; padding: 4px 10px;
+    border-radius: 14px; font-size: 12px; font-weight: 700; margin-right: 8px;
+  }
+  .content { padding: 26px 24px 30px; }
+  .badge {
+    display: inline-block; background: #2e7d32; color: #fff;
+    padding: 6px 14px; border-radius: 6px; font-size: 13px; font-weight: 700;
+    margin-bottom: 12px; letter-spacing: 0.5px;
+  }
+  .sub-title { font-size: 15px; color: #555; margin: 0 0 6px; font-weight: 700; }
+  .main-title { font-size: 30px; font-weight: 900; line-height: 1.3; color: #1b5e20; margin: 6px 0 22px; }
+  .hook {
+    border-left: 4px solid #2e7d32; background: #f9fff9;
+    padding: 14px 18px; margin: 18px 0; font-size: 16px;
+  }
+  .highlight { background: #fff59d; padding: 2px 6px; border-radius: 4px; font-weight: 800; }
+  .summary-box {
+    background: #e8f5e9; border-left: 5px solid #2e7d32;
+    padding: 18px 20px; border-radius: 8px; margin: 18px 0;
+  }
+  .summary-box h3 { margin: 0 0 8px; color: #1b5e20; font-size: 16px; }
+  .summary-box ul { margin: 0; padding-left: 20px; }
+  .summary-box li { margin-bottom: 4px; }
+  h2 { color: #1b5e20; font-size: 21px; margin: 26px 0 12px; border-bottom: 2px solid #2e7d32; padding-bottom: 5px; }
+  table {
+    width: 100%; border-collapse: collapse; margin: 14px 0;
+    font-size: 14px;
+  }
+  th, td { padding: 10px 12px; border: 1px solid #ddd; text-align: left; }
+  th { background: #2e7d32; color: #fff; font-weight: 700; }
+  td.num { color: #c62828; font-weight: 800; text-align: right; }
+  .infographic {
+    background: #f1f8e9; border-radius: 10px; padding: 18px; margin: 18px 0;
+    text-align: center;
+  }
+  .step-box { background: #f5f5f5; padding: 14px 16px; border-radius: 8px; margin: 8px 0; }
+  .step-box strong { color: #2e7d32; }
+  .deadline-box {
+    border: 2px dashed #f57c00; background: #fff8e1;
+    padding: 14px 18px; border-radius: 8px; margin: 16px 0;
+    color: #e65100; font-weight: 700;
+  }
+  .check-list {
+    background: #fafafa; padding: 16px 20px; border-radius: 8px; margin: 14px 0;
+    border-left: 4px solid #2e7d32;
+  }
+  .check-list ul { list-style: none; padding: 0; margin: 0; }
+  .check-list li { padding: 5px 0; font-size: 14px; }
+  .check-list li::before { content: "✓ "; color: #2e7d32; font-weight: 900; }
+  .warning {
+    background: #fff3e0; padding: 14px 18px; border-radius: 8px;
+    margin: 14px 0; font-size: 14px; line-height: 1.7;
+  }
+  .contact-box {
+    background: #1b5e20; color: #fff; padding: 16px 20px; border-radius: 10px;
+    margin: 18px 0;
+  }
+  .contact-box h3 { margin: 0 0 8px; color: #fff; font-size: 16px; }
+  .contact-box a { color: #fff59d; }
+  .opinion-section { margin: 30px 0; }
+  .opinion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .opinion-pro, .opinion-con { border-radius: 12px; padding: 20px; }
+  .opinion-pro { background: #e8f5e9; border-left: 5px solid #2e7d32; }
+  .opinion-con { background: #fff3e0; border-left: 5px solid #c62828; }
+  .opinion-pro h3 { color: #1b5e20; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-con h3 { color: #b71c1c; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-card {
+    background: #fff; padding: 14px 16px; border-radius: 8px;
+    margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .opinion-card:last-child { margin-bottom: 0; }
+  .opinion-card .quote { font-size: 14px; line-height: 1.7; color: #333; font-style: italic; margin-bottom: 8px; }
+  .opinion-card .author { font-size: 12px; color: #777; text-align: right; font-weight: 700; margin: 0; }
+  .hashtags {
+    background: #f1f8e9; padding: 14px 18px; border-radius: 8px;
+    margin: 16px 0; font-size: 13px; color: #2e7d32; font-weight: 700;
+  }
+  .disclaimer {
+    background: #f5f5f5; color: #777; padding: 12px 16px; border-radius: 6px;
+    font-size: 12px; margin-top: 22px; line-height: 1.6;
+  }
+  .meta { text-align: right; color: #999; font-size: 12px; margin-top: 12px; }
+  @media (max-width: 600px) {
+    .main-title { font-size: 23px; }
+    .opinion-grid { grid-template-columns: 1fr; }
+    body { padding: 8px; }
+    .content { padding: 18px 14px 22px; }
+    table { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="top-header">
+    <span class="date-tag">2026.04.29</span> 오늘의 복지 뉴스 · 제1보
+  </div>
+  <div class="content">
+    <span class="badge">청년 자활 · 일자리</span>
+    <p class="sub-title">기초생활수급 청년·차상위 청년이 알아야 할 충격 개편</p>
+    <h1 class="main-title">"카페 알바만 시키던 시대 끝났다" — 오늘부터 저소득 청년에 역량강화비 300만원·삼성 인턴까지 꽂힌다</h1>
+
+    <div class="hook">
+      카페 청소만 하다 끝나던 자활사업이 <span class="highlight">대기업·공공기관 인턴십</span>으로 바뀝니다. 게다가 자격증·어학에만 쓰던 교육비가 <span class="highlight">문화생활·자존감 교육까지 인정</span>되며, 1인당 한도도 <span class="highlight">220만원 → 300만원</span>으로 한 번에 80만원 올랐습니다. 우울·불안으로 첫 발을 못 떼던 청년에게는 <span class="highlight">10회 무료 심리상담</span>까지 깔립니다.
+    </div>
+
+    <div class="summary-box">
+      <h3>📌 이것만 알면 됩니다</h3>
+      <ul>
+        <li><b>오늘(4월 29일)부터</b> 청년자립도전 자활사업단 운영체계가 전면 개편 시행</li>
+        <li>역량강화비 <b>1인당 연 300만원</b>(80만원 증액) — 견학·문화생활·자존감 교육 OK</li>
+        <li>창업형(카페·편의점) → <b>대기업·공공기관 인턴형</b>으로 전환 + 청년형 게이트웨이 신설</li>
+      </ul>
+    </div>
+
+    <h2>왜 갑자기 바꾸나 — "취·창업 강요부터 잘못이었다"</h2>
+    <p>그동안 자활사업단의 청년 참여자들은 카페나 편의점·세차장 같은 사업단에 배치돼 운영 보조 업무를 맡아왔습니다. 형식은 '창업 훈련'이었지만 사실상 <b>저임금 단순노동</b>에 가까웠고, 사업단을 졸업해도 시장에서 통할 경력이 쌓이지 않는다는 비판이 컸습니다. 보건복지부는 <b>"취·창업 강요 이전에 기초역량 강화와 일경험 기회가 더 시급하다"</b>고 분석하고 운영체계를 새로 짠 겁니다.</p>
+    <p>특히 자활을 가로막는 가장 큰 장벽이 능력 부족이 아니라 <b>우울·불안 같은 정서적 문제</b>였다는 현장 보고가 결정적이었습니다. 그래서 이번에는 첫 단계부터 심리·정서 지원을 깔고, 그다음 일경험을 붙이는 방식으로 흐름을 완전히 뒤집었습니다.</p>
+
+    <h2>📊 한눈에 보는 개편 전·후</h2>
+    <table>
+      <tr><th>항목</th><th>이전</th><th>2026.4.29 이후</th></tr>
+      <tr><td>교육비 명칭</td><td>교육비</td><td><b>역량강화비</b></td></tr>
+      <tr><td>지원 한도(1인/연)</td><td class="num">220만원</td><td class="num">300만원</td></tr>
+      <tr><td>사용 범위</td><td>자격증·어학에 한정</td><td>업무 견학·문화생활·자존감 교육까지</td></tr>
+      <tr><td>주력 일자리 형태</td><td>창업형(카페·편의점)</td><td><b>인턴형</b>(대기업·공공기관)</td></tr>
+      <tr><td>심리·정서 지원</td><td>거의 없음</td><td><b>10회 상담</b>+종합자립설계</td></tr>
+      <tr><td>초기 적응 단계</td><td>일반 게이트웨이</td><td><b>청년형 게이트웨이</b> 신설</td></tr>
+    </table>
+
+    <div class="infographic">
+      <svg viewBox="0 0 600 220" width="100%" style="max-width:560px;">
+        <rect x="20" y="40" width="240" height="150" fill="#ffebee" rx="10"/>
+        <text x="140" y="70" font-size="16" font-weight="900" fill="#c62828" text-anchor="middle">개편 전</text>
+        <text x="140" y="100" font-size="13" fill="#333" text-anchor="middle">교육비 220만원</text>
+        <text x="140" y="125" font-size="13" fill="#333" text-anchor="middle">자격증/어학만 가능</text>
+        <text x="140" y="150" font-size="13" fill="#333" text-anchor="middle">카페·편의점 보조</text>
+        <text x="140" y="175" font-size="13" fill="#333" text-anchor="middle">심리지원 ✗</text>
+
+        <polygon points="280,115 320,95 320,135" fill="#2e7d32"/>
+
+        <rect x="340" y="40" width="240" height="150" fill="#e8f5e9" rx="10"/>
+        <text x="460" y="70" font-size="16" font-weight="900" fill="#1b5e20" text-anchor="middle">개편 후 (오늘)</text>
+        <text x="460" y="100" font-size="13" fill="#333" text-anchor="middle">역량강화비 300만원</text>
+        <text x="460" y="125" font-size="13" fill="#333" text-anchor="middle">문화·자존감까지 OK</text>
+        <text x="460" y="150" font-size="13" fill="#333" text-anchor="middle">대기업·공공 인턴</text>
+        <text x="460" y="175" font-size="13" fill="#333" text-anchor="middle">10회 상담 + 게이트웨이</text>
+
+        <text x="300" y="25" font-size="14" font-weight="900" fill="#2e7d32" text-anchor="middle">청년자활 · 같은 돈으로 다른 길</text>
+      </svg>
+    </div>
+
+    <h2>📝 신청은 이렇게 하세요</h2>
+    <div class="step-box"><strong>1단계.</strong> 거주지 <b>읍·면·동 주민센터</b>에서 자활대상자 확인 (조건부 수급자·차상위 자활희망자)</div>
+    <div class="step-box"><strong>2단계.</strong> <b>지역자활센터</b> 청년사업단 상담 신청 — 청년형 게이트웨이 단계 진입</div>
+    <div class="step-box"><strong>3단계.</strong> 종합자립설계 + 심리·정서상담(10회 무료)으로 적성 확인</div>
+    <div class="step-box"><strong>4단계.</strong> 광역자활센터·한국자활복지개발원이 매칭한 <b>인턴처</b>(대기업/공공기관/유망 자활기업) 배치</div>
+    <div class="step-box"><strong>5단계.</strong> 인턴 수행 중 역량강화비 300만원 활용 — 견학·자격증·문화체험으로 자유 사용</div>
+
+    <div class="deadline-box">
+      ⏰ <b>시행일:</b> 2026년 4월 29일(오늘)부터 즉시 적용. 기존 자활 참여자도 청년 대상자라면 신청 시 청년형 게이트웨이로 재배치 가능.
+    </div>
+
+    <div class="check-list">
+      <h2 style="border:none;margin-top:0;font-size:18px;">✅ 자가진단 — 나도 대상일까?</h2>
+      <ul>
+        <li>나이 만 39세 이하 청년이다</li>
+        <li>기초생활수급자(조건부 수급자) 또는 차상위 계층이다</li>
+        <li>지금 안정적인 직장 없이 알바·단기일자리만 반복 중이다</li>
+        <li>우울·불안 등으로 취업 첫발을 못 떼고 있다</li>
+        <li>"카페 사업단" 같은 정형화된 자활은 안 맞았던 경험이 있다</li>
+      </ul>
+    </div>
+
+    <div class="warning">
+      <b>⚠️ 주의할 점</b><br>
+      ① 인턴형 자활근로는 <b>광역자활센터·지역자활센터의 매칭</b>을 거쳐야 하며 자유 신청은 안 됩니다.<br>
+      ② 역량강화비 300만원은 <b>지급이 아닌 사용 한도</b>입니다(현금 통장 입금 ✗, 정해진 항목·증빙 필요).<br>
+      ③ 심리상담 10회는 <b>외부 전문가 연계</b>로 운영, 대기시간이 있을 수 있습니다.<br>
+      ④ '대기업 인턴'이라고 해서 자유경쟁 채용이 아닌 <b>자활 트랙 인턴</b>임에 유의하세요.
+    </div>
+
+    <div class="contact-box">
+      <h3>📞 담당 기관 및 문의처</h3>
+      • 보건복지부 자립지원과 · 한국자활복지개발원<br>
+      • 거주지 <b>지역자활센터</b>(전국 250여 곳) · 광역자활센터<br>
+      • 보건복지상담센터 <b>129</b> (24시간) / 자활정보 <a href="https://www.mohw.go.kr">mohw.go.kr</a>
+    </div>
+
+    <h2>💬 전문가 찬반 론평</h2>
+    <div class="opinion-section">
+      <div class="opinion-grid">
+        <div class="opinion-pro">
+          <h3>🟢 찬성</h3>
+          <div class="opinion-card">
+            <p class="quote">"창업형 자활은 사실상 단순노동이었고 청년의 시장 경쟁력을 키우지 못했다. 인턴형 전환은 노동시장 신호가 작동하는 방향으로의 정상화다."</p>
+            <p class="author">— 노동시장 정책 연구자</p>
+          </div>
+          <div class="opinion-card">
+            <p class="quote">"심리·정서 지원을 자활의 출발점으로 인정한 첫 사례라는 점에서 의미가 크다. 빈곤은 능력 문제가 아니라 회복 자원의 문제라는 현장의 합의가 정책에 반영된 결과다."</p>
+            <p class="author">— 빈곤청년 현장 활동가</p>
+          </div>
+        </div>
+        <div class="opinion-con">
+          <h3>🔴 반대 / 우려</h3>
+          <div class="opinion-card">
+            <p class="quote">"역량강화비를 문화생활까지 허용하는 것은 모럴해저드 우려가 있다. 사용 항목과 증빙 기준이 느슨하면 본래 취지가 흐려질 수 있다."</p>
+            <p class="author">— 재정 효율 연구자</p>
+          </div>
+          <div class="opinion-card">
+            <p class="quote">"대기업 인턴 매칭 규모는 한정적이다. 결국 일부 광역 도시 청년에게만 혜택이 집중되고, 농어촌·소도시 청년은 다시 카페 사업단에 머무를 가능성이 있다."</p>
+            <p class="author">— 지역복지 현장 연구자</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hashtags">
+      #청년자활 #자활사업단 #청년형게이트웨이 #역량강화비300만원 #인턴형자활근로 #저소득청년 #기초생활수급 #차상위 #지역자활센터 #한국자활복지개발원 #2026복지개편
+    </div>
+
+    <div class="disclaimer">
+      이 기사는 2026년 4월 29일 보건복지부·한국자활복지개발원이 발표한 청년자립도전 자활사업단 개편안 및 헤럴드경제·아시아투데이 보도, 정책브리핑 자료를 종합해 작성되었습니다. 정확한 지원 대상·금액은 거주지 지역자활센터에 확인하세요.
+    </div>
+    <div class="meta">발행: 2026.04.29 · 오늘의 복지 뉴스 제1보</div>
+  </div>
+</div>
+</body>
+</html>

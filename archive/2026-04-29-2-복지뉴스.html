@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"퇴근하고 가도 됩니다, 토요일도 엽니다" — 범죄피해자, 이제 밤 9시·주말까지 무료 상담받는다 | 365 스마일 본격 가동 | 오늘의 복지 뉴스</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    line-height: 1.7;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f5;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+  }
+  .top-header {
+    padding: 18px 24px 6px;
+    color: #777;
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+  }
+  .date-tag {
+    background: #6a1b9a; color: #fff; padding: 4px 10px;
+    border-radius: 14px; font-size: 12px; font-weight: 700; margin-right: 8px;
+  }
+  .content { padding: 26px 24px 30px; }
+  .badge {
+    display: inline-block; background: #6a1b9a; color: #fff;
+    padding: 6px 14px; border-radius: 6px; font-size: 13px; font-weight: 700;
+    margin-bottom: 12px; letter-spacing: 0.5px;
+  }
+  .sub-title { font-size: 15px; color: #555; margin: 0 0 6px; font-weight: 700; }
+  .main-title { font-size: 30px; font-weight: 900; line-height: 1.3; color: #4a148c; margin: 6px 0 22px; }
+  .hook {
+    border-left: 4px solid #6a1b9a; background: #faf4ff;
+    padding: 14px 18px; margin: 18px 0; font-size: 16px;
+  }
+  .highlight { background: #fff59d; padding: 2px 6px; border-radius: 4px; font-weight: 800; }
+  .summary-box {
+    background: #e8f5e9; border-left: 5px solid #2e7d32;
+    padding: 18px 20px; border-radius: 8px; margin: 18px 0;
+  }
+  .summary-box h3 { margin: 0 0 8px; color: #1b5e20; font-size: 16px; }
+  .summary-box ul { margin: 0; padding-left: 20px; }
+  .summary-box li { margin-bottom: 4px; }
+  h2 { color: #4a148c; font-size: 21px; margin: 26px 0 12px; border-bottom: 2px solid #6a1b9a; padding-bottom: 5px; }
+  table {
+    width: 100%; border-collapse: collapse; margin: 14px 0;
+    font-size: 14px;
+  }
+  th, td { padding: 10px 12px; border: 1px solid #ddd; text-align: left; }
+  th { background: #6a1b9a; color: #fff; font-weight: 700; }
+  td.num { color: #c62828; font-weight: 800; text-align: right; }
+  .infographic {
+    background: #f3e5f5; border-radius: 10px; padding: 18px; margin: 18px 0;
+    text-align: center;
+  }
+  .step-box { background: #f5f5f5; padding: 14px 16px; border-radius: 8px; margin: 8px 0; }
+  .step-box strong { color: #6a1b9a; }
+  .deadline-box {
+    border: 2px dashed #f57c00; background: #fff8e1;
+    padding: 14px 18px; border-radius: 8px; margin: 16px 0;
+    color: #e65100; font-weight: 700;
+  }
+  .check-list {
+    background: #fafafa; padding: 16px 20px; border-radius: 8px; margin: 14px 0;
+    border-left: 4px solid #6a1b9a;
+  }
+  .check-list ul { list-style: none; padding: 0; margin: 0; }
+  .check-list li { padding: 5px 0; font-size: 14px; }
+  .check-list li::before { content: "✓ "; color: #6a1b9a; font-weight: 900; }
+  .warning {
+    background: #fff3e0; padding: 14px 18px; border-radius: 8px;
+    margin: 14px 0; font-size: 14px; line-height: 1.7;
+  }
+  .contact-box {
+    background: #4a148c; color: #fff; padding: 16px 20px; border-radius: 10px;
+    margin: 18px 0;
+  }
+  .contact-box h3 { margin: 0 0 8px; color: #fff; font-size: 16px; }
+  .contact-box a { color: #fff59d; }
+  .opinion-section { margin: 30px 0; }
+  .opinion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .opinion-pro, .opinion-con { border-radius: 12px; padding: 20px; }
+  .opinion-pro { background: #e8f5e9; border-left: 5px solid #2e7d32; }
+  .opinion-con { background: #fff3e0; border-left: 5px solid #c62828; }
+  .opinion-pro h3 { color: #1b5e20; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-con h3 { color: #b71c1c; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-card {
+    background: #fff; padding: 14px 16px; border-radius: 8px;
+    margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .opinion-card:last-child { margin-bottom: 0; }
+  .opinion-card .quote { font-size: 14px; line-height: 1.7; color: #333; font-style: italic; margin-bottom: 8px; }
+  .opinion-card .author { font-size: 12px; color: #777; text-align: right; font-weight: 700; margin: 0; }
+  .hashtags {
+    background: #f3e5f5; padding: 14px 18px; border-radius: 8px;
+    margin: 16px 0; font-size: 13px; color: #4a148c; font-weight: 700;
+  }
+  .disclaimer {
+    background: #f5f5f5; color: #777; padding: 12px 16px; border-radius: 6px;
+    font-size: 12px; margin-top: 22px; line-height: 1.6;
+  }
+  .meta { text-align: right; color: #999; font-size: 12px; margin-top: 12px; }
+  @media (max-width: 600px) {
+    .main-title { font-size: 23px; }
+    .opinion-grid { grid-template-columns: 1fr; }
+    body { padding: 8px; }
+    .content { padding: 18px 14px 22px; }
+    table { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="top-header">
+    <span class="date-tag">2026.04.29</span> 오늘의 복지 뉴스 · 제2보
+  </div>
+  <div class="content">
+    <span class="badge">범죄피해자 · 심리지원</span>
+    <p class="sub-title">"낮에는 일해야 하는데…" 14년 만에 깨진 평일 9-to-6 빗장</p>
+    <h1 class="main-title">"퇴근하고 가도 됩니다, 토요일도 엽니다" — 범죄피해자, 이제 밤 9시·주말까지 무료 상담받는다</h1>
+
+    <div class="hook">
+      그동안 범죄 피해를 입어도 <span class="highlight">평일 낮에만 운영</span>하던 스마일센터 때문에 직장인·학생들은 결국 상담을 포기했습니다. 휴가를 낼 수도, 학교를 빠질 수도 없었기 때문입니다. 정부가 드디어 빗장을 풀었습니다. <span class="highlight">평일 밤 9시까지·토요일 오전 9시~오후 6시</span> 운영을 도입하고, 집 밖으로 나가기조차 두려운 피해자에게는 <span class="highlight">'찾아가는 심리지원 차량'</span>까지 보냅니다.
+    </div>
+
+    <div class="summary-box">
+      <h3>📌 이것만 알면 됩니다</h3>
+      <ul>
+        <li>365 스마일 — <b>토요일(09~18시) + 평일 야간(~21시)</b> 상담 신설</li>
+        <li><b>찾아가는 심리지원 차량</b>(거점도시) + <b>비대면 어디서나 심리지원</b>(지방소도시) 동시 가동</li>
+        <li>이용료 <b>전액 무료</b> · 신원 노출 없이 전화 한 통이면 예약 가능</li>
+      </ul>
+    </div>
+
+    <h2>왜 지금 바뀌나 — "낮에 가지 못해 포기한 사람들"</h2>
+    <p>전국 스마일센터(범죄피해 트라우마 통합지원기관)는 14곳이 운영되고 있지만, 평일 9~18시 운영 원칙 탓에 <b>직장인·학생·1인 자영업자</b>는 사실상 이용이 막혀 있었습니다. 게다가 일부 센터는 상담 대기시간이 한 달 이상이어서, 가장 도움이 절실한 사건 직후 1~2주를 놓치는 일이 다반사였습니다.</p>
+    <p>법무부와 검찰청이 발표한 <b>'2026 새로워지는 법무정책 — 범죄피해자 지원편'</b>의 핵심이 바로 이 '문턱 낮추기'입니다. 핵심은 세 가지: <b>주말·야간 상담</b>, <b>찾아가는 심리지원 차량</b>(피해자가 외출 어려운 경우 방문), <b>어디서나 심리지원</b>(비대면 화상 상담). 평일 낮 한 가지에 묶여 있던 채널을 동시다발로 풀어냈습니다.</p>
+
+    <h2>📊 한눈에 보는 운영 변화</h2>
+    <table>
+      <tr><th>구분</th><th>이전 (~2026)</th><th>365 스마일 시행 후</th></tr>
+      <tr><td>운영 요일</td><td>월~금</td><td><b>월~토</b></td></tr>
+      <tr><td>운영 시간</td><td>09~18시</td><td><b>평일 ~21시 / 토 09~18시</b></td></tr>
+      <tr><td>외출 어려운 피해자</td><td>지원 사실상 ✗</td><td>찾아가는 심리지원 <b>차량 방문</b></td></tr>
+      <tr><td>지방·도서 산간</td><td>거점센터까지 직접 이동</td><td>비대면 <b>'어디서나 심리지원'</b></td></tr>
+      <tr><td>운영 시범 지역</td><td>—</td><td>주말·야간 → <b>서울 동부·대구</b></td></tr>
+      <tr><td>이용료</td><td class="num">무료</td><td class="num">무료</td></tr>
+    </table>
+
+    <div class="infographic">
+      <svg viewBox="0 0 600 240" width="100%" style="max-width:560px;">
+        <text x="300" y="22" font-size="14" font-weight="900" fill="#4a148c" text-anchor="middle">365 스마일 — 3채널 동시 가동</text>
+
+        <rect x="20" y="50" width="170" height="160" fill="#fff" stroke="#6a1b9a" stroke-width="2" rx="10"/>
+        <text x="105" y="80" font-size="14" font-weight="900" fill="#6a1b9a" text-anchor="middle">① 주말·야간 상담</text>
+        <text x="105" y="110" font-size="12" fill="#333" text-anchor="middle">서울 동부·대구</text>
+        <text x="105" y="135" font-size="12" fill="#333" text-anchor="middle">평일 09~21시</text>
+        <text x="105" y="160" font-size="12" fill="#333" text-anchor="middle">토 09~18시</text>
+        <text x="105" y="190" font-size="11" fill="#777" text-anchor="middle">직장인·학생용</text>
+
+        <rect x="215" y="50" width="170" height="160" fill="#fff" stroke="#6a1b9a" stroke-width="2" rx="10"/>
+        <text x="300" y="80" font-size="14" font-weight="900" fill="#6a1b9a" text-anchor="middle">② 찾아가는 차량</text>
+        <text x="300" y="110" font-size="12" fill="#333" text-anchor="middle">거점도시</text>
+        <text x="300" y="135" font-size="12" fill="#333" text-anchor="middle">집·시설 직접 방문</text>
+        <text x="300" y="160" font-size="12" fill="#333" text-anchor="middle">신체·정신적 손상 우선</text>
+        <text x="300" y="190" font-size="11" fill="#777" text-anchor="middle">외출 어려운 피해자</text>
+
+        <rect x="410" y="50" width="170" height="160" fill="#fff" stroke="#6a1b9a" stroke-width="2" rx="10"/>
+        <text x="495" y="80" font-size="14" font-weight="900" fill="#6a1b9a" text-anchor="middle">③ 비대면 화상</text>
+        <text x="495" y="110" font-size="12" fill="#333" text-anchor="middle">지방소도시</text>
+        <text x="495" y="135" font-size="12" fill="#333" text-anchor="middle">"어디서나 심리지원"</text>
+        <text x="495" y="160" font-size="12" fill="#333" text-anchor="middle">스마트폰·PC로 OK</text>
+        <text x="495" y="190" font-size="11" fill="#777" text-anchor="middle">물리적 거리 해소</text>
+
+        <rect x="20" y="225" width="560" height="0" stroke="none"/>
+      </svg>
+    </div>
+
+    <h2>📝 신청 방법 — 전화 한 통이면 됩니다</h2>
+    <div class="step-box"><strong>1단계.</strong> 검찰청 또는 경찰서에 사건 신고 시 <b>"스마일센터 연계 원합니다"</b> 의사 표시</div>
+    <div class="step-box"><strong>2단계.</strong> 거주지·사건 발생지 인근 <b>스마일센터</b>에 직접 전화 (전국 14곳)</div>
+    <div class="step-box"><strong>3단계.</strong> 상담사가 가용 채널 안내 — 야간/주말 / 차량 방문 / 비대면 중 선택</div>
+    <div class="step-box"><strong>4단계.</strong> 첫 상담 일정 잡기 — <b>비공개·익명 보장</b></div>
+    <div class="step-box"><strong>5단계.</strong> 심리·법률·생활자금 등 추가 지원 필요 시 검찰청 범죄피해자지원센터·여성긴급전화 1366과 연계</div>
+
+    <div class="deadline-box">
+      ⏰ <b>주말·야간 상담은 시범 운영 단계</b> — 서울 동부·대구 스마일센터부터 가동 중. 다른 권역으로 단계적 확대 예정. 본인 권역 운영 여부는 사전 전화 확인 필수.
+    </div>
+
+    <div class="check-list">
+      <h2 style="border:none;margin-top:0;font-size:18px;">✅ 자가진단 — 나도 대상일까?</h2>
+      <ul>
+        <li>본인 또는 가족이 강력범죄·성폭력·교통범죄 등의 피해를 입었다</li>
+        <li>사건 이후 불면·악몽·공황·극심한 불안이 한 달 넘게 이어진다</li>
+        <li>가해자와의 분리 조치 후에도 일상 복귀가 어렵다</li>
+        <li>평일 낮에 시간을 낼 수 없거나, 외출 자체가 두렵다</li>
+        <li>지방 거주로 가까운 센터까지 거리가 너무 멀다</li>
+      </ul>
+    </div>
+
+    <div class="warning">
+      <b>⚠️ 주의할 점</b><br>
+      ① 365 스마일 야간·주말은 <b>서울 동부·대구 시범</b>으로 시작합니다. 타 지역은 평일 운영이 기본입니다.<br>
+      ② 차량 방문은 <b>의료진·상담사 협진 형태</b>로, 사전 평가 후 일정 조율됩니다.<br>
+      ③ 상담 내용은 <b>비공개 원칙</b>이지만, 자·타해 위험 등 예외 상황에서는 보호 조치가 우선됩니다.<br>
+      ④ 심리상담은 무료지만, 의료적 치료가 필요한 경우 <b>범죄피해자 의료비 지원</b>(별도 신청)이 함께 진행됩니다.
+    </div>
+
+    <div class="contact-box">
+      <h3>📞 담당 기관 및 문의처</h3>
+      • 법무부 인권국 / 대검찰청 피해자인권과<br>
+      • <b>스마일센터</b> 전국 14곳 (서울동부·서울중앙·인천·경기·강원·대전·광주·대구·부산·울산·전주·청주 등)<br>
+      • 검찰청 범죄피해자지원센터 <b>1577-2584</b> · 여성긴급전화 <b>1366</b><br>
+      • 범죄피해자 통합 안내: <a href="https://www.moj.go.kr">moj.go.kr</a>
+    </div>
+
+    <h2>💬 전문가 찬반 론평</h2>
+    <div class="opinion-section">
+      <div class="opinion-grid">
+        <div class="opinion-pro">
+          <h3>🟢 찬성</h3>
+          <div class="opinion-card">
+            <p class="quote">"상담 접근성 자체가 회복의 출발점이다. 평일 9-18시 묶여 있던 운영 시간을 풀었다는 것만으로도 이용률이 두 자릿수 상승할 가능성이 크다."</p>
+            <p class="author">— 피해자 심리지원 연구자</p>
+          </div>
+          <div class="opinion-card">
+            <p class="quote">"외출 자체가 두려운 피해자에게 차량 방문·비대면 상담을 결합한 것은 회복적 사법 정책의 중요한 진전이다. 사건 직후 골든타임을 잡을 수 있게 됐다."</p>
+            <p class="author">— 법사회학 교수</p>
+          </div>
+        </div>
+        <div class="opinion-con">
+          <h3>🔴 반대 / 우려</h3>
+          <div class="opinion-card">
+            <p class="quote">"시범 지역이 서울 동부·대구 두 곳에 그친다. 정작 인프라가 부족한 비수도권·도서산간에서는 야간 상담이 여전히 불가능하다. 형평성 문제가 남는다."</p>
+            <p class="author">— 지역 사법복지 활동가</p>
+          </div>
+          <div class="opinion-card">
+            <p class="quote">"상담사 야간·주말 근무 확대는 인력 충원 없이는 번아웃과 회전율 악화로 이어진다. 인력 기준·처우 개선이 동반되지 않으면 단기 효과에 그칠 우려가 있다."</p>
+            <p class="author">— 사회복지 노동연구자</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hashtags">
+      #범죄피해자 #스마일센터 #365스마일 #야간상담 #주말상담 #찾아가는심리지원 #어디서나심리지원 #피해자보호 #회복적사법 #법무부 #1577-2584
+    </div>
+
+    <div class="disclaimer">
+      이 기사는 법무부·대검찰청의 '2026 새로워지는 법무정책 — 범죄피해자 지원편' 발표 자료, 정책브리핑 보도 및 스마일센터 운영 안내를 종합해 작성되었습니다. 시범 운영 일정과 운영 권역은 변경될 수 있으니 이용 전 해당 스마일센터 또는 1577-2584로 사전 확인하세요.
+    </div>
+    <div class="meta">발행: 2026.04.29 · 오늘의 복지 뉴스 제2보</div>
+  </div>
+</div>
+</body>
+</html>
