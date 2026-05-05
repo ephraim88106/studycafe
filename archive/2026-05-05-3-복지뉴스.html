@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"月 200만원 간병비, 이제 60만원으로 줄어든다" — 2026년 하반기 요양병원 간병비 건강보험 첫 적용, 치매·욕창 환자 가족 숨통 트인다 | 오늘의 복지 뉴스</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    background: #f0f4ff;
+    color: #222;
+    line-height: 1.7;
+  }
+  .container {
+    max-width: 780px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 0 0 40px 0;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    border-radius: 0 0 16px 16px;
+  }
+  /* 헤더 */
+  .top-header {
+    background: #1565c0;
+    color: #fff;
+    padding: 14px 24px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0;
+  }
+  .top-header .date-tag {
+    background: rgba(255,255,255,0.20);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .content { padding: 28px 32px; }
+  /* 배지 */
+  .section-badge {
+    display: inline-block;
+    background: #e3f2fd;
+    color: #1565c0;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+  }
+  /* 메인 제목 */
+  h1 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.4;
+    color: #0d2a6e;
+    margin-bottom: 20px;
+  }
+  h1 .accent { color: #1565c0; }
+  /* 훅 */
+  .hook {
+    border-left: 5px solid #1565c0;
+    padding: 14px 18px;
+    background: #f5f9ff;
+    margin-bottom: 22px;
+    font-size: 16px;
+    border-radius: 0 8px 8px 0;
+  }
+  .hook .highlight {
+    background: #fff176;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-weight: 700;
+  }
+  /* 핵심 요약 박스 */
+  .summary-box {
+    background: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    padding: 18px 22px;
+    border-radius: 0 10px 10px 0;
+    margin-bottom: 26px;
+  }
+  .summary-box h2 {
+    font-size: 15px;
+    font-weight: 900;
+    color: #1b5e20;
+    margin-bottom: 10px;
+  }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box ul li {
+    font-size: 15px;
+    padding: 3px 0;
+    color: #2e7d32;
+    font-weight: 600;
+  }
+  .summary-box ul li::before { content: "✅ "; }
+  /* 섹션 제목 */
+  h2.section-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #1565c0;
+    margin: 30px 0 14px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #bbdefb;
+  }
+  p { margin-bottom: 14px; font-size: 15px; }
+  /* 상세 정보 표 */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  th {
+    background: #1565c0;
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 700;
+  }
+  td { padding: 10px 14px; border-bottom: 1px solid #e3f2fd; }
+  tr:nth-child(even) td { background: #f5f9ff; }
+  /* SVG 컨테이너 */
+  .svg-wrap {
+    background: #f0f4ff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 26px;
+    overflow-x: auto;
+  }
+  .svg-wrap svg { display: block; margin: 0 auto; }
+  /* 신청방법 */
+  .steps { list-style: none; padding: 0; margin-bottom: 24px; }
+  .steps li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 14px;
+    font-size: 15px;
+  }
+  .step-num {
+    background: #1565c0;
+    color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  /* 시행 일정 박스 */
+  .deadline-box {
+    border: 2px dashed #f57c00;
+    background: #fff8f0;
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+  }
+  .deadline-box h3 { color: #e65100; font-size: 16px; font-weight: 900; margin-bottom: 10px; }
+  .deadline-box p { font-size: 14px; margin: 0; }
+  /* 자가진단 체크리스트 */
+  .checklist {
+    background: #e3f2fd;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 24px;
+  }
+  .checklist h3 { font-size: 16px; font-weight: 900; color: #0d47a1; margin-bottom: 12px; }
+  .checklist ul { list-style: none; padding: 0; }
+  .checklist ul li {
+    font-size: 15px;
+    padding: 5px 0;
+    border-bottom: 1px solid #bbdefb;
+    color: #1565c0;
+    font-weight: 600;
+  }
+  .checklist ul li:last-child { border: none; }
+  .checklist ul li::before { content: "✓ "; color: #1565c0; font-weight: 900; }
+  /* 주의사항 */
+  .caution {
+    background: #fff9c4;
+    border-left: 4px solid #f9a825;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 24px;
+  }
+  .caution h3 { font-size: 15px; font-weight: 900; color: #e65100; margin-bottom: 10px; }
+  .caution p { font-size: 14px; margin-bottom: 6px; }
+  /* 문의처 박스 */
+  .contact-box {
+    background: #e3f2fd;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 26px;
+  }
+  .contact-box h3 { font-size: 16px; font-weight: 900; color: #0d47a1; margin-bottom: 10px; }
+  .contact-box p { font-size: 14px; margin-bottom: 6px; }
+  /* 찬반 론평 */
+  .opinion-section { margin: 30px 0; }
+  .opinion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .opinion-pro, .opinion-con {
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .opinion-pro {
+    background: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+  }
+  .opinion-con {
+    background: #fff3e0;
+    border-left: 5px solid #c62828;
+  }
+  .opinion-pro h3 { color: #1b5e20; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-con h3 { color: #b71c1c; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-card {
+    background: #fff;
+    padding: 14px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .opinion-card:last-child { margin-bottom: 0; }
+  .opinion-card .quote {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+  .opinion-card .author {
+    font-size: 12px;
+    color: #777;
+    text-align: right;
+    font-weight: 700;
+    margin: 0;
+  }
+  /* 해시태그 */
+  .hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .hashtags span {
+    background: #e3f2fd;
+    color: #1565c0;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  /* 면책조항 */
+  .disclaimer {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 16px;
+  }
+  .meta { font-size: 12px; color: #aaa; text-align: right; }
+  @media (max-width: 600px) {
+    h1 { font-size: 22px; }
+    .content { padding: 18px 16px; }
+    .opinion-grid { grid-template-columns: 1fr; }
+    table { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- 상단 헤더 -->
+  <div class="top-header">
+    <span>오늘의 복지 뉴스 · 제3보</span>
+    <span class="date-tag">📅 2026년 5월 5일</span>
+  </div>
+
+  <div class="content">
+    <!-- 배지 + 소제목 -->
+    <span class="section-badge">🏥 노인 · 돌봄 정책 변화</span>
+
+    <!-- 메인 제목 -->
+    <h1>"月 <span class="accent">200만원</span> 간병비, 이제 <span class="accent">60만원</span>으로 줄어든다" — 2026년 하반기 요양병원 간병비 건강보험 첫 적용, 치매·욕창 환자 가족 숨통 트인다</h1>
+
+    <!-- 훅 -->
+    <div class="hook">
+      <p>부모님이 요양병원에 계신 분이라면, 매달 청구서를 받을 때마다 가슴이 철렁 내려앉았을 겁니다. <span class="highlight">간병인 비용만 月 200만~267만 원, 병원비는 따로.</span> 그 고통이 올 하반기부터 드디어 줄어듭니다. 정부가 2026년 하반기부터 요양병원 간병비에 건강보험을 처음으로 적용합니다. 본인부담률 100%에서 최종 30%로 — 지금 당장 확인하세요.</p>
+    </div>
+
+    <!-- 핵심 요약 박스 -->
+    <div class="summary-box">
+      <h2>📌 이것만 알면 됩니다</h2>
+      <ul>
+        <li>2026년 하반기, 의료중심 요양병원 약 200곳에서 간병비 건강보험 첫 적용</li>
+        <li>月 200만~267만 원 → 約 60만~80만 원으로 줄어듦 (본인부담 30%)</li>
+        <li>치매·파킨슨·욕창·인공호흡기 등 의료필요도 높은 환자 우선 적용</li>
+      </ul>
+    </div>
+
+    <!-- 배경 섹션 -->
+    <h2 class="section-title">왜 이 정책이 나왔나</h2>
+    <p>우리나라 간병비는 전 세계적으로도 유례없는 '100% 본인부담' 구조였습니다. 건강보험 적용을 전혀 받지 못해 노인 한 명이 요양병원에 입원하면 가족이 매달 간병비·입원비·식대를 모두 떠안아야 했습니다. 보건복지부 추산에 따르면 노인 1인당 연간 간병비 부담은 2,400만~3,200만 원에 달했습니다. 이 탓에 "부모가 아프면 자식이 파산한다"는 말이 나올 정도였습니다.</p>
+    <p>초고령사회에 진입한 대한민국은 2025년 기준 65세 이상 인구 비율이 전체의 20.6%를 넘어섰습니다. 정부는 더 이상 이 문제를 방치할 수 없다고 판단, 2025년 9월 '간병비 급여화 로드맵'을 발표하고 2026년 하반기 시범 시행, 2030년까지 단계적 확대를 결정했습니다.</p>
+
+    <!-- 상세 정보 표 -->
+    <h2 class="section-title">지원 상세 정보</h2>
+    <table>
+      <tr><th>구분</th><th>내용</th></tr>
+      <tr><td>시행 시기</td><td>2026년 하반기 (상반기 中 대상 병원 선정)</td></tr>
+      <tr><td>1단계 대상 병원</td><td>의료중심 요양병원 약 200곳 (전국)</td></tr>
+      <tr><td>2단계 확대 (2028년)</td><td>약 350곳</td></tr>
+      <tr><td>3단계 확대 (2030년)</td><td>약 500곳 · 10만 병상</td></tr>
+      <tr><td>건보 적용 후 본인부담률</td><td>기존 100% → 30% (최종 목표)</td></tr>
+      <tr><td>月 간병비 절감 효과</td><td>200만~267만 원 → 약 60만~80만 원</td></tr>
+      <tr><td>우선 적용 대상 환자</td><td>의료필요도 최고도·고도 (치매, 파킨슨, 욕창, 혼수, 인공호흡기 상시 사용자)</td></tr>
+      <tr><td>총 투입 재정</td><td>5년간 약 6조 5,000억 원</td></tr>
+    </table>
+
+    <!-- SVG 인포그래픽 -->
+    <h2 class="section-title">간병비 부담 변화 한눈에 보기</h2>
+    <div class="svg-wrap">
+      <svg viewBox="0 0 700 320" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <!-- 배경 -->
+        <rect width="700" height="320" fill="#f0f4ff" rx="10"/>
+        <text x="350" y="36" text-anchor="middle" font-size="17" font-weight="900" fill="#0d2a6e">월 간병비 본인부담 변화 (추정)</text>
+
+        <!-- 현재 막대 -->
+        <rect x="80" y="60" width="120" height="200" fill="#ef5350" rx="8"/>
+        <text x="140" y="52" text-anchor="middle" font-size="13" font-weight="700" fill="#c62828">현재 (2026년 이전)</text>
+        <text x="140" y="130" text-anchor="middle" font-size="22" font-weight="900" fill="#fff">267만원</text>
+        <text x="140" y="155" text-anchor="middle" font-size="13" fill="#ffcdd2">본인부담 100%</text>
+
+        <!-- 화살표 -->
+        <text x="280" y="165" text-anchor="middle" font-size="36" fill="#1565c0">→</text>
+
+        <!-- 적용 후 막대 -->
+        <rect x="360" y="140" width="120" height="120" fill="#1565c0" rx="8"/>
+        <text x="420" y="132" text-anchor="middle" font-size="13" font-weight="700" fill="#0d47a1">2026년 하반기~</text>
+        <text x="420" y="195" text-anchor="middle" font-size="22" font-weight="900" fill="#fff">80만원</text>
+        <text x="420" y="218" text-anchor="middle" font-size="13" fill="#bbdefb">본인부담 약30%</text>
+
+        <!-- 절감 강조 -->
+        <rect x="530" y="100" width="140" height="80" fill="#fff176" rx="10"/>
+        <text x="600" y="133" text-anchor="middle" font-size="15" font-weight="900" fill="#e65100">절감액</text>
+        <text x="600" y="158" text-anchor="middle" font-size="20" font-weight="900" fill="#c62828">月 187만원↓</text>
+
+        <!-- 로드맵 라벨 -->
+        <text x="80" y="290" font-size="12" fill="#555">2026 하반기: 200곳</text>
+        <text x="260" y="290" font-size="12" fill="#555">2028: 350곳</text>
+        <text x="410" y="290" font-size="12" fill="#555">2030: 500곳·10만병상</text>
+      </svg>
+    </div>
+
+    <!-- 신청 방법 -->
+    <h2 class="section-title">어떻게 이용하나요?</h2>
+    <ul class="steps">
+      <li>
+        <div class="step-num">1</div>
+        <div><strong>병원 확인:</strong> 2026년 하반기 보건복지부가 '의료중심 요양병원' 약 200곳을 지정·공고합니다. 지정 병원 명단은 복지부 홈페이지(mohw.go.kr) 및 건강보험심사평가원(hira.or.kr)에서 확인 가능합니다.</div>
+      </li>
+      <li>
+        <div class="step-num">2</div>
+        <div><strong>의료필요도 평가:</strong> 입원 시 의료진이 의료필요도를 평가합니다. 최고도·고도 판정 시 건강보험 적용 간병 서비스를 받을 수 있습니다.</div>
+      </li>
+      <li>
+        <div class="step-num">3</div>
+        <div><strong>병원 측 신청 처리:</strong> 별도 서류 없이 병원에서 건강보험공단에 급여 청구를 처리합니다. 환자 가족은 본인부담 약 30%만 납부하면 됩니다.</div>
+      </li>
+      <li>
+        <div class="step-num">4</div>
+        <div><strong>문의:</strong> 담당 요양병원 원무과 또는 국민건강보험공단(☎ 1577-1000) 문의.</div>
+      </li>
+    </ul>
+
+    <!-- 시행 일정 박스 -->
+    <div class="deadline-box">
+      <h3>⏰ 시행 일정</h3>
+      <p>▸ <strong>2026년 상반기:</strong> 의료중심 요양병원 200곳 선정 · 준비<br>
+         ▸ <strong>2026년 하반기:</strong> 간병비 건강보험 적용 시범 시행 (<strong>최초 적용</strong>)<br>
+         ▸ <strong>2028년:</strong> 350곳으로 확대<br>
+         ▸ <strong>2030년:</strong> 500곳 (약 10만 병상) 완성</p>
+    </div>
+
+    <!-- 자가 진단 체크리스트 -->
+    <div class="checklist">
+      <h3>🔍 우리 부모님이 해당되나요? 자가 진단</h3>
+      <ul>
+        <li>요양병원에 입원 중이거나 입원 예정인 부모님이 있다</li>
+        <li>치매, 파킨슨병, 욕창, 혼수상태, 인공호흡기 사용 중이다</li>
+        <li>의료필요도가 높다는 의료진 소견을 받은 적 있다</li>
+        <li>매달 간병비로 150만 원 이상 지출하고 있다</li>
+        <li>2026년 하반기 이후 병원 선정 여부를 확인하고 싶다</li>
+      </ul>
+    </div>
+
+    <!-- 주의사항 -->
+    <div class="caution">
+      <h3>⚠️ 반드시 알아두세요</h3>
+      <p>① 건강보험 적용은 <strong>지정 병원에서만</strong> 적용됩니다. 모든 요양병원이 대상이 아닙니다.</p>
+      <p>② <strong>의료필요도 최고도·고도 판정</strong>을 받아야 급여 대상이 됩니다. 경증 환자는 이번 1단계에서 제외될 수 있습니다.</p>
+      <p>③ 2026년 하반기는 <strong>시범 적용</strong> 단계입니다. 확대 일정은 정책 추진 상황에 따라 변동될 수 있습니다.</p>
+      <p>④ 기존 개인 간병인과의 계약은 본인이 별도 정리해야 하며, 병원 공동간병 체계로 전환됩니다.</p>
+    </div>
+
+    <!-- 담당 기관 -->
+    <div class="contact-box">
+      <h3>📞 담당 기관 및 문의처</h3>
+      <p>🏛 <strong>보건복지부 요양병원과:</strong> ☎ 044-202-3400</p>
+      <p>🏛 <strong>국민건강보험공단:</strong> ☎ 1577-1000 (24시간)</p>
+      <p>🏛 <strong>건강보험심사평가원 (지정 병원 명단 공개):</strong> hira.or.kr</p>
+      <p>🏛 <strong>보건복지부 공식 홈페이지:</strong> mohw.go.kr → 보도자료 검색 "간병비 급여화"</p>
+    </div>
+
+    <!-- 찬반 론평 -->
+    <h2 class="section-title">💬 전문가 찬반 론평</h2>
+    <div class="opinion-section">
+      <div class="opinion-grid">
+        <div class="opinion-pro">
+          <h3>🟢 찬성</h3>
+          <div class="opinion-card">
+            <p class="quote">"간병비는 오랫동안 복지 사각지대의 대명사였습니다. 100% 본인부담 구조는 가계를 파탄시키는 구조적 불평등이었으며, 이번 급여화 첫 발은 초고령사회 대한민국이 반드시 가야 할 방향입니다."</p>
+            <p class="author">— 노인복지정책 연구자</p>
+          </div>
+          <div class="opinion-card">
+            <p class="quote">"요양병원 입원 가족을 둔 중산층이 순식간에 빈곤층으로 추락하는 사례를 현장에서 수없이 목격해 왔습니다. 이번 정책은 간병 파산을 막는 최소한의 사회 안전망입니다."</p>
+            <p class="author">— 노인 돌봄 현장 활동가</p>
+          </div>
+        </div>
+        <div class="opinion-con">
+          <h3>🔴 반대 / 우려</h3>
+          <div class="opinion-card">
+            <p class="quote">"5년간 6조 5,000억 원이라는 막대한 재정 투입은 건강보험 재정 건전성에 심각한 부담을 줄 수 있습니다. 보험료 인상 또는 다른 급여 항목 삭감으로 전가될 가능성을 면밀히 검토해야 합니다."</p>
+            <p class="author">— 재정경제 연구자</p>
+          </div>
+          <div class="opinion-card">
+            <p class="quote">"이번 1단계는 의료중심 요양병원 200곳의 고도·최고도 환자에게만 적용됩니다. 경증 환자와 지정 외 병원 입원자는 여전히 사각지대에 놓이며, '선택받지 못한 가족'의 상대적 박탈감이 커질 수 있습니다."</p>
+            <p class="author">— 사회복지학과 교수</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 해시태그 -->
+    <div class="hashtags">
+      <span>#요양병원간병비</span>
+      <span>#간병비급여화</span>
+      <span>#건강보험적용</span>
+      <span>#2026복지정책</span>
+      <span>#노인돌봄</span>
+      <span>#치매환자</span>
+      <span>#파킨슨</span>
+      <span>#욕창환자</span>
+      <span>#간병파산방지</span>
+      <span>#초고령사회</span>
+    </div>
+
+    <!-- 면책조항 -->
+    <div class="disclaimer">
+      ※ 이 기사는 공개된 정보를 바탕으로 작성되었습니다. 실제 적용 시기·대상·금액은 정부 발표에 따라 변동될 수 있으므로 정확한 지원 여부는 보건복지부 또는 국민건강보험공단에 직접 확인하세요.
+    </div>
+
+    <p class="meta">작성일: 2026년 5월 5일 | 출처: 보건복지부, 아시아투데이, 후생신보, 정책브리핑</p>
+  </div>
+</div>
+</body>
+</html>
