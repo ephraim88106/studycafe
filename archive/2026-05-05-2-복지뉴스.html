@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"5년 버텼더니 드디어 국가가 알아줬다" — 7월부터 선임 요양보호사 月 15만원 수당·장기근속 최대 38만원 한꺼번에 받는다 | 오늘의 복지 뉴스</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    background: #f0f4f8;
+    color: #222;
+    line-height: 1.7;
+  }
+  .article-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  }
+  /* 상단 헤더 */
+  .top-header {
+    background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%);
+    color: #fff;
+    padding: 20px 28px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .top-header .date-tag {
+    font-size: 13px;
+    background: rgba(255,255,255,0.18);
+    border-radius: 20px;
+    padding: 4px 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  .top-header .series-tag {
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.88;
+  }
+  /* 섹션 배지 */
+  .section-badge {
+    padding: 18px 28px 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .badge {
+    background: #1565c0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+  }
+  .badge-sub {
+    color: #1565c0;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  /* 메인 제목 */
+  .main-title {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.35;
+    padding: 10px 28px 16px;
+    color: #0d2a5e;
+    word-break: keep-all;
+  }
+  /* 훅 */
+  .hook-box {
+    margin: 0 28px 20px;
+    border-left: 5px solid #1565c0;
+    padding: 14px 18px;
+    background: #e3f0fd;
+    border-radius: 0 10px 10px 0;
+    font-size: 15px;
+    color: #1a3a6b;
+    line-height: 1.75;
+  }
+  .hook-box .highlight {
+    background: #1565c0;
+    color: #fff;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-weight: 800;
+  }
+  /* 핵심 요약 박스 */
+  .summary-box {
+    background: #e8f5e9;
+    border: 2px solid #2e7d32;
+    border-radius: 12px;
+    margin: 0 28px 24px;
+    padding: 18px 20px;
+  }
+  .summary-box h2 {
+    color: #2e7d32;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 900;
+  }
+  .summary-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  .summary-box ul li {
+    padding: 3px 0;
+    font-size: 14.5px;
+    color: #1b3a20;
+    font-weight: 600;
+  }
+  .summary-box ul li::before {
+    content: "📌 ";
+  }
+  /* 본문 섹션 */
+  .section {
+    padding: 0 28px 22px;
+  }
+  .section h2 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #1565c0;
+    border-bottom: 2px solid #bbdefb;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+  }
+  .section p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 10px;
+    word-break: keep-all;
+  }
+  /* 상세 정보 표 */
+  .info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0 20px;
+    font-size: 14px;
+  }
+  .info-table th {
+    background: #1565c0;
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 800;
+  }
+  .info-table td {
+    padding: 9px 12px;
+    border-bottom: 1px solid #e0e7f3;
+    vertical-align: top;
+  }
+  .info-table tr:nth-child(even) td {
+    background: #f0f6ff;
+  }
+  .info-table .val {
+    font-weight: 700;
+    color: #0d47a1;
+  }
+  /* SVG 인포그래픽 */
+  .infographic {
+    margin: 0 28px 24px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #bbdefb;
+  }
+  /* 신청 방법 */
+  .step-list {
+    counter-reset: step;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+  }
+  .step-list li {
+    counter-increment: step;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+    font-size: 14.5px;
+  }
+  .step-list li::before {
+    content: counter(step);
+    min-width: 28px;
+    height: 28px;
+    background: #1565c0;
+    color: #fff;
+    font-weight: 900;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  /* 시행 일정 박스 */
+  .deadline-box {
+    border: 2.5px dashed #f57c00;
+    border-radius: 12px;
+    margin: 0 28px 24px;
+    padding: 16px 20px;
+    background: #fff8e1;
+  }
+  .deadline-box h2 {
+    color: #e65100;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  .deadline-box p, .deadline-box li {
+    font-size: 14.5px;
+    color: #5d3a00;
+    margin-bottom: 6px;
+  }
+  .deadline-box ul { list-style: none; padding: 0; }
+  .deadline-box ul li::before { content: "⏰ "; }
+  /* 자가진단 체크리스트 */
+  .checklist {
+    list-style: none;
+    padding: 0;
+  }
+  .checklist li {
+    padding: 7px 0;
+    border-bottom: 1px dashed #cce0ff;
+    font-size: 14.5px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .checklist li .ck { color: #1565c0; font-weight: 900; font-size: 16px; }
+  /* 주의사항 */
+  .caution-list {
+    list-style: none;
+    padding: 0;
+    counter-reset: cnum;
+  }
+  .caution-list li {
+    counter-increment: cnum;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e8eef7;
+    font-size: 14.5px;
+    color: #444;
+    display: flex;
+    gap: 8px;
+  }
+  .caution-list li::before {
+    content: "⚠️";
+    flex-shrink: 0;
+  }
+  /* 담당기관 박스 */
+  .contact-box {
+    background: linear-gradient(135deg, #e3f0fd, #c8daf7);
+    border-radius: 12px;
+    margin: 0 28px 24px;
+    padding: 18px 20px;
+    border-left: 5px solid #1565c0;
+  }
+  .contact-box h2 {
+    color: #0d3a7a;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 12px;
+  }
+  .contact-box p {
+    font-size: 14.5px;
+    color: #1a3a6b;
+    margin-bottom: 6px;
+  }
+  .contact-box .phone {
+    font-weight: 900;
+    color: #0d47a1;
+    font-size: 16px;
+  }
+  /* 찬반 론평 */
+  .opinion-section { margin: 0 28px 24px; }
+  .opinion-section > h2 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #1565c0;
+    border-bottom: 2px solid #bbdefb;
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+  }
+  .opinion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .opinion-pro {
+    background: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    border-radius: 12px;
+    padding: 18px;
+  }
+  .opinion-con {
+    background: #fff3e0;
+    border-left: 5px solid #c62828;
+    border-radius: 12px;
+    padding: 18px;
+  }
+  .opinion-pro h3 { color: #1b5e20; margin-bottom: 14px; font-weight: 900; font-size: 16px; }
+  .opinion-con h3 { color: #b71c1c; margin-bottom: 14px; font-weight: 900; font-size: 16px; }
+  .opinion-card {
+    background: #fff;
+    padding: 13px 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  .opinion-card:last-child { margin-bottom: 0; }
+  .opinion-card .quote {
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+  .opinion-card .author {
+    font-size: 12px;
+    color: #777;
+    text-align: right;
+    font-weight: 700;
+    margin: 0;
+  }
+  /* 해시태그 */
+  .hashtags { padding: 0 28px 24px; }
+  .hashtag-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtag {
+    background: #e3f0fd;
+    color: #1565c0;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+  }
+  /* 면책조항 */
+  .disclaimer {
+    background: #f5f5f5;
+    border-radius: 8px;
+    margin: 0 28px 20px;
+    padding: 14px 16px;
+    font-size: 12.5px;
+    color: #777;
+    line-height: 1.6;
+  }
+  /* 작성일 */
+  .meta {
+    text-align: right;
+    font-size: 12px;
+    color: #aaa;
+    padding: 0 28px 24px;
+  }
+
+  @media (max-width: 600px) {
+    .main-title { font-size: 22px; padding: 10px 16px 14px; }
+    .hook-box, .summary-box, .section, .infographic, .deadline-box, .contact-box, .opinion-section, .hashtags, .disclaimer { margin-left: 12px; margin-right: 12px; }
+    .section { padding-left: 0; padding-right: 0; }
+    .section h2 { padding-left: 12px; }
+    .section > * { padding-left: 12px; padding-right: 12px; }
+    .opinion-grid { grid-template-columns: 1fr; }
+    .top-header { padding: 16px 16px 12px; }
+    .info-table { font-size: 13px; }
+    .section-badge { padding: 16px 16px 4px; }
+  }
+</style>
+</head>
+<body>
+<div class="article-wrap">
+
+  <!-- 상단 헤더 -->
+  <div class="top-header">
+    <span class="date-tag">2026년 5월 5일 (어린이날)</span>
+    <span class="series-tag">오늘의 복지 뉴스 · 제2보</span>
+  </div>
+
+  <!-- 섹션 배지 -->
+  <div class="section-badge">
+    <span class="badge">돌봄·고령사회</span>
+    <span class="badge-sub">요양보호사 처우개선 · 2026년 대개편</span>
+  </div>
+
+  <!-- 메인 제목 -->
+  <h1 class="main-title">"5년 버텼더니 드디어 국가가 알아줬다" — 7월부터 선임 요양보호사 月 15만원 수당·장기근속 최대 38만원 한꺼번에 받는다</h1>
+
+  <!-- 훅 -->
+  <div class="hook-box">
+    밥도 제때 못 먹고, 허리도 못 펴고, 그래도 누군가의 곁을 지킨 사람들이 있습니다. 전국 요양보호사 54만 명 이야기입니다.
+    2026년 7월 1일, 마침내 국가가 그들에게 답합니다. <span class="highlight">선임 요양보호사 수당 월 15만원</span>이 신설되고,
+    장기근속 장려금·농어촌 수당까지 합산하면 <span class="highlight">월 최대 38만원</span>을 추가로 받을 수 있게 됩니다.
+    아직도 우리 부모님 곁에 있는 그 손을, 국가가 이제야 붙잡았습니다.
+  </div>
+
+  <!-- 핵심 요약 박스 -->
+  <div class="summary-box">
+    <h2>📌 이것만 알면 됩니다</h2>
+    <ul>
+      <li>선임 요양보호사 제도 2026년 7월 1일 본격 시행, 월 15만원 수당 지급</li>
+      <li>장기근속 장려금 대폭 인상 — 7년 이상이면 최대 월 18만원, 농어촌 추가 5만원</li>
+      <li>합산 최대 월 38만원 추가 수령 가능 (기본급 별도), 대상자 6,500명으로 확대</li>
+    </ul>
+  </div>
+
+  <!-- 배경/문제 섹션 -->
+  <div class="section">
+    <h2>🔍 왜 지금인가 — 54만 명의 외침</h2>
+    <p>
+      전국 요양보호사는 약 54만 명. 초고령사회 진입과 함께 수요는 폭발적으로 늘었지만 처우는 제자리였습니다.
+      2025년 기준 평균 월 급여는 170만원대, 이직률은 연 35%에 달했습니다.
+      노인을 돌보는 인력이 열악한 처우 탓에 현장을 떠나면서 돌봄 공백은 고스란히 어르신과 가족들에게 돌아갔습니다.
+    </p>
+    <p>
+      이에 보건복지부는 <strong>2026년 장기요양 제도 전면 개편</strong>을 선언했습니다.
+      선임 요양보호사 제도 확대, 장기근속 장려금 인상, 농어촌 지역 추가 지원금 신설이 핵심입니다.
+      "오래 일할수록 더 받는" 구조를 처음으로 제도화한 것입니다.
+    </p>
+  </div>
+
+  <!-- 상세 정보 표 -->
+  <div class="section">
+    <h2>📊 2026년 요양보호사 수당 체계 한눈에 보기</h2>
+    <table class="info-table">
+      <tr>
+        <th>수당 종류</th>
+        <th>조건</th>
+        <th>월 지급액</th>
+      </tr>
+      <tr>
+        <td>장기근속 장려금 ①</td>
+        <td class="val">1년 이상 ~ 3년 미만 근무</td>
+        <td class="val">월 5만원 (신설)</td>
+      </tr>
+      <tr>
+        <td>장기근속 장려금 ②</td>
+        <td class="val">7년 이상 근무</td>
+        <td class="val">월 최대 18만원</td>
+      </tr>
+      <tr>
+        <td>농어촌 지역 지원금</td>
+        <td class="val">인력수급취약지역 근무자</td>
+        <td class="val">월 5만원 (신설)</td>
+      </tr>
+      <tr>
+        <td>선임 요양보호사 수당</td>
+        <td class="val">60개월(5년) 이상 + 승급교육 40시간 이수</td>
+        <td class="val">월 15만원</td>
+      </tr>
+      <tr>
+        <td><strong>최대 합산</strong></td>
+        <td class="val">7년 이상 + 농어촌 + 선임 자격</td>
+        <td class="val" style="color:#c62828;font-size:15px;"><strong>월 38만원</strong></td>
+      </tr>
+    </table>
+    <p style="font-size:13px;color:#888;">※ 위 수당은 기본급에 추가로 지급됩니다. 기관·고용형태에 따라 실수령액 차이 있음.</p>
+  </div>
+
+  <!-- SVG 인포그래픽 -->
+  <div class="infographic">
+    <svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" width="100%">
+      <rect width="720" height="320" fill="#e8f1fc"/>
+      <!-- 제목 -->
+      <text x="360" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0d2a5e" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">2026년 요양보호사 추가 수당 구조 (월 기준)</text>
+      <!-- 막대 그래프 -->
+      <!-- 1년 이상 -->
+      <rect x="60" y="200" width="90" height="50" fill="#1565c0" rx="6"/>
+      <text x="105" y="192" text-anchor="middle" font-size="17" font-weight="bold" fill="#1565c0" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">+5만원</text>
+      <text x="105" y="263" text-anchor="middle" font-size="12" fill="#444" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">장기근속①</text>
+      <text x="105" y="278" text-anchor="middle" font-size="11" fill="#666" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">(1~3년)</text>
+      <!-- 7년 이상 -->
+      <rect x="195" y="120" width="90" height="130" fill="#1976d2" rx="6"/>
+      <text x="240" y="112" text-anchor="middle" font-size="17" font-weight="bold" fill="#1565c0" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">+18만원</text>
+      <text x="240" y="263" text-anchor="middle" font-size="12" fill="#444" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">장기근속②</text>
+      <text x="240" y="278" text-anchor="middle" font-size="11" fill="#666" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">(7년 이상)</text>
+      <!-- 농어촌 -->
+      <rect x="330" y="180" width="90" height="70" fill="#0288d1" rx="6"/>
+      <text x="375" y="172" text-anchor="middle" font-size="17" font-weight="bold" fill="#0277bd" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">+5만원</text>
+      <text x="375" y="263" text-anchor="middle" font-size="12" fill="#444" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">농어촌 지원</text>
+      <text x="375" y="278" text-anchor="middle" font-size="11" fill="#666" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">(취약지역)</text>
+      <!-- 선임 -->
+      <rect x="465" y="100" width="90" height="150" fill="#5c6bc0" rx="6"/>
+      <text x="510" y="92" text-anchor="middle" font-size="17" font-weight="bold" fill="#3949ab" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">+15만원</text>
+      <text x="510" y="263" text-anchor="middle" font-size="12" fill="#444" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">선임 요양보호사</text>
+      <text x="510" y="278" text-anchor="middle" font-size="11" fill="#666" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">(5년+교육 이수)</text>
+      <!-- 최대 합산 -->
+      <rect x="600" y="48" width="90" height="202" fill="#c62828" rx="6"/>
+      <text x="645" y="40" text-anchor="middle" font-size="19" font-weight="bold" fill="#c62828" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">최대 38만원</text>
+      <text x="645" y="263" text-anchor="middle" font-size="12" fill="#333" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">최대 합산</text>
+      <text x="645" y="278" text-anchor="middle" font-size="11" fill="#666" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">(기본급 별도)</text>
+      <!-- 기준선 -->
+      <line x1="40" y1="250" x2="700" y2="250" stroke="#bbb" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <text x="36" y="295" font-size="11" fill="#aaa" font-family="Apple SD Gothic Neo, Malgun Gothic, sans-serif">0원</text>
+    </svg>
+  </div>
+
+  <!-- 선임 요양보호사 자격 및 신청 방법 -->
+  <div class="section">
+    <h2>📋 선임 요양보호사가 되려면?</h2>
+    <ol class="step-list">
+      <li><strong>근무 기간 확인</strong> — 현 기관에서 60개월(5년) 이상 재직 중인지 확인합니다.</li>
+      <li><strong>승급교육 40시간 신청</strong> — 국민건강보험공단 또는 장기요양기관을 통해 승급교육을 신청하고 이수합니다.</li>
+      <li><strong>기관에 선임 지정 신청</strong> — 교육 수료 후 근무 기관(원장)에 선임 요양보호사 지정 신청서를 제출합니다.</li>
+      <li><strong>건강보험공단 확인</strong> — 기관이 공단에 신고하면 공단이 수당 산정 여부를 확인·승인합니다.</li>
+      <li><strong>급여 반영</strong> — 승인 후 다음 달 급여부터 월 15만원 수당이 자동 반영됩니다.</li>
+    </ol>
+  </div>
+
+  <!-- 시행 일정 박스 -->
+  <div class="deadline-box">
+    <h2>⏰ 핵심 시행 일정 (놓치면 손해!)</h2>
+    <ul>
+      <li>2026년 1월 1일 — 장기근속 장려금 1~3년 차 신설, 기존 수당 인상 적용 시작</li>
+      <li>2026년 7월 1일 — <strong>선임 요양보호사 수당 월 15만원 본격 지급 개시</strong></li>
+      <li>2026년 내 — 대상 인원 2025년 3,600명 → 6,500명으로 확대 (50인 미만 시설 포함)</li>
+      <li>지금 당장 — 60개월 재직 조건 해당자는 승급교육 일정 먼저 확인·예약하세요!</li>
+    </ul>
+  </div>
+
+  <!-- 자가진단 체크리스트 -->
+  <div class="section">
+    <h2>✅ 나는 선임 요양보호사 대상자일까? — 자가진단 체크리스트</h2>
+    <ul class="checklist">
+      <li><span class="ck">✓</span> 현재 노인요양시설·주야간보호시설·방문요양 기관에 재직 중이다</li>
+      <li><span class="ck">✓</span> 동일 기관에서 60개월(5년) 이상 근무했거나, 올해 안에 충족된다</li>
+      <li><span class="ck">✓</span> 승급교육(40시간)을 아직 이수하지 않았다 — 지금이 예약할 타이밍!</li>
+      <li><span class="ck">✓</span> 농어촌·인력수급취약지역 근무자라면 추가 월 5만원도 해당될 수 있다</li>
+      <li><span class="ck">✓</span> 7년 이상 근속자라면 장기근속 장려금 최대 18만원도 중복 수령 가능하다</li>
+    </ul>
+  </div>
+
+  <!-- 주의사항 -->
+  <div class="section">
+    <h2>⚠️ 꼭 확인하세요 — 주의사항</h2>
+    <ul class="caution-list">
+      <li>선임 요양보호사 수당은 <strong>기관을 통해서만 신청</strong>됩니다. 개인이 공단에 직접 신청하는 방식이 아닙니다.</li>
+      <li>장기근속 장려금은 동일 기관 근속 기간 기준입니다. 기관 이직 후 재입사 시 근속 기간이 초기화될 수 있습니다.</li>
+      <li>농어촌·인력수급취약지역 해당 여부는 건강보험공단 담당자에게 사전 문의 후 확인하세요. 지역별로 지정 기준이 다릅니다.</li>
+      <li>방문요양·재가급여 요양보호사의 경우 고용 형태(직고용·위탁)에 따라 적용 방식이 다를 수 있으니 기관 원장에게 반드시 확인하세요.</li>
+    </ul>
+  </div>
+
+  <!-- 담당 기관 및 문의처 박스 -->
+  <div class="contact-box">
+    <h2>📞 담당 기관 및 문의처</h2>
+    <p>🏛️ <strong>보건복지부 장기요양보험과</strong></p>
+    <p>📞 복지 상담 전화 <span class="phone">☎ 129</span> (24시간, 무료)</p>
+    <p>🏛️ <strong>국민건강보험공단 장기요양운영실</strong></p>
+    <p>📞 고객센터 <span class="phone">☎ 1577-1000</span></p>
+    <p>🌐 장기요양기관 정보 → <strong>노인장기요양보험 홈페이지</strong> (longtermcare.or.kr)</p>
+    <p>🌐 승급교육 신청 → <strong>국민건강보험공단 교육포털</strong></p>
+    <p style="margin-top:10px;font-size:13px;color:#3a5a9b;">※ 방문요양·재가급여 종사자는 소속 기관 원장 통해 먼저 확인 권장</p>
+  </div>
+
+  <!-- 전문가 찬반 론평 -->
+  <div class="opinion-section">
+    <h2>💬 전문가 찬반 론평</h2>
+    <div class="opinion-grid">
+      <div class="opinion-pro">
+        <h3>🟢 찬성</h3>
+        <div class="opinion-card">
+          <p class="quote">"선임 수당 신설과 장기근속 인상은 요양보호사를 단순 일자리가 아닌 전문직으로 격상시키는 첫 시도입니다. 이직률을 낮추는 데 실질적인 유인이 될 것입니다."</p>
+          <p class="author">— 노인복지 현장 연구자</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"초고령사회 진입 속도를 감안하면 돌봄 인력 확보는 국가 안보급 과제입니다. 처우개선 없이 지속 가능한 장기요양 시스템은 불가능하며, 이번 조치는 방향이 맞습니다."</p>
+          <p class="author">— 사회복지학과 교수</p>
+        </div>
+      </div>
+      <div class="opinion-con">
+        <h3>🔴 반대 / 우려</h3>
+        <div class="opinion-card">
+          <p class="quote">"동일 기관 5년 근속 요건은 소규모 재가기관이 많은 현실에서 충족하기 어렵습니다. 정작 열악한 환경의 방문요양 종사자들이 사각지대에 놓일 수 있습니다."</p>
+          <p class="author">— 재가복지 현장 활동가</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"수당 재원이 장기요양보험료율 인상으로 충당되는 구조인 만큼, 피보험자 부담이 장기적으로 가중될 수 있습니다. 지속 가능한 재정 설계가 병행되어야 합니다."</p>
+          <p class="author">— 사회보험 재정 연구자</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 해시태그 -->
+  <div class="hashtags">
+    <div class="hashtag-wrap">
+      <span class="hashtag">#요양보호사수당</span>
+      <span class="hashtag">#선임요양보호사</span>
+      <span class="hashtag">#장기근속장려금</span>
+      <span class="hashtag">#월15만원</span>
+      <span class="hashtag">#요양보호사처우개선</span>
+      <span class="hashtag">#2026복지</span>
+      <span class="hashtag">#장기요양보험</span>
+      <span class="hashtag">#돌봄노동자</span>
+      <span class="hashtag">#복지뉴스</span>
+      <span class="hashtag">#보건복지부</span>
+    </div>
+  </div>
+
+  <!-- 면책조항 -->
+  <div class="disclaimer">
+    이 기사는 공개된 정보를 바탕으로 작성되었습니다. 정확한 지원 여부, 수당 지급 기준 및 시행 세부 사항은 담당 기관(국민건강보험공단, 보건복지부)에 반드시 확인하시기 바랍니다.
+  </div>
+
+  <!-- 작성일 메타 -->
+  <div class="meta">작성일: 2026년 5월 5일 | 복지뉴스 자동 발간 시스템</div>
+
+</div>
+</body>
+</html>
