@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"1차는 오늘 마감, 10일 뒤엔 당신 차례입니다" — 고유가 피해지원금 2차 신청 D-10, 소득하위 70% 최대 40만원 챙기는 법 완전정복 | 오늘의 복지 뉴스</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', Apple SD Gothic Neo, sans-serif; background: #fafafa; color: #222; line-height: 1.7; font-size: 15px; }
+  .container { max-width: 780px; margin: 0 auto; padding: 20px 16px 60px; }
+
+  /* 헤더 */
+  .top-header { background: linear-gradient(135deg, #f57c00 0%, #ff8f00 100%); color: #fff; border-radius: 14px; padding: 18px 22px; margin-bottom: 22px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .top-header .date-tag { font-size: 13px; font-weight: 700; opacity: 0.9; }
+  .top-header .series-tag { font-size: 12px; background: rgba(255,255,255,0.25); border-radius: 20px; padding: 4px 12px; }
+
+  /* 카테고리 배지 */
+  .category-badge { display: inline-block; background: #f57c00; color: #fff; font-size: 12px; font-weight: 700; border-radius: 20px; padding: 4px 14px; margin-bottom: 12px; }
+
+  /* 메인 제목 */
+  .main-title { font-size: 28px; font-weight: 900; line-height: 1.35; color: #e65100; margin-bottom: 18px; word-break: keep-all; }
+
+  /* 훅 */
+  .hook { border-left: 5px solid #f57c00; padding: 14px 18px; background: #fff8f0; border-radius: 0 10px 10px 0; margin-bottom: 22px; font-size: 15px; }
+  .highlight { background: linear-gradient(180deg, transparent 60%, #ffe0b2 60%); font-weight: 700; padding: 0 2px; }
+
+  /* 핵심 요약 */
+  .summary-box { background: linear-gradient(135deg, #e8f5e9, #f1f8e9); border: 2px solid #2e7d32; border-radius: 12px; padding: 20px 22px; margin-bottom: 24px; }
+  .summary-box h2 { color: #1b5e20; font-size: 16px; font-weight: 900; margin-bottom: 12px; }
+  .summary-box ul { list-style: none; }
+  .summary-box li { padding: 4px 0; font-size: 14px; color: #2e7d32; font-weight: 600; }
+  .summary-box li::before { content: "✅ "; }
+
+  /* 섹션 제목 */
+  h2.section-title { font-size: 19px; font-weight: 900; color: #e65100; margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 3px solid #f57c00; }
+  h2.section-title-dark { font-size: 19px; font-weight: 900; color: #333; margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #ddd; }
+
+  /* 테이블 */
+  .info-table { width: 100%; border-collapse: collapse; margin-bottom: 22px; font-size: 14px; }
+  .info-table th { background: #f57c00; color: #fff; padding: 10px 14px; text-align: left; }
+  .info-table td { padding: 10px 14px; border-bottom: 1px solid #eee; vertical-align: top; }
+  .info-table tr:nth-child(even) td { background: #fff8f0; }
+  .info-table .label { font-weight: 700; color: #bf360c; min-width: 110px; }
+
+  /* SVG 래퍼 */
+  .svg-wrap { background: #fff; border-radius: 14px; padding: 16px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow-x: auto; }
+
+  /* 신청 방법 */
+  .step-list { list-style: none; margin-bottom: 24px; }
+  .step-list li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 14px; background: #fff; border: 1px solid #ffe0b2; border-radius: 10px; margin-bottom: 10px; font-size: 14px; }
+  .step-num { min-width: 28px; height: 28px; background: #f57c00; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 13px; flex-shrink: 0; }
+
+  /* 마감 박스 */
+  .deadline-box { border: 2px dashed #f57c00; border-radius: 12px; padding: 16px 20px; background: #fff3e0; margin-bottom: 22px; text-align: center; }
+  .deadline-box .d-day { font-size: 32px; font-weight: 900; color: #e65100; }
+  .deadline-box .d-desc { font-size: 14px; color: #555; margin-top: 4px; }
+
+  /* 체크리스트 */
+  .check-list { list-style: none; margin-bottom: 22px; }
+  .check-list li { padding: 8px 12px; background: #fff; border-radius: 8px; border: 1px solid #eee; margin-bottom: 8px; font-size: 14px; }
+  .check-list li::before { content: "✓ "; color: #f57c00; font-weight: 900; }
+
+  /* 주의사항 */
+  .caution-box { background: #fff8f0; border-radius: 10px; padding: 16px 20px; margin-bottom: 22px; }
+  .caution-box p { font-size: 14px; margin-bottom: 8px; }
+
+  /* 문의처 */
+  .contact-box { background: linear-gradient(135deg, #fff3e0, #ffe0b2); border-radius: 12px; padding: 18px 22px; margin-bottom: 22px; border-left: 5px solid #f57c00; }
+  .contact-box h3 { font-size: 16px; font-weight: 900; color: #e65100; margin-bottom: 10px; }
+  .contact-box p { font-size: 14px; margin-bottom: 6px; }
+
+  /* 찬반 론평 */
+  .opinion-section { margin: 30px 0; }
+  .opinion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .opinion-pro, .opinion-con { border-radius: 12px; padding: 20px; }
+  .opinion-pro { background: #e8f5e9; border-left: 5px solid #2e7d32; }
+  .opinion-con { background: #fff3e0; border-left: 5px solid #c62828; }
+  .opinion-pro h3 { color: #1b5e20; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-con h3 { color: #b71c1c; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-card { background: #fff; padding: 14px 16px; border-radius: 8px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+  .opinion-card:last-child { margin-bottom: 0; }
+  .opinion-card .quote { font-size: 14px; line-height: 1.7; color: #333; font-style: italic; margin-bottom: 8px; }
+  .opinion-card .author { font-size: 12px; color: #777; text-align: right; font-weight: 700; margin: 0; }
+
+  /* 해시태그 */
+  .hashtag-box { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .hashtag-box span { background: #ffe0b2; color: #e65100; font-size: 13px; font-weight: 700; border-radius: 20px; padding: 4px 12px; }
+
+  /* 면책조항 */
+  .disclaimer { background: #f5f5f5; border-radius: 8px; padding: 14px 18px; font-size: 12px; color: #888; margin-bottom: 16px; }
+
+  /* 작성일 */
+  .meta { text-align: right; font-size: 12px; color: #aaa; }
+
+  /* 반응형 */
+  @media (max-width: 600px) {
+    .main-title { font-size: 21px; }
+    .opinion-grid { grid-template-columns: 1fr; }
+    .info-table { font-size: 13px; }
+    .info-table th, .info-table td { padding: 8px 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 상단 헤더 -->
+  <div class="top-header">
+    <span class="date-tag">📅 2026년 5월 8일 (금)</span>
+    <span class="series-tag">오늘의 복지 뉴스 · 제1보</span>
+  </div>
+
+  <!-- 섹션 배지 -->
+  <span class="category-badge">💰 지원금·생계</span>
+  <p style="font-size:14px;color:#888;margin-bottom:10px;">지원금 정책 변화</p>
+
+  <!-- 메인 제목 -->
+  <h1 class="main-title">"1차는 오늘 마감, 10일 뒤엔 당신 차례입니다"<br>고유가 피해지원금 2차 신청 D-10<br>소득하위 70% 최대 40만원, 이 글 읽고 바로 준비하세요</h1>
+
+  <!-- 훅 -->
+  <div class="hook">
+    장을 보러 갈 때마다 느끼는 그 압박감, 기름값·물가가 오르는데 통장은 그대로인 느낌. 정부가 이 부담을 조금이라도 덜어주겠다며 내놓은 것이 바로 <span class="highlight">고유가 피해지원금</span>입니다. 오늘(5월 8일)로 취약계층 1차 신청이 마감되지만, <span class="highlight">10일 뒤인 5월 18일부터는 소득하위 70%에 해당하는 일반 국민 누구나 신청</span>할 수 있습니다. 지금 이 순간 준비를 시작하지 않으면 최대 40만 원이 8월 31일 자정에 조용히 사라집니다.
+  </div>
+
+  <!-- 핵심 요약 박스 -->
+  <div class="summary-box">
+    <h2>📌 이것만 알면 됩니다</h2>
+    <ul>
+      <li>2차 신청: 5월 18일(월) ~ 7월 3일(금) — 소득하위 70% 일반 가구 대상</li>
+      <li>지원 금액: 소득 수준에 따라 10만~40만 원, 지역화폐·카드포인트로 지급</li>
+      <li>사용 기한: 2026년 8월 31일까지 — 소진 안 하면 자동 소멸, 환불 없음</li>
+    </ul>
+  </div>
+
+  <!-- 배경/문제 섹션 -->
+  <h2 class="section-title">왜 이 지원금이 나왔나</h2>
+  <p style="margin-bottom:14px;font-size:15px;">
+    2022년부터 이어진 국제유가 급등과 물가 상승으로 저소득층뿐 아니라 중산층까지 생활비 압박이 심화됐습니다. 통계청에 따르면 2026년 1분기 소비자물가 상승률은 식품·에너지 부문을 중심으로 여전히 높은 수준을 유지하고 있습니다. 정부는 전 국민의 약 70%를 아우르는 광범위한 지원을 통해 물가 충격을 직접 완화하겠다는 취지로 이 사업을 설계했습니다. 특히 2차 신청은 소득하위 70% — 실질적으로 직장인, 자영업자, 프리랜서 등 '중간층'도 포함되어 사실상 대부분의 가구가 혜택을 받을 수 있습니다.
+  </p>
+
+  <!-- 상세 정보 표 -->
+  <h2 class="section-title-dark">📊 지원 대상 및 지급 금액 한눈에 보기</h2>
+  <table class="info-table">
+    <tr>
+      <th>구분</th>
+      <th>대상</th>
+      <th>신청 기간</th>
+      <th>지원 금액</th>
+    </tr>
+    <tr>
+      <td class="label">1차 (마감)</td>
+      <td>기초생활수급자·차상위·한부모가족</td>
+      <td>4/27 ~ 5/8(오늘)</td>
+      <td>10만~60만 원</td>
+    </tr>
+    <tr>
+      <td class="label">2차 (예정)</td>
+      <td>소득하위 70% 일반 가구</td>
+      <td>5/18 ~ 7/3</td>
+      <td>10만~40만 원</td>
+    </tr>
+    <tr>
+      <td class="label">신청 방법</td>
+      <td colspan="3">카드사 앱/홈페이지, 토스·카카오페이·네이버페이, 주민센터 방문</td>
+    </tr>
+    <tr>
+      <td class="label">지급 방식</td>
+      <td colspan="3">선택 카드 포인트 또는 지역사랑상품권 충전 (현금 이체 아님)</td>
+    </tr>
+    <tr>
+      <td class="label">사용처</td>
+      <td colspan="3">연 매출 30억 원 이하 소상공인 사업장 — 대형마트·백화점·온라인쇼핑 ❌</td>
+    </tr>
+    <tr>
+      <td class="label">사용 기한</td>
+      <td colspan="3">2026년 8월 31일(월)까지 — 미사용 잔액 자동 소멸, 환불 불가</td>
+    </tr>
+  </table>
+
+  <!-- SVG 인포그래픽 -->
+  <h2 class="section-title-dark">📈 신청 일정 타임라인</h2>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:680px;display:block;margin:0 auto;">
+      <!-- 배경 -->
+      <rect width="680" height="200" fill="#fff" rx="10"/>
+      <!-- 타임라인 선 -->
+      <line x1="60" y1="100" x2="620" y2="100" stroke="#e0e0e0" stroke-width="4" stroke-linecap="round"/>
+
+      <!-- 1차: 4/27 -->
+      <circle cx="120" cy="100" r="14" fill="#f57c00"/>
+      <text x="120" y="105" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">1차</text>
+      <text x="120" y="75" text-anchor="middle" fill="#f57c00" font-size="12" font-weight="bold">4월 27일</text>
+      <text x="120" y="60" text-anchor="middle" fill="#888" font-size="11">1차 시작</text>
+
+      <!-- 오늘: 5/8 마감 -->
+      <circle cx="250" cy="100" r="18" fill="#c62828"/>
+      <text x="250" y="105" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">D-0</text>
+      <text x="250" y="75" text-anchor="middle" fill="#c62828" font-size="12" font-weight="bold">5월 8일</text>
+      <text x="250" y="60" text-anchor="middle" fill="#c62828" font-size="11" font-weight="bold">1차 마감 ⚠️</text>
+
+      <!-- 2차 시작: 5/18 -->
+      <circle cx="400" cy="100" r="14" fill="#2e7d32"/>
+      <text x="400" y="105" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">2차</text>
+      <text x="400" y="130" text-anchor="middle" fill="#2e7d32" font-size="12" font-weight="bold">5월 18일</text>
+      <text x="400" y="148" text-anchor="middle" fill="#888" font-size="11">2차 시작</text>
+
+      <!-- 2차 마감: 7/3 -->
+      <circle cx="540" cy="100" r="14" fill="#1565c0"/>
+      <text x="540" y="105" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">종료</text>
+      <text x="540" y="130" text-anchor="middle" fill="#1565c0" font-size="12" font-weight="bold">7월 3일</text>
+      <text x="540" y="148" text-anchor="middle" fill="#888" font-size="11">2차 마감</text>
+
+      <!-- 사용기한: 8/31 -->
+      <circle cx="620" cy="100" r="12" fill="#9e9e9e"/>
+      <text x="620" y="105" text-anchor="middle" fill="#fff" font-size="9" font-weight="bold">소멸</text>
+      <text x="620" y="75" text-anchor="middle" fill="#9e9e9e" font-size="11" font-weight="bold">8/31</text>
+      <text x="620" y="60" text-anchor="middle" fill="#9e9e9e" font-size="10">잔액 소멸</text>
+
+      <!-- D-10 화살표 표시 -->
+      <rect x="290" y="84" width="90" height="22" rx="6" fill="#fff3e0" stroke="#f57c00" stroke-width="1.5"/>
+      <text x="335" y="99" text-anchor="middle" fill="#e65100" font-size="11" font-weight="bold">D-10 ★ 준비!</text>
+    </svg>
+  </div>
+
+  <!-- 신청 방법 -->
+  <h2 class="section-title">🖥️ 2차 신청 방법 (5월 18일부터)</h2>
+  <ul class="step-list">
+    <li>
+      <span class="step-num">1</span>
+      <div><strong>대상 여부 확인</strong> — 복지로(bokjiro.go.kr) 또는 정부24에서 소득분위 조회 가능. 건강보험료 기준 소득하위 70%에 해당하면 신청 자격 있음</div>
+    </li>
+    <li>
+      <span class="step-num">2</span>
+      <div><strong>온라인 신청</strong> — 본인 카드사 앱/홈페이지, 토스, 카카오페이, 네이버페이, 지역사랑상품권 앱에서 신청. 앱 로그인 → '지원금 신청' 메뉴 → 본인인증 → 신청 완료</div>
+    </li>
+    <li>
+      <span class="step-num">3</span>
+      <div><strong>오프라인 신청</strong> — 주소지 관할 주민센터 방문 or 카드사 연계 은행 영업점 방문. 신분증 지참 필수</div>
+    </li>
+    <li>
+      <span class="step-num">4</span>
+      <div><strong>포인트 확인 후 사용</strong> — 카드 포인트 또는 지역화폐로 충전됨. 연 매출 30억 원 이하 소상공인 매장에서만 결제 가능</div>
+    </li>
+    <li>
+      <span class="step-num">5</span>
+      <div><strong>8월 31일 이전 전액 소진</strong> — 이 날짜를 넘기면 잔액은 환불 없이 자동 소멸. 달력에 꼭 표시해두세요!</div>
+    </li>
+  </ul>
+
+  <!-- 시행 일정 박스 -->
+  <div class="deadline-box">
+    <div class="d-day">📅 2차 신청: 2026년 5월 18일(월) 개시</div>
+    <div class="d-desc">요일별 5부제 운영 예정 · 마감: 2026년 7월 3일(금) 18:00</div>
+    <div class="d-desc" style="color:#c62828;font-weight:700;margin-top:8px;">⚠️ 사용 기한: 2026년 8월 31일(월) — 이 날짜 이후 미사용 잔액 전액 소멸</div>
+  </div>
+
+  <!-- 자가 진단 체크리스트 -->
+  <h2 class="section-title-dark">✅ 나는 받을 수 있을까? 자가 진단</h2>
+  <ul class="check-list">
+    <li>건강보험 지역가입자 또는 직장가입자로 소득하위 70% 이내에 해당한다</li>
+    <li>주민등록상 대한민국 국적 또는 영주권자이며 국내에 거주하고 있다</li>
+    <li>지원금을 받을 신용카드·체크카드 또는 지역화폐 계정을 보유하고 있다</li>
+    <li>5월 18일~7월 3일 사이에 신청할 시간 여유가 있다</li>
+    <li>8월 31일까지 지역 소상공인 매장에서 사용할 의향이 있다</li>
+  </ul>
+
+  <!-- 주의사항 -->
+  <h2 class="section-title-dark">⚠️ 꼭 알아야 할 주의사항</h2>
+  <div class="caution-box">
+    <p>① <strong>현금 이체 불가</strong> — 지원금은 카드 포인트·지역화폐로만 지급됩니다. 계좌로 직접 송금되지 않습니다.</p>
+    <p>② <strong>사용처 제한</strong> — 대형마트(이마트·홈플러스 등), 백화점, 온라인쇼핑몰(쿠팡·네이버쇼핑 등)에서는 사용 불가합니다. 연 매출 30억 원 이하 소상공인 매장에서만 사용 가능합니다.</p>
+    <p>③ <strong>중복 수령 불가</strong> — 1차에 이미 신청했다면 2차 신청 대상이 아닙니다. 중복 신청 시 지원금 환수 조치될 수 있습니다.</p>
+    <p>④ <strong>기한 경과 시 소멸</strong> — 8월 31일 이후 남은 포인트는 무조건 소멸되며, 이후 어떤 방법으로도 환불 또는 재사용이 불가합니다.</p>
+  </div>
+
+  <!-- 담당 기관 및 문의처 -->
+  <div class="contact-box">
+    <h3>📞 담당 기관 및 문의처</h3>
+    <p>🏛️ <strong>주관 기관:</strong> 보건복지부 / 각 지방자치단체</p>
+    <p>📱 <strong>온라인 신청:</strong> 복지로 (bokjiro.go.kr) · 카드사 앱 · 토스 · 카카오페이 · 네이버페이</p>
+    <p>🏠 <strong>오프라인 신청:</strong> 주소지 관할 주민센터(행정복지센터) 방문</p>
+    <p>☎️ <strong>고객센터:</strong> 복지로 콜센터 1566-0313 / 카드사 고객센터</p>
+    <p>🌐 <strong>자격 조회:</strong> 복지로 → 복지서비스 → 모의계산 → 소득분위 확인</p>
+  </div>
+
+  <!-- 💬 전문가 찬반 론평 -->
+  <h2 class="section-title-dark">💬 전문가 찬반 론평</h2>
+  <div class="opinion-section">
+    <div class="opinion-grid">
+      <div class="opinion-pro">
+        <h3>🟢 찬성</h3>
+        <div class="opinion-card">
+          <p class="quote">"소득하위 70%까지 수혜 범위를 확장한 것은 물가 충격이 중산층에게도 실질적으로 미치고 있다는 현실을 반영한 조치다. 소상공인 매장 사용 제한은 지역 경제 선순환 효과도 기대케 한다."</p>
+          <p class="author">— 사회정책 연구자</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"현금이 아닌 카드포인트·지역화폐 방식은 복지 자금이 지역 골목상권에 실질적으로 흘러가게 하는 효과적인 설계다. 소비 진작과 복지 전달을 동시에 달성할 수 있다."</p>
+          <p class="author">— 지역경제 활성화 전문가</p>
+        </div>
+      </div>
+      <div class="opinion-con">
+        <h3>🔴 반대 / 우려</h3>
+        <div class="opinion-card">
+          <p class="quote">"소득하위 70%에 광범위한 지원을 하는 방식은 재정 효율성 면에서 의문이 제기된다. 정말 어려운 계층에 집중해야 할 재원이 분산될 경우, 취약계층 지원의 질이 오히려 낮아질 수 있다."</p>
+          <p class="author">— 재정경제 연구자</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"사용처를 소상공인으로 제한하면 디지털 접근성이 낮은 고령층이나 농촌 거주자는 실질적으로 사용에 어려움을 겪을 수 있다. 사용기한 연장이나 환불 규정 개선이 필요하다."</p>
+          <p class="author">— 소비자권익 시민단체 활동가</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 해시태그 -->
+  <div class="hashtag-box">
+    <span>#고유가피해지원금</span>
+    <span>#2차신청</span>
+    <span>#복지지원금2026</span>
+    <span>#소득하위70</span>
+    <span>#5월신청마감</span>
+    <span>#지역화폐</span>
+    <span>#소상공인</span>
+    <span>#생활비지원</span>
+    <span>#복지로</span>
+    <span>#물가지원</span>
+  </div>
+
+  <!-- 면책조항 -->
+  <div class="disclaimer">
+    이 기사는 공개된 정보를 바탕으로 작성되었습니다. 지원 대상 여부, 지급 금액 등 세부 사항은 지자체나 카드사 정책에 따라 다를 수 있으므로, 정확한 지원 여부는 담당 기관에 확인하세요.
+  </div>
+
+  <!-- 작성일 메타 -->
+  <p class="meta">작성일: 2026년 5월 8일 | 출처: 보건복지부, 복지로, 각 카드사 공지</p>
+
+</div>
+</body>
+</html>
