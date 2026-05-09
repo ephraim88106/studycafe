@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"국민 4명 중 3명이 마음의 병"… 정부, 드디어 정신건강 국가책임 선언 — 자살예방 예산 708억·정신응급센터 전국 확대, 당신 동네에도 생긴다 | 오늘의 복지 뉴스</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; background: #f4f6fb; color: #222; line-height: 1.7; }
+  .container { max-width: 780px; margin: 0 auto; padding: 20px 16px 60px; }
+
+  /* 헤더 */
+  .top-header { background: #1565c0; color: #fff; padding: 14px 20px; border-radius: 10px 10px 0 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .top-header .date-tag { font-size: 13px; opacity: 0.85; }
+  .top-header .issue-tag { font-size: 13px; font-weight: 700; background: rgba(255,255,255,0.2); padding: 3px 10px; border-radius: 20px; }
+
+  /* 섹션 배지 */
+  .section-badge { display: inline-block; background: #1565c0; color: #fff; font-size: 12px; font-weight: 800; padding: 4px 14px; border-radius: 0 0 8px 8px; margin-bottom: 14px; letter-spacing: 1px; }
+
+  /* 메인 제목 */
+  h1.main-title { font-size: 26px; font-weight: 900; line-height: 1.4; color: #0d2e6e; margin-bottom: 18px; word-break: keep-all; }
+
+  /* 훅 */
+  .hook { border-left: 5px solid #1565c0; background: #e8f0fe; padding: 14px 18px; border-radius: 0 10px 10px 0; margin-bottom: 22px; font-size: 15px; color: #1a1a1a; }
+  .hook .highlight { color: #c62828; font-weight: 800; }
+
+  /* 핵심 요약 */
+  .summary-box { background: #e8f5e9; border-left: 6px solid #2e7d32; border-radius: 10px; padding: 18px 20px; margin-bottom: 24px; }
+  .summary-box h2 { color: #1b5e20; font-size: 15px; margin-bottom: 10px; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box ul li { font-size: 14px; color: #2e2e2e; padding: 4px 0; padding-left: 22px; position: relative; }
+  .summary-box ul li::before { content: "📌"; position: absolute; left: 0; }
+
+  /* 섹션 제목 */
+  h2.section-title { font-size: 18px; font-weight: 800; color: #1565c0; margin: 28px 0 12px; border-bottom: 2px solid #1565c0; padding-bottom: 6px; }
+
+  /* 배경 */
+  .bg-section { background: #fff; border-radius: 10px; padding: 18px 20px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); font-size: 14px; }
+
+  /* 표 */
+  .info-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 14px; }
+  .info-table th { background: #1565c0; color: #fff; padding: 10px 14px; text-align: left; }
+  .info-table td { background: #fff; padding: 10px 14px; border-bottom: 1px solid #e0e0e0; vertical-align: top; }
+  .info-table tr:last-child td { border-bottom: none; }
+  .info-table tr:nth-child(even) td { background: #f0f4ff; }
+
+  /* 신청 방법 */
+  .step-list { list-style: none; padding: 0; margin-bottom: 20px; }
+  .step-list li { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px dashed #dde; font-size: 14px; }
+  .step-list li:last-child { border-bottom: none; }
+  .step-num { background: #1565c0; color: #fff; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 13px; flex-shrink: 0; margin-top: 2px; }
+
+  /* deadline-box */
+  .deadline-box { border: 2.5px dashed #f57c00; border-radius: 10px; padding: 16px 20px; background: #fff8e1; margin-bottom: 24px; }
+  .deadline-box h3 { color: #e65100; font-size: 15px; margin-bottom: 8px; }
+  .deadline-box p { font-size: 14px; color: #333; }
+
+  /* 체크리스트 */
+  .checklist { background: #fff; border-radius: 10px; padding: 18px 20px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); }
+  .checklist h2 { font-size: 16px; color: #1565c0; margin-bottom: 12px; font-weight: 800; }
+  .checklist ul { list-style: none; padding: 0; }
+  .checklist ul li { padding: 7px 0; font-size: 14px; border-bottom: 1px solid #f0f0f0; }
+  .checklist ul li:last-child { border-bottom: none; }
+
+  /* 주의사항 */
+  .caution { background: #fce4ec; border-radius: 10px; padding: 16px 20px; margin-bottom: 24px; font-size: 14px; }
+  .caution h2 { color: #880e4f; font-size: 15px; margin-bottom: 10px; font-weight: 800; }
+  .caution p { margin-bottom: 6px; }
+
+  /* contact-box */
+  .contact-box { background: #e3f2fd; border-radius: 10px; padding: 18px 20px; margin-bottom: 24px; }
+  .contact-box h2 { color: #0d47a1; font-size: 15px; font-weight: 800; margin-bottom: 10px; }
+  .contact-box p, .contact-box li { font-size: 14px; color: #1a237e; margin-bottom: 4px; }
+  .contact-box ul { list-style: none; padding: 0; }
+
+  /* 찬반 론평 */
+  .opinion-section { margin: 30px 0; }
+  .opinion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .opinion-pro, .opinion-con { border-radius: 12px; padding: 20px; }
+  .opinion-pro { background: #e8f5e9; border-left: 5px solid #2e7d32; }
+  .opinion-con { background: #fff3e0; border-left: 5px solid #c62828; }
+  .opinion-pro h3 { color: #1b5e20; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-con h3 { color: #b71c1c; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-card { background: #fff; padding: 14px 16px; border-radius: 8px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+  .opinion-card:last-child { margin-bottom: 0; }
+  .opinion-card .quote { font-size: 14px; line-height: 1.7; color: #333; font-style: italic; margin-bottom: 8px; }
+  .opinion-card .author { font-size: 12px; color: #777; text-align: right; font-weight: 700; margin: 0; }
+
+  /* 해시태그 */
+  .hashtags { margin: 20px 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hashtags span { background: #1565c0; color: #fff; padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: 700; }
+
+  /* 면책조항 */
+  .disclaimer { background: #f5f5f5; border-radius: 8px; padding: 14px 16px; font-size: 12px; color: #777; margin-top: 20px; }
+
+  /* 작성일 */
+  .meta { text-align: right; font-size: 11px; color: #aaa; margin-top: 10px; }
+
+  /* SVG 박스 */
+  .svg-box { background: #fff; border-radius: 10px; padding: 16px; margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); overflow-x: auto; }
+
+  /* 반응형 */
+  @media (max-width: 600px) {
+    h1.main-title { font-size: 20px; }
+    .opinion-grid { grid-template-columns: 1fr; }
+    .info-table { font-size: 12px; }
+    .top-header { padding: 10px 14px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 상단 헤더 -->
+  <div class="top-header">
+    <span class="date-tag">📅 2026년 5월 10일 (일)</span>
+    <span class="issue-tag">오늘의 복지 뉴스 · 제1보</span>
+  </div>
+
+  <!-- 섹션 배지 -->
+  <div class="section-badge">🧠 정신건강 · 자살예방</div>
+
+  <!-- 메인 제목 -->
+  <h1 class="main-title">"국민 4명 중 3명이 마음의 병" — 정부, 드디어 정신건강 국가책임 선언! 자살예방 예산 708억·응급센터 전국 확대, 지금 당장 무료 지원 받는 법</h1>
+
+  <!-- 훅 -->
+  <div class="hook">
+    혼자 버텨온 당신, 이제 국가가 함께합니다. <span class="highlight">우울·불안·공황… 참지 마세요.</span> 2026년부터 정신건강은 개인 문제가 아닌 <span class="highlight">국가 책임</span>으로 대전환됩니다. 전국 어디서든 24시간 위기상담과 응급치료를 받을 수 있는 체계가 지금 확대되고 있습니다.
+  </div>
+
+  <!-- 핵심 요약 박스 -->
+  <div class="summary-box">
+    <h2>📌 이것만 알면 됩니다</h2>
+    <ul>
+      <li>정신건강 위기상담 무료 전화 <strong>1577-0199</strong> — 24시간, 전국 어디서든 가능</li>
+      <li>정신질환 치료비 지원 대상: <strong>기준 중위소득 120% 이하</strong> — 주민센터·보건소에 신청</li>
+      <li>2026~2030 자살예방 예산 <strong>708억원</strong>으로 대폭 확대, 응급센터 10→17개소 증설</li>
+    </ul>
+  </div>
+
+  <!-- 배경/문제 섹션 -->
+  <h2 class="section-title">왜 지금 이 정책이 나왔나?</h2>
+  <div class="bg-section">
+    <p>한국은 OECD 국가 중 <strong>자살률 1위</strong>라는 불명예를 20년 넘게 이어오고 있습니다. 국민 4명 중 3명이 일생에 한 번은 정신건강 문제를 경험하지만, 정신과 진료를 받는 비율은 선진국 대비 절반에도 못 미칩니다. "정신과 가면 이상한 사람" 이라는 낙인이 여전히 강하고, 치료 접근성도 낮기 때문입니다.</p>
+    <br>
+    <p>이에 정부는 2026년을 기점으로 <strong>제3차 정신건강복지기본계획(2026~2030)</strong>을 확정하고, 정신건강을 <em>개인의 나약함</em>이 아닌 <em>국가가 반드시 책임져야 할 사회안전망</em>으로 공식 선언했습니다. 이 대통령도 "자살 문제는 전 세계적 망신"이라며 상담·긴급출동 인력을 즉각 확충하겠다고 밝혔습니다.</p>
+  </div>
+
+  <!-- 상세 정보 표 -->
+  <h2 class="section-title">📊 주요 정책 변화 한눈에 보기</h2>
+  <table class="info-table">
+    <tr>
+      <th>항목</th>
+      <th>현재(2025)</th>
+      <th>목표(2030)</th>
+    </tr>
+    <tr>
+      <td>권역정신응급의료센터</td>
+      <td>10개소</td>
+      <td><strong>17개소</strong></td>
+    </tr>
+    <tr>
+      <td>공공 정신과 병상</td>
+      <td>130개</td>
+      <td><strong>180개</strong></td>
+    </tr>
+    <tr>
+      <td>급성기 집중치료병상</td>
+      <td>391개</td>
+      <td><strong>2,000개</strong></td>
+    </tr>
+    <tr>
+      <td>자살예방센터 인력(1개소 평균)</td>
+      <td>2.6명</td>
+      <td><strong>5명</strong></td>
+    </tr>
+    <tr>
+      <td>경찰-정신건강복지센터 합동대응팀</td>
+      <td>10개소</td>
+      <td><strong>18개소</strong></td>
+    </tr>
+    <tr>
+      <td>자살예방 예산</td>
+      <td>562억원</td>
+      <td><strong>708억원</strong> (2026 기준)</td>
+    </tr>
+    <tr>
+      <td>정신질환 치료비 지원 대상</td>
+      <td colspan="2">기준 중위소득 <strong>120% 이하</strong> (4인가구 약 778만원/월)</td>
+    </tr>
+  </table>
+
+  <!-- SVG 인포그래픽 -->
+  <h2 class="section-title">📈 정신응급 인프라 확대 시각화</h2>
+  <div class="svg-box">
+    <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:640px;display:block;margin:0 auto;">
+      <rect width="640" height="300" fill="#f0f4ff" rx="12"/>
+      <text x="320" y="32" text-anchor="middle" font-size="15" font-weight="bold" fill="#1565c0">2026 → 2030 정신건강 인프라 확대 현황</text>
+
+      <!-- 응급센터 -->
+      <rect x="40" y="60" width="80" height="140" fill="#90caf9" rx="6"/>
+      <rect x="40" y="60" width="80" height="140" fill="#90caf9" rx="6"/>
+      <rect x="40" y="110" width="80" height="90" fill="#1565c0" rx="6"/>
+      <text x="80" y="105" text-anchor="middle" font-size="11" fill="#1565c0" font-weight="bold">현재 10개</text>
+      <text x="80" y="215" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">목표 17개</text>
+      <text x="80" y="235" text-anchor="middle" font-size="10" fill="#444">응급센터</text>
+
+      <!-- 병상 -->
+      <rect x="160" y="60" width="80" height="140" fill="#90caf9" rx="6"/>
+      <rect x="160" y="80" width="80" height="120" fill="#1565c0" rx="6"/>
+      <text x="200" y="75" text-anchor="middle" font-size="11" fill="#1565c0" font-weight="bold">130개</text>
+      <text x="200" y="155" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">목표</text>
+      <text x="200" y="170" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">180개</text>
+      <text x="200" y="215" text-anchor="middle" font-size="10" fill="#444">공공병상</text>
+
+      <!-- 집중치료병상 -->
+      <rect x="280" y="180" width="80" height="20" fill="#90caf9" rx="6"/>
+      <rect x="280" y="60" width="80" height="140" fill="#1565c0" rx="6"/>
+      <text x="320" y="55" text-anchor="middle" font-size="11" fill="#888" font-weight="bold">391개 →</text>
+      <text x="320" y="120" text-anchor="middle" font-size="13" fill="#fff" font-weight="bold">2,000개</text>
+      <text x="320" y="215" text-anchor="middle" font-size="10" fill="#444">집중치료병상</text>
+
+      <!-- 자살예방센터 인력 -->
+      <rect x="400" y="140" width="80" height="60" fill="#90caf9" rx="6"/>
+      <rect x="400" y="100" width="80" height="100" fill="#1565c0" rx="6"/>
+      <text x="440" y="93" text-anchor="middle" font-size="11" fill="#1565c0" font-weight="bold">2.6명 →</text>
+      <text x="440" y="145" text-anchor="middle" font-size="13" fill="#fff" font-weight="bold">5명</text>
+      <text x="440" y="215" text-anchor="middle" font-size="10" fill="#444">센터 인력</text>
+
+      <!-- 예산 -->
+      <rect x="520" y="130" width="80" height="70" fill="#90caf9" rx="6"/>
+      <rect x="520" y="80" width="80" height="120" fill="#1565c0" rx="6"/>
+      <text x="560" y="75" text-anchor="middle" font-size="11" fill="#888" font-weight="bold">562억 →</text>
+      <text x="560" y="130" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">708억원</text>
+      <text x="560" y="215" text-anchor="middle" font-size="10" fill="#444">자살예방 예산</text>
+
+      <text x="320" y="280" text-anchor="middle" font-size="11" fill="#555">※ 파란색: 2026~2030 목표치 / 하늘색: 현재(2025) 기준</text>
+    </svg>
+  </div>
+
+  <!-- 신청 방법 -->
+  <h2 class="section-title">🗂️ 지금 바로 받을 수 있는 지원 & 신청 방법</h2>
+  <ol class="step-list">
+    <li>
+      <span class="step-num">1</span>
+      <div><strong>정신건강 위기상담 전화</strong> — 즉시 가능<br>📞 <strong>1577-0199</strong> (24시간 무료, 전국 어디서나)</div>
+    </li>
+    <li>
+      <span class="step-num">2</span>
+      <div><strong>정신질환 치료비 지원 신청</strong><br>주소지 보건소 또는 정신건강복지센터 방문 → 소득 기준 확인(기준 중위소득 120% 이하) → 신청서 작성 → 지원 결정</div>
+    </li>
+    <li>
+      <span class="step-num">3</span>
+      <div><strong>정신건강복지센터 연결</strong><br>전국 255개소 운영 중 — 주소지 관할 센터에 연락하면 무료 상담·치료 연계 가능</div>
+    </li>
+    <li>
+      <span class="step-num">4</span>
+      <div><strong>자살 위기 긴급 출동</strong><br>자살 위기 상황 시 <strong>1393</strong>(자살예방상담전화) 또는 <strong>119</strong> 신고 → 경찰·정신건강복지센터 합동 대응팀 출동</div>
+    </li>
+    <li>
+      <span class="step-num">5</span>
+      <div><strong>온라인 심리지원</strong><br>마음이음 앱·정신건강 자가진단 → 복지로(bokjiro.go.kr) 검색 '정신건강'</div>
+    </li>
+  </ol>
+
+  <!-- 시행 일정 박스 -->
+  <div class="deadline-box">
+    <h3>⏰ 지금 당장 챙겨야 할 일정</h3>
+    <p>✔ <strong>정신질환 치료비 지원:</strong> 연중 상시 신청 — 주소지 보건소 방문<br>
+    ✔ <strong>권역정신응급의료센터 추가 지정:</strong> 2026년 중 신규 7개소 확대 예정<br>
+    ✔ <strong>'천명 지킴 프로젝트':</strong> 2026년 자살자 수 1,000명 감소 목표 — 전부처 총력 대응 진행 중<br>
+    ✔ <strong>자살예방 AI 모니터링:</strong> 자살유발정보 SNS 실시간 감지 체계 2026년 구축 완료 목표</p>
+  </div>
+
+  <!-- 자가 진단 체크리스트 -->
+  <div class="checklist">
+    <h2>✅ 나도 해당될까? 자가 진단 체크리스트</h2>
+    <ul>
+      <li>✓ 2주 이상 이유 없이 우울하거나 무기력하다면 → <strong>정신건강 위기상담 1577-0199</strong></li>
+      <li>✓ 가구 소득이 기준 중위소득 120% 이하라면 → <strong>치료비 지원 대상</strong> (보건소 문의)</li>
+      <li>✓ 스스로를 해치고 싶다는 생각이 들었다면 → <strong>즉시 1393·119 신고</strong></li>
+      <li>✓ 가족 중 정신질환자가 있다면 → 지역 정신건강복지센터에서 <strong>가족 지원 프로그램 무료 제공</strong></li>
+      <li>✓ 직장·학교 내 심리 지원이 필요하다면 → <strong>마음이음·EAP 프로그램</strong> 활용 가능</li>
+    </ul>
+  </div>
+
+  <!-- 주의사항 -->
+  <div class="caution">
+    <h2>⚠️ 꼭 알아두세요</h2>
+    <p>① 정신과 진료 기록은 <strong>보험 불이익과 무관</strong>합니다 — 2016년 이후 건강보험 정신과 진료기록이 실손보험 가입 심사에서 제외되었습니다.</p>
+    <p>② 치료비 지원 금액과 대상은 <strong>지자체마다 다를 수 있으므로</strong> 반드시 주소지 보건소에서 확인하세요.</p>
+    <p>③ 위기상담 전화는 <strong>익명 사용 가능</strong>하며, 이름·주민번호 없이도 상담받을 수 있습니다.</p>
+    <p>④ 가족이 정신질환을 앓고 있다면 <strong>본인 동의 없이도 가족 이름으로 센터에 먼저 연락</strong>할 수 있습니다.</p>
+  </div>
+
+  <!-- 담당 기관 박스 -->
+  <div class="contact-box">
+    <h2>📞 담당 기관 및 문의처</h2>
+    <ul>
+      <li>🏥 <strong>정신건강 위기상담전화:</strong> 1577-0199 (24시간 무료)</li>
+      <li>☎ <strong>자살예방상담전화:</strong> 1393 (24시간)</li>
+      <li>🏢 <strong>보건복지부 정신건강정책과:</strong> 044-202-3874</li>
+      <li>🌐 <strong>국립정신건강센터:</strong> www.ncmh.go.kr</li>
+      <li>🌐 <strong>복지로(온라인 신청):</strong> www.bokjiro.go.kr → '정신건강' 검색</li>
+      <li>📍 <strong>전국 정신건강복지센터:</strong> 주소지 관할 보건소 또는 1577-0199로 연결</li>
+    </ul>
+  </div>
+
+  <!-- 전문가 찬반 론평 -->
+  <h2 class="section-title">💬 전문가 찬반 론평</h2>
+  <div class="opinion-section">
+    <div class="opinion-grid">
+      <div class="opinion-pro">
+        <h3>🟢 찬성</h3>
+        <div class="opinion-card">
+          <p class="quote">"OECD 자살률 1위라는 오명을 벗기 위해서는 정신건강을 개인 책임에서 국가 책임으로 전환하는 것이 필수적이며, 이번 기본계획은 그 방향에서 매우 올바른 첫걸음입니다."</p>
+          <p class="author">— 정신보건 정책 연구자</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"응급 인프라 확충과 예산 증액은 즉각적인 생명 구조로 이어집니다. 특히 경찰-정신건강복지센터 합동대응팀 확대는 위기 상황에서 골든타임을 지키는 핵심 수단이 될 것입니다."</p>
+          <p class="author">— 정신건강 위기개입 현장 활동가</p>
+        </div>
+      </div>
+      <div class="opinion-con">
+        <h3>🔴 반대 / 우려</h3>
+        <div class="opinion-card">
+          <p class="quote">"센터 인력을 2.6명에서 5명으로 늘린다고 발표했지만, 실제 인건비 예산이 지자체에 전가되는 구조라면 지역별 격차가 오히려 심화될 수 있습니다."</p>
+          <p class="author">— 재정복지 연구자</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"정신과 낙인 문제를 제도 확충만으로 해결할 수 없습니다. 수요자가 자발적으로 서비스를 찾아오도록 사회적 인식 개선 캠페인이 병행되지 않으면 인프라 공백이 생길 수 있습니다."</p>
+          <p class="author">— 사회복지학 연구자</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 해시태그 -->
+  <div class="hashtags">
+    <span>#정신건강국가책임</span>
+    <span>#자살예방예산708억</span>
+    <span>#정신응급센터확대</span>
+    <span>#1577_0199</span>
+    <span>#정신건강복지기본계획</span>
+    <span>#무료정신과상담</span>
+    <span>#치료비지원</span>
+    <span>#천명지킴프로젝트</span>
+    <span>#마음건강</span>
+    <span>#복지뉴스</span>
+  </div>
+
+  <!-- 면책조항 -->
+  <div class="disclaimer">
+    이 기사는 공개된 정보를 바탕으로 작성되었습니다. 정확한 지원 여부 및 신청 절차는 담당 기관에 확인하세요. 정신건강 위기 상황이라면 즉시 1577-0199 또는 1393으로 연락하세요. 도움을 요청하는 것은 용기 있는 행동입니다.
+  </div>
+
+  <!-- 메타 -->
+  <p class="meta">작성일: 2026년 5월 10일 | 오늘의 복지 뉴스 제1보</p>
+
+</div>
+</body>
+</html>
