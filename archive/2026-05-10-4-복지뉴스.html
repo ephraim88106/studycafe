@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"시급 17,270원 + 가산급여 53시간 추가" — 2026 장애인 활동지원 완전 개편, 36만 장애인 생활이 달라집니다 | 오늘의 복지 뉴스</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; background: #f1f8e9; color: #222; line-height: 1.7; font-size: 15px; }
+  .container { max-width: 780px; margin: 0 auto; padding: 20px 16px 60px; }
+
+  /* 헤더 */
+  .top-header { background: #2e7d32; color: #fff; padding: 14px 20px; border-radius: 10px 10px 0 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .top-header .date-tag { font-size: 13px; opacity: 0.85; }
+  .top-header .issue-tag { font-size: 13px; font-weight: 700; background: rgba(255,255,255,0.2); padding: 3px 10px; border-radius: 20px; }
+
+  .section-badge { display: inline-block; background: #2e7d32; color: #fff; font-size: 12px; font-weight: 800; padding: 4px 14px; border-radius: 0 0 8px 8px; margin-bottom: 14px; letter-spacing: 1px; }
+
+  h1.main-title { font-size: 26px; font-weight: 900; line-height: 1.4; color: #1b5e20; margin-bottom: 18px; word-break: keep-all; }
+
+  .hook { border-left: 5px solid #2e7d32; background: #e8f5e9; padding: 14px 18px; border-radius: 0 10px 10px 0; margin-bottom: 22px; font-size: 15px; color: #1a1a1a; }
+  .hook .highlight { color: #2e7d32; font-weight: 800; }
+
+  .summary-box { background: #e8f5e9; border-left: 6px solid #2e7d32; border-radius: 10px; padding: 18px 20px; margin-bottom: 24px; }
+  .summary-box h2 { color: #1b5e20; font-size: 15px; margin-bottom: 10px; }
+  .summary-box ul { list-style: none; padding: 0; }
+  .summary-box li { padding: 4px 0; font-size: 14px; }
+  .summary-box li::before { content: "📌 "; }
+
+  h2.section-title { font-size: 18px; font-weight: 800; color: #1b5e20; margin: 28px 0 12px; border-bottom: 2px solid #2e7d32; padding-bottom: 6px; }
+
+  p { margin-bottom: 14px; }
+
+  table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 14px; }
+  th { background: #2e7d32; color: #fff; padding: 10px 14px; text-align: left; }
+  td { padding: 10px 14px; border-bottom: 1px solid #eee; vertical-align: top; }
+  tr:nth-child(even) td { background: #f1f8e9; }
+
+  .svg-wrap { background: #fff; border-radius: 12px; padding: 20px; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.07); overflow-x: auto; }
+
+  .step-list { list-style: none; padding: 0; margin: 12px 0 24px; }
+  .step-list li { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 14px; }
+  .step-num { min-width: 32px; height: 32px; background: #2e7d32; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 15px; flex-shrink: 0; margin-top: 2px; }
+  .step-text { font-size: 14px; line-height: 1.65; }
+
+  .deadline-box { border: 2px dashed #f57c00; border-radius: 10px; background: #fff8e1; padding: 16px 20px; margin: 24px 0; }
+  .deadline-box h3 { color: #e65100; font-size: 16px; font-weight: 800; margin-bottom: 10px; }
+  .deadline-box p { font-size: 14px; color: #4a2600; margin: 0 0 6px; }
+
+  .checklist { list-style: none; padding: 0; margin: 12px 0 24px; }
+  .checklist li { padding: 8px 0 8px 36px; position: relative; border-bottom: 1px solid #dcedc8; font-size: 14px; }
+  .checklist li::before { content: "✓"; position: absolute; left: 8px; color: #2e7d32; font-weight: 900; font-size: 17px; }
+
+  .caution { background: #fff9c4; border-radius: 10px; padding: 16px 20px; margin: 20px 0; font-size: 14px; border-left: 4px solid #f9a825; }
+  .caution p { margin: 4px 0; }
+
+  .contact-box { background: #2e7d32; color: #fff; border-radius: 12px; padding: 20px 24px; margin: 24px 0; }
+  .contact-box h3 { font-size: 16px; font-weight: 800; margin-bottom: 12px; }
+  .contact-box p { font-size: 14px; margin: 4px 0; }
+  .contact-box a { color: #a5d6a7; text-decoration: underline; }
+
+  /* 찬반 론평 */
+  .opinion-section { margin: 30px 0; }
+  .opinion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .opinion-pro, .opinion-con { border-radius: 12px; padding: 20px; }
+  .opinion-pro { background: #e8f5e9; border-left: 5px solid #2e7d32; }
+  .opinion-con { background: #fff3e0; border-left: 5px solid #c62828; }
+  .opinion-pro h3 { color: #1b5e20; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-con h3 { color: #b71c1c; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-card { background: #fff; padding: 14px 16px; border-radius: 8px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+  .opinion-card:last-child { margin-bottom: 0; }
+  .opinion-card .quote { font-size: 14px; line-height: 1.7; color: #333; font-style: italic; margin-bottom: 8px; }
+  .opinion-card .author { font-size: 12px; color: #777; text-align: right; font-weight: 700; margin: 0; }
+
+  .hashtags { margin: 24px 0 12px; font-size: 14px; color: #2e7d32; font-weight: 700; word-break: break-all; }
+
+  .disclaimer { background: #f5f5f5; border-radius: 8px; padding: 14px 18px; font-size: 12px; color: #777; margin: 24px 0 10px; }
+
+  .meta { text-align: right; font-size: 12px; color: #aaa; margin-top: 8px; }
+
+  .highlight-num { color: #2e7d32; font-weight: 900; font-size: 1.1em; }
+
+  @media (max-width: 600px) {
+    h1.main-title { font-size: 20px; }
+    .opinion-grid { grid-template-columns: 1fr; }
+    table { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 1. 상단 헤더 -->
+  <div class="top-header">
+    <span class="date-tag">📅 2026년 5월 10일 일요일</span>
+    <span class="issue-tag">오늘의 복지 뉴스 · 제4보</span>
+  </div>
+
+  <!-- 2. 섹션 배지 -->
+  <span class="section-badge">♿ 장애인 활동지원 개편</span>
+
+  <!-- 3. 메인 제목 -->
+  <h1 class="main-title">"시급 17,270원·가산급여 53시간 추가" — 2026 장애인 활동지원 완전 개편, 36만 장애인 생활이 달라집니다… 모르면 못 받는 가산급여 확인하세요</h1>
+
+  <!-- 4. 훅 -->
+  <div class="hook">
+    매일 누군가의 손이 필요한 36만 명의 장애인과, 그들 곁을 지키는 활동지원사들이 드디어 달라집니다. 2026년 활동지원 시급이 <span class="highlight">3.9% 인상된 시간당 17,270원</span>으로 확정됐고, 가산급여 지급 시간은 기존 205시간에서 <span class="highlight">258시간으로 53시간 확대</span>됐습니다. 신청하지 않으면 받을 수 없는 가산급여, 지금 바로 확인하세요.
+  </div>
+
+  <!-- 5. 핵심 요약 박스 -->
+  <div class="summary-box">
+    <h2>📌 이것만 알면 됩니다</h2>
+    <ul>
+      <li>2026년 활동지원 기본 단가: 시간당 16,620원 → <strong>17,270원</strong> (3.9% 인상)</li>
+      <li>가산급여 지급 한도: 월 205시간 → <strong>월 258시간</strong> (53시간 확대)</li>
+      <li>활동지원사 교육 5월 일정 진행 중 — 자격 취득 후 즉시 활동 가능</li>
+    </ul>
+  </div>
+
+  <!-- 6. 배경/문제 섹션 -->
+  <h2 class="section-title">📢 왜 이번에 단가를 올렸나</h2>
+  <p>장애인 활동지원 서비스는 신체적·정신적 이유로 혼자서 일상생활을 유지하기 어려운 장애인에게 활동지원사를 연결해 주는 제도입니다. 현재 전국 약 <strong>36만 명의 장애인</strong>이 이 서비스를 이용 중이며, 활동지원사 약 22만 명이 종사하고 있습니다.</p>
+  <p>그러나 활동지원사의 처우는 오랫동안 논란이었습니다. 최저임금 수준에 근접했던 기존 시급은 우수 인력 유입을 막고, 서비스 질 저하로 이어진다는 비판이 계속됐습니다. 이에 정부는 2026년 단가를 <strong>3.9% 인상</strong>하고, 야간·심야·공휴일에 제공되는 가산급여 허용 시간을 대폭 늘렸습니다.</p>
+  <p>가산급여란 야간(22시~06시), 공휴일 등 특수 시간대에 활동지원을 제공할 때 기본 단가에 추가로 지급되는 금액입니다. 가산급여 시간이 확대됨으로써 <strong>심야·공휴일 돌봄 공백</strong>이 크게 줄어들 것으로 기대됩니다.</p>
+
+  <!-- 7. 상세 정보 표 -->
+  <h2 class="section-title">📊 2026년 활동지원 단가 변화 상세</h2>
+  <table>
+    <tr>
+      <th>구분</th>
+      <th>2025년 (기존)</th>
+      <th>2026년 (변경)</th>
+      <th>변화</th>
+    </tr>
+    <tr>
+      <td><strong>기본 단가 (시간당)</strong></td>
+      <td>16,620원</td>
+      <td><strong>17,270원</strong></td>
+      <td>+650원 (+3.9%)</td>
+    </tr>
+    <tr>
+      <td><strong>가산급여 한도 (월)</strong></td>
+      <td>205시간</td>
+      <td><strong>258시간</strong></td>
+      <td>+53시간 확대</td>
+    </tr>
+    <tr>
+      <td><strong>가산급여 비율</strong><br>(야간·공휴일)</td>
+      <td>기본 단가의 130%</td>
+      <td>기본 단가의 130% 유지</td>
+      <td>동일 (비율 유지)</td>
+    </tr>
+    <tr>
+      <td><strong>가산급여 단가</strong><br>(야간·공휴일)</td>
+      <td>약 21,606원</td>
+      <td><strong>약 22,451원</strong></td>
+      <td>+845원</td>
+    </tr>
+    <tr>
+      <td><strong>지원 대상</strong></td>
+      <td colspan="3">만 6세 이상 등록 장애인 중 활동지원 급여 수급자 (약 36만 명)</td>
+    </tr>
+    <tr>
+      <td><strong>활동지원사 교육</strong></td>
+      <td colspan="3">만 18세 이상 누구나 지원 가능 — 표준과정 50시간(이론+실기 40h + 현장실습 10h) 이수 후 취득</td>
+    </tr>
+  </table>
+
+  <!-- 8. SVG 인포그래픽 -->
+  <h2 class="section-title">📈 가산급여 확대 효과 — 월 최대 수령액 비교</h2>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:700px;">
+      <rect width="700" height="300" fill="#f9fbe7" rx="12"/>
+      <text x="350" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b5e20">활동지원사 월 최대 급여 비교 (야간 풀 가동 기준)</text>
+
+      <!-- 2025 막대 -->
+      <text x="160" y="55" text-anchor="middle" font-size="12" fill="#555">2025년</text>
+      <!-- 기본급 -->
+      <rect x="60" y="60" width="200" height="80" fill="#81c784" rx="6"/>
+      <text x="160" y="95" text-anchor="middle" font-size="11" fill="#1b5e20" font-weight="bold">기본급여</text>
+      <text x="160" y="112" text-anchor="middle" font-size="11" fill="#1b5e20">16,620원 × 최대 480h</text>
+      <text x="160" y="128" text-anchor="middle" font-size="12" fill="#1b5e20" font-weight="bold">≈ 797만원</text>
+      <!-- 가산급여 -->
+      <rect x="60" y="148" width="200" height="70" fill="#43a047" rx="6"/>
+      <text x="160" y="178" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">가산급여 (야간)</text>
+      <text x="160" y="196" text-anchor="middle" font-size="11" fill="#e8f5e9">21,606원 × 205h</text>
+      <text x="160" y="212" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">≈ 443만원</text>
+
+      <!-- 2026 막대 -->
+      <text x="530" y="55" text-anchor="middle" font-size="12" fill="#555">2026년</text>
+      <!-- 기본급 -->
+      <rect x="430" y="60" width="200" height="80" fill="#81c784" rx="6"/>
+      <text x="530" y="95" text-anchor="middle" font-size="11" fill="#1b5e20" font-weight="bold">기본급여</text>
+      <text x="530" y="112" text-anchor="middle" font-size="11" fill="#1b5e20">17,270원 × 최대 480h</text>
+      <text x="530" y="128" text-anchor="middle" font-size="12" fill="#1b5e20" font-weight="bold">≈ 829만원</text>
+      <!-- 가산급여 -->
+      <rect x="430" y="148" width="200" height="90" fill="#2e7d32" rx="6"/>
+      <text x="530" y="180" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">가산급여 (야간)</text>
+      <text x="530" y="198" text-anchor="middle" font-size="11" fill="#c8e6c9">22,451원 × 258h</text>
+      <text x="530" y="216" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">≈ 579만원</text>
+      <text x="530" y="233" text-anchor="middle" font-size="10" fill="#a5d6a7">▲ 53시간 확대</text>
+
+      <!-- 화살표 -->
+      <line x1="265" y1="185" x2="420" y2="185" stroke="#2e7d32" stroke-width="2.5" marker-end="url(#arrow2)"/>
+      <defs>
+        <marker id="arrow2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 Z" fill="#2e7d32"/>
+        </marker>
+      </defs>
+      <text x="342" y="178" text-anchor="middle" font-size="10" fill="#2e7d32" font-weight="bold">+136만원</text>
+      <text x="342" y="192" text-anchor="middle" font-size="10" fill="#2e7d32">가산 증가</text>
+
+      <!-- 합계 표시 -->
+      <rect x="60" y="240" width="200" height="42" fill="#e8f5e9" rx="6" stroke="#81c784" stroke-width="1"/>
+      <text x="160" y="258" text-anchor="middle" font-size="11" fill="#444">최대 합계 (기본+가산)</text>
+      <text x="160" y="274" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">약 1,240만원/월</text>
+
+      <rect x="430" y="240" width="200" height="42" fill="#c8e6c9" rx="6" stroke="#2e7d32" stroke-width="2"/>
+      <text x="530" y="258" text-anchor="middle" font-size="11" fill="#444">최대 합계 (기본+가산)</text>
+      <text x="530" y="274" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b5e20">약 1,408만원/월 ▲</text>
+    </svg>
+  </div>
+
+  <!-- 9. 신청 방법 -->
+  <h2 class="section-title">📋 활동지원 신청 방법 — 장애인 편</h2>
+  <ul class="step-list">
+    <li>
+      <span class="step-num">1</span>
+      <div class="step-text"><strong>서비스 신청 — 주민센터 방문</strong>: 장애인등록증, 건강보험증, 본인 통장 사본 지참 → 주민센터(행정복지센터) 방문 후 '장애인 활동지원 신청서' 작성</div>
+    </li>
+    <li>
+      <span class="step-num">2</span>
+      <div class="step-text"><strong>국민연금공단 조사</strong>: 신청 후 국민연금공단 직원이 가정 방문하여 서비스 필요도 조사 (기능 상태, 일상생활 수행 능력 등 평가)</div>
+    </li>
+    <li>
+      <span class="step-num">3</span>
+      <div class="step-text"><strong>급여 결정 통보</strong>: 심사 후 월 지원 시간(급여량) 결정 통보 — 최소 월 60시간~최대 480시간(중증 최대 수급자 기준)</div>
+    </li>
+    <li>
+      <span class="step-num">4</span>
+      <div class="step-text"><strong>활동지원기관 선택</strong>: 결정 통보 후 지역 내 활동지원기관 선택 → 원하는 활동지원사와 매칭</div>
+    </li>
+    <li>
+      <span class="step-num">5</span>
+      <div class="step-text"><strong>서비스 시작</strong>: 계약 완료 후 즉시 서비스 개시 — 야간·공휴일 이용 시 가산급여 자동 적용</div>
+    </li>
+  </ul>
+
+  <!-- 10. 시행 일정 박스 -->
+  <div class="deadline-box">
+    <h3>⏰ 꼭 알아야 할 일정</h3>
+    <p>🟢 <strong>2026년 1월 1일부터 인상 단가 소급 적용 완료</strong> — 이미 서비스 중인 경우 소급 정산 확인</p>
+    <p>🟡 <strong>5월 중 활동지원사 신규 교육 모집 중</strong> — 가까운 활동지원사 교육기관 수강 신청</p>
+    <p>🔵 <strong>가산급여 확대 적용</strong> — 2026년 1월부터 258시간 상한으로 자동 적용, 별도 신청 불필요</p>
+    <p>💡 <em>아직 서비스를 신청하지 않은 장애인이라면 지금 바로 주민센터에 신청하세요!</em></p>
+  </div>
+
+  <!-- 11. 자가 진단 체크리스트 -->
+  <h2 class="section-title">✅ 나도 해당될까? 자가 진단 체크리스트</h2>
+  <ul class="checklist">
+    <li>등록 장애인이며 만 6세 이상이다</li>
+    <li>혼자서 식사·목욕·이동·사회활동 중 하나 이상이 어렵다</li>
+    <li>노인장기요양보험 등급을 받지 않았거나, 등급외 판정을 받은 경우이다</li>
+    <li>야간(22시~06시) 또는 공휴일에 활동지원이 필요한 상황이 있다 → 가산급여 대상</li>
+    <li>현재 활동지원 수급 중이나 급여량이 부족하다고 느낀다 → 재조사 신청 가능</li>
+  </ul>
+
+  <!-- 12. 주의사항 -->
+  <h2 class="section-title">⚠️ 꼭 알아야 할 주의사항</h2>
+  <div class="caution">
+    <p>① 활동지원 서비스는 노인장기요양보험과 <strong>중복 수급이 원칙적으로 불가</strong>합니다. 65세 이상은 장기요양등급 신청을 먼저 해야 합니다.</p>
+    <p>② 가산급여(야간·공휴일)는 활동지원기관이 전자바우처 시스템에 정확한 시간을 입력해야 자동 산정됩니다. 입력 오류 시 과소 지급될 수 있으므로 월별 내역을 반드시 확인하세요.</p>
+    <p>③ 활동지원사 자격증 취득 후 가족(직계 가족) 대상 서비스는 <strong>원칙적으로 제한</strong>됩니다. 예외 허용 기준을 반드시 확인하세요.</p>
+    <p>④ 급여량(월 시간) 변경이 필요하면 거주지 주민센터에 '활동지원 급여 변경 신청'을 별도로 제출해야 하며, 자동 조정되지 않습니다.</p>
+  </div>
+
+  <!-- 13. 담당 기관 및 문의처 -->
+  <div class="contact-box">
+    <h3>📞 담당 기관 및 문의처</h3>
+    <p>🏢 <strong>보건복지부 장애인서비스과</strong> — ☎ 129 (보건복지 콜센터, 24시간)</p>
+    <p>🏢 <strong>국민연금공단 장애인활동지원 상담</strong> — ☎ 1355</p>
+    <p>🏢 <strong>사회서비스 전자바우처</strong> — <a href="https://www.socialservice.or.kr" target="_blank">www.socialservice.or.kr</a></p>
+    <p>🏢 <strong>장애인활동지원 공식 홈페이지</strong> — <a href="https://www.ableservice.or.kr" target="_blank">www.ableservice.or.kr</a></p>
+    <p>🏢 <strong>주민센터(행정복지센터)</strong> — 신청·변경·재조사 현장 접수</p>
+  </div>
+
+  <!-- 14. 전문가 찬반 론평 -->
+  <h2 class="section-title">💬 전문가 찬반 론평</h2>
+  <div class="opinion-section">
+    <div class="opinion-grid">
+      <div class="opinion-pro">
+        <h3>🟢 찬성</h3>
+        <div class="opinion-card">
+          <p class="quote">"단가 인상과 가산급여 확대는 활동지원사의 처우 개선을 통해 서비스 공급 안정성을 높이는 올바른 방향이다. 돌봄 인력 이탈을 막기 위한 최소한의 조치다."</p>
+          <p class="author">— 장애인복지 현장 활동가</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"야간·공휴일 가산급여 시간 확대는 중증 장애인의 돌봄 공백 문제를 실질적으로 줄이는 효과를 가져올 것이다. 특히 가족 돌봄 부담 경감에도 긍정적 영향이 기대된다."</p>
+          <p class="author">— 사회복지학과 교수</p>
+        </div>
+      </div>
+      <div class="opinion-con">
+        <h3>🔴 반대 / 우려</h3>
+        <div class="opinion-card">
+          <p class="quote">"3.9% 인상률은 실제 물가상승률과 최저임금 인상폭에 비해 여전히 낮다. 이 수준으로는 우수 활동지원사를 장기간 유지하기 어렵고, 인력 부족 문제는 지속될 것이다."</p>
+          <p class="author">— 재정복지 연구자</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"가산급여 상한을 늘리는 것보다 기본 급여량(수급 시간) 자체를 늘리는 것이 더 시급하다. 저소득 중증 장애인 중 여전히 월 60~100시간의 적은 급여량을 받는 경우가 많다."</p>
+          <p class="author">— 장애인권 시민단체 활동가</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 15. 해시태그 -->
+  <div class="hashtags">
+    #장애인활동지원 #활동지원단가인상 #가산급여확대 #활동지원사시급 #2026장애인복지 #중증장애인 #돌봄공백해소 #사회서비스 #복지로 #장애인복지정책
+  </div>
+
+  <!-- 16. 면책조항 -->
+  <div class="disclaimer">
+    ※ 이 기사는 공개된 정보를 바탕으로 작성되었습니다. 개인별 급여량·가산급여 적용 여부는 장애 등급 및 기능 상태에 따라 다를 수 있으며, 정확한 지원 여부는 담당 기관(보건복지부 129, 국민연금공단 1355, 주민센터)에 반드시 확인하세요.
+  </div>
+
+  <!-- 17. 작성일 메타 -->
+  <div class="meta">작성일: 2026년 5월 10일 | 오늘의 복지 뉴스 제4보</div>
+
+</div>
+</body>
+</html>
