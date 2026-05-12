@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"문 앞에서 내려드려도 됩니다" — 주야간보호 차량 드디어 장애인전용주차구역 허용, 거동 불편한 어르신 이제 비 맞지 않아도 됩니다 | 오늘의 복지 뉴스</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #fafafa; color: #333; line-height: 1.7; }
+  .container { max-width: 780px; margin: 0 auto; padding: 20px 16px 40px; }
+
+  /* 헤더 */
+  .header { background: #1565c0; color: #fff; padding: 12px 18px; border-radius: 10px 10px 0 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; }
+  .header .date-tag { font-size: 13px; background: rgba(255,255,255,0.2); padding: 3px 10px; border-radius: 20px; }
+  .header .issue-tag { font-size: 13px; font-weight: 700; }
+
+  /* 배지 */
+  .badge { display: inline-block; background: #1565c0; color: #fff; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-bottom: 10px; }
+
+  /* 메인 타이틀 */
+  .main-title { font-size: 27px; font-weight: 900; line-height: 1.4; color: #222; margin-bottom: 16px; word-break: keep-all; }
+  @media(max-width:600px){ .main-title { font-size: 21px; } }
+
+  /* 훅 */
+  .hook { border-left: 5px solid #1565c0; padding: 14px 18px; background: #e3f2fd; border-radius: 0 8px 8px 0; margin-bottom: 24px; font-size: 16px; }
+  .hook .highlight { background: #bbdefb; padding: 2px 6px; border-radius: 4px; font-weight: 700; color: #0d47a1; }
+
+  /* 핵심 요약 박스 */
+  .summary-box { background: #e8f5e9; border-left: 5px solid #2e7d32; border-radius: 8px; padding: 18px 20px; margin-bottom: 24px; }
+  .summary-box h3 { color: #1b5e20; font-size: 16px; font-weight: 900; margin-bottom: 10px; }
+  .summary-box ul { padding-left: 18px; }
+  .summary-box ul li { margin-bottom: 6px; font-size: 15px; }
+
+  /* 섹션 */
+  h2 { font-size: 20px; font-weight: 800; color: #1565c0; margin: 28px 0 12px; border-bottom: 2px solid #bbdefb; padding-bottom: 6px; }
+
+  /* 테이블 */
+  .info-table { width: 100%; border-collapse: collapse; margin-bottom: 24px; font-size: 14px; }
+  .info-table th { background: #1565c0; color: #fff; padding: 10px 14px; text-align: left; }
+  .info-table td { padding: 10px 14px; border-bottom: 1px solid #bbdefb; }
+  .info-table tr:nth-child(even) td { background: #e3f2fd; }
+  .highlight-cell { font-weight: 900; color: #1565c0; font-size: 15px; }
+  .new-badge { background: #1565c0; color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 10px; margin-left: 6px; }
+
+  /* SVG */
+  .svg-wrap { background: #fff; border-radius: 12px; padding: 16px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); overflow-x: auto; }
+  .svg-wrap svg { display: block; margin: 0 auto; }
+
+  /* 단계별 */
+  .step-list { counter-reset: step; padding: 0; list-style: none; }
+  .step-list li { counter-increment: step; display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+  .step-list li::before { content: counter(step); background: #1565c0; color: #fff; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 14px; flex-shrink: 0; }
+  .step-content strong { display: block; font-size: 15px; color: #333; }
+  .step-content span { font-size: 13px; color: #666; }
+
+  /* deadline 박스 */
+  .deadline-box { border: 2px dashed #f57c00; background: #fff8f0; border-radius: 10px; padding: 16px 20px; margin: 24px 0; text-align: center; }
+  .deadline-box .d-title { font-size: 20px; font-weight: 900; color: #e65100; }
+  .deadline-box .desc { font-size: 14px; color: #555; margin-top: 6px; }
+  .deadline-box .note { font-size: 13px; color: #555; margin-top: 8px; background: #fff3e0; padding: 6px 12px; border-radius: 6px; display: inline-block; }
+
+  /* 체크리스트 */
+  .checklist { list-style: none; padding: 0; margin-bottom: 24px; }
+  .checklist li { padding: 8px 12px; border-bottom: 1px solid #bbdefb; font-size: 15px; }
+  .checklist li::before { content: "✓ "; color: #1565c0; font-weight: 900; }
+
+  /* 주의사항 */
+  .notice { background: #e3f2fd; border-radius: 8px; padding: 16px 20px; margin-bottom: 24px; }
+  .notice p { margin-bottom: 8px; font-size: 14px; }
+  .notice p:last-child { margin-bottom: 0; }
+
+  /* 연락처 박스 */
+  .contact-box { background: #e3f2fd; border: 1px solid #90caf9; border-radius: 10px; padding: 18px 20px; margin-bottom: 24px; }
+  .contact-box h3 { color: #0d47a1; margin-bottom: 12px; font-size: 16px; }
+  .contact-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 14px; }
+
+  /* 찬반 론평 */
+  .opinion-section { margin: 30px 0; }
+  .opinion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .opinion-pro, .opinion-con { border-radius: 12px; padding: 20px; }
+  .opinion-pro { background: #e8f5e9; border-left: 5px solid #2e7d32; }
+  .opinion-con { background: #fff3e0; border-left: 5px solid #c62828; }
+  .opinion-pro h3 { color: #1b5e20; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-con h3 { color: #b71c1c; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-card { background: #fff; padding: 14px 16px; border-radius: 8px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+  .opinion-card:last-child { margin-bottom: 0; }
+  .opinion-card .quote { font-size: 14px; line-height: 1.7; color: #333; font-style: italic; margin-bottom: 8px; }
+  .opinion-card .author { font-size: 12px; color: #777; text-align: right; font-weight: 700; margin: 0; }
+  @media(max-width:600px){ .opinion-grid { grid-template-columns: 1fr; } }
+
+  /* 해시태그 */
+  .hashtags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .hashtags span { background: #e3f2fd; color: #1565c0; font-size: 13px; padding: 4px 12px; border-radius: 20px; font-weight: 600; }
+
+  /* 면책조항 */
+  .disclaimer { background: #f5f5f5; border-radius: 8px; padding: 14px 16px; font-size: 12px; color: #888; line-height: 1.6; margin-bottom: 10px; }
+  .meta { text-align: right; font-size: 12px; color: #aaa; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 상단 헤더 -->
+  <div class="header">
+    <span class="date-tag">📅 2026년 5월 12일 화요일</span>
+    <span class="issue-tag">오늘의 복지 뉴스 · 제2보</span>
+  </div>
+
+  <div style="background:#fff;border-radius:0 0 12px 12px;padding:24px 22px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.07);margin-bottom:28px;">
+
+    <span class="badge">🚗 장애인 이동권 · 입법예고</span>
+
+    <h1 class="main-title">
+      "문 앞에서 내려드려도 됩니다"<br>
+      — 주야간보호 차량 드디어 장애인전용주차구역 허용<br>
+      거동 불편한 어르신·장애인, 이제 비 맞으며 걸어오지 않아도 됩니다
+    </h1>
+
+    <!-- 훅 -->
+    <div class="hook">
+      지금까지 주야간보호시설 차량이 시설 입구 앞 장애인전용주차구역에 세우면 <span class="highlight">불법 주차 과태료 10만원</span>이었습니다. 어르신을 부축해 20m씩 걷게 하는 게 현실이었죠. 보건복지부가 드디어 법을 바꿉니다 — 오늘(5월 12일)부터 입법예고가 시작됩니다.
+    </div>
+
+    <!-- 핵심 요약 박스 -->
+    <div class="summary-box">
+      <h3>📌 이것만 알면 됩니다</h3>
+      <ul>
+        <li>입법예고 기간: <strong>2026년 5월 12일(화) ~ 6월 22일(월)</strong></li>
+        <li>바뀌는 내용: 주야간보호 차량이 <strong>장애인전용주차구역에서 승하차</strong> 가능</li>
+        <li>대상 확대: 장애인·어르신을 실질적으로 돌보는 차량도 표지 없이 단시간 정차 허용</li>
+      </ul>
+    </div>
+
+    <!-- 배경 -->
+    <h2>🔍 왜 이제야 바꿨나 — 지금까지의 불편</h2>
+    <p style="margin-bottom:16px;font-size:15px;">
+      장애인전용주차구역은 보행상 장애인 본인이나 그 민법상 가족, 복지시설·단체 명의 차량만 이용할 수 있었습니다. 주야간보호 시설은 치매·중풍 어르신을 매일 자택과 시설 사이를 실어 나르는데, 시설 바로 앞에 장애인주차구역이 있어도 세울 수가 없었습니다. 어르신을 10~30m 떨어진 일반 주차공간에서 내려 걷게 하는 것이 일상이었고, 비·눈이 오는 날에는 낙상 사고 위험이 컸습니다.
+    </p>
+    <p style="font-size:15px;">
+      보건복지부는 이런 불합리를 해소하기 위해 「장애인·노인·임산부 등의 편의증진 보장에 관한 법률 시행령」 일부개정령안을 마련했습니다. <strong>오늘 5월 12일부터 6월 22일까지 40일간 입법예고</strong>를 거친 뒤 하반기 시행을 목표로 합니다.
+    </p>
+
+    <!-- 상세 정보 표 -->
+    <h2>📊 개정 전·후 비교 — 무엇이 달라지나</h2>
+    <table class="info-table">
+      <tr><th>구분</th><th>현행 (개정 전)</th><th>개정안 (입법예고)</th></tr>
+      <tr>
+        <td>이용 가능 차량</td>
+        <td>장애인 본인·민법상 가족<br>복지시설·단체 명의 차량</td>
+        <td class="highlight-cell">+ 주야간보호시설 차량 <span class="new-badge">NEW</span><br>+ 장애인 실질 보호자 차량</td>
+      </tr>
+      <tr>
+        <td>주야간보호 차량</td>
+        <td>정차 시 과태료 10만원</td>
+        <td class="highlight-cell">승하차 목적 단시간 정차 허용</td>
+      </tr>
+      <tr>
+        <td>대상 이용자</td>
+        <td>장애인 본인만 인정</td>
+        <td class="highlight-cell">거동 불편 어르신(비장애인) 포함</td>
+      </tr>
+      <tr>
+        <td>법적 근거</td>
+        <td>편의증진법 시행령</td>
+        <td class="highlight-cell">시행령 개정 (하반기 시행 예정)</td>
+      </tr>
+    </table>
+
+    <!-- SVG 인포그래픽 -->
+    <h2>📍 지금까지 vs 앞으로 — 주야간보호 차량 현실</h2>
+    <div class="svg-wrap">
+      <svg viewBox="0 0 700 280" width="660" xmlns="http://www.w3.org/2000/svg">
+        <rect width="700" height="280" fill="#e3f2fd" rx="10"/>
+        <text x="350" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#0d47a1">주야간보호 차량의 장애인주차구역 사용 — 지금 vs 앞으로</text>
+
+        <!-- 현행 -->
+        <rect x="40" y="48" width="280" height="180" fill="#fff" rx="10" stroke="#ef9a9a" stroke-width="2"/>
+        <text x="180" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill="#c62828">❌ 현행 (개정 전)</text>
+        <rect x="70" y="90" width="220" height="50" fill="#ffebee" rx="8"/>
+        <text x="180" y="110" text-anchor="middle" font-size="12" fill="#c62828">장애인주차구역 정차 = 과태료 10만원</text>
+        <text x="180" y="126" text-anchor="middle" font-size="12" fill="#c62828">주야간보호 차량 이용 불가</text>
+        <rect x="70" y="150" width="220" height="60" fill="#fff3e0" rx="8"/>
+        <text x="180" y="170" text-anchor="middle" font-size="12" fill="#e65100">어르신을 일반 주차공간에서 내려</text>
+        <text x="180" y="186" text-anchor="middle" font-size="12" fill="#e65100">시설까지 10~30m 보행</text>
+        <text x="180" y="202" text-anchor="middle" font-size="11" fill="#888">→ 낙상 위험 / 비·눈 노출</text>
+
+        <!-- 구분선 -->
+        <line x1="350" y1="50" x2="350" y2="230" stroke="#90caf9" stroke-width="2" stroke-dasharray="6,4"/>
+        <text x="350" y="160" text-anchor="middle" font-size="22">⇒</text>
+
+        <!-- 개정안 -->
+        <rect x="380" y="48" width="280" height="180" fill="#fff" rx="10" stroke="#81c784" stroke-width="2"/>
+        <text x="520" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill="#2e7d32">✅ 개정안 (입법예고)</text>
+        <rect x="410" y="90" width="220" height="50" fill="#e8f5e9" rx="8"/>
+        <text x="520" y="110" text-anchor="middle" font-size="12" fill="#2e7d32">주야간보호 차량 승하차 목적</text>
+        <text x="520" y="126" text-anchor="middle" font-size="12" fill="#2e7d32">장애인전용주차구역 단시간 정차 허용</text>
+        <rect x="410" y="150" width="220" height="60" fill="#e3f2fd" rx="8"/>
+        <text x="520" y="170" text-anchor="middle" font-size="12" fill="#1565c0">어르신을 시설 문 앞에서</text>
+        <text x="520" y="186" text-anchor="middle" font-size="12" fill="#1565c0">바로 내려드릴 수 있음</text>
+        <text x="520" y="202" text-anchor="middle" font-size="11" fill="#2e7d32">→ 낙상 위험 감소 / 이동권 보장</text>
+
+        <text x="350" y="256" text-anchor="middle" font-size="12" fill="#555">입법예고: 2026.05.12 ~ 06.22 | 하반기 시행 예정</text>
+      </svg>
+    </div>
+
+    <!-- 시행 일정 -->
+    <div class="deadline-box">
+      <div class="d-title">📋 입법예고 진행 중 — 의견 제출 기회</div>
+      <div class="desc"><strong>입법예고 기간: 2026년 5월 12일(화) ~ 6월 22일(월)</strong></div>
+      <div class="note">시행 예정: 2026년 하반기 | 의견 제출: 보건복지부 장애인정책과 (044-202-3317)</div>
+    </div>
+
+    <!-- 신청/활용 방법 -->
+    <h2>📋 현장에서 바로 활용하는 법 — 단계별 가이드</h2>
+    <ol class="step-list">
+      <li>
+        <div class="step-content">
+          <strong>① 시행 전(현재): 법 개정 진행 상황 주시</strong>
+          <span>하반기 공포·시행 시 복지부 공식 발표를 확인하세요. 아직 정차 허용은 아님</span>
+        </div>
+      </li>
+      <li>
+        <div class="step-content">
+          <strong>② 시행 후: 시설 차량에 관련 서류 비치</strong>
+          <span>시행령 개정 후 적법 서류 요건이 확정되면 시설 차량에 비치 필요 (요건 추후 고시)</span>
+        </div>
+      </li>
+      <li>
+        <div class="step-content">
+          <strong>③ 의견이 있다면 지금 바로 제출</strong>
+          <span>입법예고 기간 내 국민 누구나 의견 제출 가능 — 복지부 또는 국민신문고</span>
+        </div>
+      </li>
+      <li>
+        <div class="step-content">
+          <strong>④ 주야간보호시설 운영자라면 종사자 교육 준비</strong>
+          <span>시행 시 장애인주차구역 이용 절차·범위를 종사자에게 사전 교육해두면 혼선 방지</span>
+        </div>
+      </li>
+      <li>
+        <div class="step-content">
+          <strong>⑤ 불법 주차와의 경계 — 단속 기준 숙지</strong>
+          <span>승하차 목적 단시간 정차만 허용. 장시간 주차는 여전히 과태료 대상</span>
+        </div>
+      </li>
+    </ol>
+
+    <!-- 자가 진단 체크리스트 -->
+    <h2>✅ 우리 시설·가족이 혜택 받을 수 있는지 체크</h2>
+    <ul class="checklist">
+      <li>주야간보호시설(데이케어센터)을 운영하거나 이용하고 있다</li>
+      <li>차량으로 어르신·장애인을 자택과 시설 사이 이송한다</li>
+      <li>시설 정문 앞에 장애인전용주차구역이 있어 정차에 어려움을 겪은 경험이 있다</li>
+      <li>거동이 불편한 이용자를 주차공간에서 보행시키다 낙상 위험을 우려한 적 있다</li>
+      <li>하반기 시행령 개정 후 적용 가능한 시설 요건을 미리 파악해두고 싶다</li>
+    </ul>
+
+    <!-- 주의사항 -->
+    <h2>⚠️ 주의사항</h2>
+    <div class="notice">
+      <p>① 현재는 입법예고 단계입니다. 시행령이 공포되어야 법적 효력이 발생하므로, 하반기 공식 시행 전까지는 장애인전용주차구역 사용 시 기존 규정을 준수해야 합니다.</p>
+      <p>② 허용되는 것은 '승하차 목적의 단시간 정차'입니다. 장시간 주차는 개정 후에도 여전히 불법입니다.</p>
+      <p>③ 시행 후 구체적인 서류 요건(시설 차량 확인서 등)은 복지부 고시에서 별도 발표됩니다.</p>
+      <p>④ 장애인전용주차구역 불법 사용은 일반 시민도 국민신문고·지자체 앱으로 신고 가능하므로, 명백한 요건 충족 시에만 이용하세요.</p>
+    </div>
+
+    <!-- 담당 기관 -->
+    <h2>📞 담당 기관 및 문의처</h2>
+    <div class="contact-box">
+      <h3>🏛️ 보건복지부 · 입법예고 관련 문의</h3>
+      <div class="contact-item">📞 <strong>보건복지부 장애인정책과:</strong> 044-202-3317</div>
+      <div class="contact-item">🌐 <strong>입법예고 열람 및 의견 제출:</strong> 국가법령정보센터 (www.law.go.kr) → 입법예고</div>
+      <div class="contact-item">📝 <strong>국민신문고:</strong> www.epeople.go.kr (온라인 의견 제출)</div>
+      <div class="contact-item">🏢 <strong>지자체 장애인복지과:</strong> 거주지 시·군·구청 방문 또는 전화 문의</div>
+    </div>
+
+    <!-- 전문가 찬반 론평 -->
+    <h2>💬 전문가 찬반 론평</h2>
+    <div class="opinion-section">
+      <div class="opinion-grid">
+        <div class="opinion-pro">
+          <h3>🟢 찬성</h3>
+          <div class="opinion-card">
+            <p class="quote">"장애인주차구역의 설치 취지는 이동이 불편한 사람을 배려하는 것입니다. 주야간보호 차량에 탑승한 어르신도 동일한 이동 제약을 가지고 있으므로 이번 개정은 제도 취지에 완전히 부합합니다."</p>
+            <p class="author">— 노인복지 현장 활동가</p>
+          </div>
+          <div class="opinion-card">
+            <p class="quote">"현장에서 10년 넘게 민원이 제기됐던 사안입니다. 법이 현실을 따라가지 못한 전형적인 사례이며, 이번 개정으로 어르신 낙상 사고 예방에 실질적인 기여를 할 것으로 기대합니다."</p>
+            <p class="author">— 사회복지시설 운영 전문가</p>
+          </div>
+        </div>
+        <div class="opinion-con">
+          <h3>🔴 반대 / 우려</h3>
+          <div class="opinion-card">
+            <p class="quote">"허용 범위가 모호하면 악용 사례가 생깁니다. '단시간 정차'의 시간 기준과 시설 차량 확인 방법을 법령에 명확히 규정하지 않으면 기존 불법 주차 문제가 더 심화될 수 있습니다."</p>
+            <p class="author">— 교통복지 정책 연구자</p>
+          </div>
+          <div class="opinion-card">
+            <p class="quote">"장애인전용주차구역 자체의 절대적 수가 부족한 것이 근본 문제입니다. 이용 대상 확대보다 주차구역 수를 늘리는 병행 정책이 없다면 실제 장애인의 이용이 더 어려워질 수 있습니다."</p>
+            <p class="author">— 장애인 이동권 시민단체 활동가</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 해시태그 -->
+    <div class="hashtags">
+      <span>#장애인전용주차구역</span>
+      <span>#주야간보호</span>
+      <span>#데이케어</span>
+      <span>#노인이동권</span>
+      <span>#입법예고</span>
+      <span>#보건복지부</span>
+      <span>#복지법개정</span>
+      <span>#어르신돌봄</span>
+      <span>#낙상예방</span>
+      <span>#장애인복지정책</span>
+    </div>
+
+    <!-- 면책조항 -->
+    <div class="disclaimer">
+      이 기사는 공개된 정보를 바탕으로 작성되었습니다. 현재 입법예고 단계이며, 시행 시기 및 구체적인 요건은 법령 공포 후 달라질 수 있습니다. 정확한 내용은 보건복지부(044-202-3317) 또는 법제처 국가법령정보센터를 통해 확인하세요.
+    </div>
+
+    <p class="meta">작성일: 2026년 5월 12일 | 오늘의 복지뉴스</p>
+  </div>
+
+</div>
+</body>
+</html>
