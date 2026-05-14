@@ -493,7 +493,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('themeToggle');
     const policyModal = document.getElementById('policyModal');
     const modalBody = document.getElementById('modalBody');
-    const privacyModal = document.getElementById('privacyModal');
     const tabs = document.querySelectorAll('.tab-content');
     const navLinks = document.querySelectorAll('.nav-links a[data-tab]');
     const homeSearchInput = document.getElementById('homeSearchInput');
@@ -570,16 +569,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (initialHash === '#benefits') switchTab('tab-benefits');
     else if (initialHash === '#news') switchTab('tab-news');
     else switchTab('tab-home');
-
-    document.getElementById('privacyLink').addEventListener('click', (e) => {
-        e.preventDefault();
-        privacyModal.classList.remove('hidden');
-    });
-    document.getElementById('privacyBtnFooter').addEventListener('click', (e) => {
-        e.preventDefault();
-        privacyModal.classList.remove('hidden');
-    });
-    document.getElementById('closePrivacy').addEventListener('click', () => privacyModal.classList.add('hidden'));
 
     themeToggle.addEventListener('click', () => {
         const isDark = document.body.getAttribute('data-theme') === 'dark';
