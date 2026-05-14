@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"혼자 아이 키우는데 나라가 월 23만원 준다고?" — 2026년 한부모·조손가족 지원금 확대, 조건 완화까지 완전 정복 | 오늘의 복지 뉴스</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Noto Sans KR', sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.8; }
+  .container { max-width: 780px; margin: 0 auto; padding: 16px; }
+
+  /* 상단 헤더 */
+  .top-header { background: linear-gradient(135deg, #ad1457, #880e4f); color: #fff; padding: 14px 20px; border-radius: 10px 10px 0 0; display: flex; justify-content: space-between; align-items: center; font-size: 13px; }
+  .top-header .date-tag { background: rgba(255,255,255,0.2); padding: 4px 10px; border-radius: 20px; }
+  .edition-tag { font-weight: 700; }
+
+  /* 섹션 배지 */
+  .section-badge { display: inline-block; background: #ad1457; color: #fff; font-size: 12px; font-weight: 700; padding: 5px 14px; border-radius: 20px; margin: 18px 0 10px 0; letter-spacing: 1px; }
+  .sub-title { font-size: 15px; color: #555; margin-bottom: 8px; }
+
+  /* 메인 제목 */
+  h1 { font-size: 26px; font-weight: 900; color: #3e0028; line-height: 1.4; margin-bottom: 20px; word-break: keep-all; }
+  h1 em { color: #c62828; font-style: normal; }
+
+  /* 훅 */
+  .hook { border-left: 6px solid #ad1457; padding: 14px 18px; background: #fce4ec; border-radius: 0 10px 10px 0; margin-bottom: 22px; font-size: 15px; line-height: 1.8; }
+  .highlight { background: #fff176; padding: 1px 4px; font-weight: 700; border-radius: 3px; }
+
+  /* 핵심 요약 박스 */
+  .summary-box { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-left: 6px solid #2e7d32; border-radius: 10px; padding: 18px 20px; margin-bottom: 24px; }
+  .summary-box h2 { font-size: 15px; color: #1b5e20; margin-bottom: 12px; font-weight: 900; }
+  .summary-box ul { list-style: none; }
+  .summary-box li { padding: 4px 0; font-size: 14px; color: #1b5e20; font-weight: 600; }
+  .summary-box li::before { content: "📌 "; }
+
+  /* 섹션 제목 */
+  h2 { font-size: 19px; font-weight: 900; color: #ad1457; margin: 28px 0 12px 0; border-bottom: 2px solid #ad1457; padding-bottom: 6px; }
+
+  /* 본문 */
+  p { font-size: 15px; margin-bottom: 14px; word-break: keep-all; }
+
+  /* 상세 정보 표 */
+  .info-table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 14px; }
+  .info-table th { background: #ad1457; color: #fff; padding: 10px 14px; text-align: left; }
+  .info-table td { padding: 10px 14px; border-bottom: 1px solid #e0e0e0; background: #fff; }
+  .info-table tr:nth-child(even) td { background: #fce4ec; }
+  .info-table td strong { color: #c62828; }
+
+  /* SVG 인포그래픽 */
+  .svg-wrap { margin: 24px 0; background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 12px rgba(173,20,87,0.1); overflow-x: auto; }
+
+  /* 신청 방법 */
+  .step-list { list-style: none; margin: 14px 0; }
+  .step-list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+  .step-num { background: #ad1457; color: #fff; font-weight: 900; font-size: 14px; min-width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+  .step-text { font-size: 14px; line-height: 1.7; }
+
+  /* 시행 일정 박스 */
+  .deadline-box { border: 2px dashed #f57c00; background: #fff8e1; border-radius: 10px; padding: 16px 20px; margin: 24px 0; }
+  .deadline-box h3 { color: #e65100; font-size: 15px; font-weight: 900; margin-bottom: 10px; }
+  .deadline-box p { font-size: 14px; color: #5d4037; margin: 4px 0; }
+
+  /* 체크리스트 */
+  .checklist { background: #fce4ec; border-radius: 10px; padding: 18px 20px; margin: 20px 0; }
+  .checklist h3 { font-size: 15px; font-weight: 900; color: #880e4f; margin-bottom: 12px; }
+  .checklist ul { list-style: none; }
+  .checklist li { padding: 5px 0; font-size: 14px; color: #4a0028; }
+  .checklist li::before { content: "✓ "; font-weight: 900; color: #ad1457; }
+
+  /* 주의사항 */
+  .caution-box { background: #fff3e0; border-radius: 10px; padding: 18px 20px; margin: 20px 0; }
+  .caution-box h3 { font-size: 15px; font-weight: 900; color: #e65100; margin-bottom: 12px; }
+  .caution-box p { font-size: 14px; color: #5d4037; margin: 5px 0; }
+
+  /* 담당 기관 */
+  .contact-box { background: linear-gradient(135deg, #ad1457, #c2185b); color: #fff; border-radius: 12px; padding: 20px 22px; margin: 24px 0; }
+  .contact-box h3 { font-size: 16px; font-weight: 900; margin-bottom: 14px; }
+  .contact-box p { font-size: 14px; margin: 5px 0; }
+  .contact-box a { color: #f8bbd0; }
+
+  /* 찬반 론평 */
+  .opinion-section { margin: 30px 0; }
+  .opinion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .opinion-pro, .opinion-con { border-radius: 12px; padding: 20px; }
+  .opinion-pro { background: #e8f5e9; border-left: 5px solid #2e7d32; }
+  .opinion-con { background: #fff3e0; border-left: 5px solid #c62828; }
+  .opinion-pro h3 { color: #1b5e20; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-con h3 { color: #b71c1c; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-card { background: #fff; padding: 14px 16px; border-radius: 8px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+  .opinion-card:last-child { margin-bottom: 0; }
+  .opinion-card .quote { font-size: 14px; line-height: 1.7; color: #333; font-style: italic; margin-bottom: 8px; }
+  .opinion-card .author { font-size: 12px; color: #777; text-align: right; font-weight: 700; margin: 0; }
+
+  /* 해시태그 */
+  .hashtags { margin: 24px 0; }
+  .hashtags span { display: inline-block; background: #fce4ec; color: #ad1457; font-size: 13px; font-weight: 700; padding: 5px 12px; border-radius: 20px; margin: 4px 4px 4px 0; }
+
+  /* 면책조항 */
+  .disclaimer { background: #f5f5f5; border-radius: 8px; padding: 14px 18px; margin: 24px 0 8px 0; font-size: 12px; color: #757575; line-height: 1.6; }
+
+  /* 작성일 */
+  .meta { text-align: right; font-size: 12px; color: #9e9e9e; margin-top: 10px; padding-bottom: 20px; }
+
+  /* 강조 수치 */
+  .big-number { font-size: 32px; font-weight: 900; color: #ad1457; }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 20px; }
+    .top-header { flex-direction: column; gap: 6px; text-align: center; }
+    .info-table { font-size: 13px; }
+    .opinion-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 상단 헤더 -->
+  <div class="top-header">
+    <span class="date-tag">📅 2026년 5월 14일 (목)</span>
+    <span class="edition-tag">오늘의 복지 뉴스 · 제2보</span>
+  </div>
+
+  <!-- 섹션 배지 -->
+  <div>
+    <span class="section-badge">🌸 한부모·여성·가족 지원</span>
+  </div>
+  <p class="sub-title">2026년 한부모가족·조손가족 지원금 완전 정복</p>
+
+  <!-- 메인 제목 -->
+  <h1>"혼자 아이 키우는데 나라가 <em>월 23만원</em> 준다고?" — 2026년 한부모·조손가족 지원금 확대, 조건 완화까지 완전 정복</h1>
+
+  <!-- 훅 -->
+  <div class="hook">
+    이혼 후 혼자 7살 딸을 키우는 34세 이○○ 씨는 "내가 한부모 지원금 받을 수 있는지도 몰랐다"고 말합니다. 2026년 기준으로 <span class="highlight">한부모가족 아동양육비는 아이 1인당 월 23만원</span>이며, 조손가정·청소년한부모는 추가 급여까지 받을 수 있습니다. 당신이 해당된다면 지금 당장 신청하세요.
+  </div>
+
+  <!-- 핵심 요약 박스 -->
+  <div class="summary-box">
+    <h2>📌 이것만 알면 됩니다</h2>
+    <ul>
+      <li>18세 미만 자녀를 혼자 키우면 → 기준 중위소득 65% 이하 시 월 23만원 아동양육비</li>
+      <li>청소년한부모(24세 이하)는 0~1세 영아 1인당 월 최대 40만원 + 검정고시 지원까지</li>
+      <li>복지로(bokjiro.go.kr) 또는 주민센터에서 상시 신청 — 빠를수록 유리</li>
+    </ul>
+  </div>
+
+  <!-- 배경/문제 섹션 -->
+  <h2>🔍 왜 지금 이 뉴스가 중요한가</h2>
+  <p>국내 한부모가족 수는 약 155만 가구로 전체 가구의 약 7%에 달합니다. 그러나 실제 지원을 받는 가구는 이 중 <strong>3분의 1 수준</strong>에 불과합니다. '나는 해당 안 되겠지'라는 생각이 복지 사각지대를 만드는 가장 큰 원인입니다.</p>
+  <p>2026년에는 <strong>기준 중위소득이 전년 대비 6.51% 인상</strong>됨에 따라 소득 기준이 올라가 기존에 탈락했던 가구가 새로 편입됩니다. 또한 청소년한부모(24세 이하)의 경우 자립지원 패키지가 강화되어 생계비·의료비·주거비를 한꺼번에 지원받을 수 있습니다.</p>
+
+  <!-- 상세 정보 표 -->
+  <h2>📊 2026년 지원 내용 한눈에 보기</h2>
+  <table class="info-table">
+    <tr><th>지원 유형</th><th>대상</th><th>지원 금액</th></tr>
+    <tr><td><strong>아동양육비</strong></td><td>18세 미만 자녀 양육 한부모·조손가족<br>(기준 중위소득 65% 이하)</td><td><strong>아동 1인당 월 23만원</strong></td></tr>
+    <tr><td><strong>청소년한부모 아동양육비</strong></td><td>부 또는 모가 24세 이하<br>(기준 중위소득 65% 이하)</td><td>0~1세 영아: <strong>월 40만원</strong><br>그 외 아동: 월 23만원</td></tr>
+    <tr><td><strong>아동교육지원비</strong></td><td>중학생·고등학생 자녀<br>(기준 중위소득 52% 이하)</td><td>자녀 1인당 <strong>연 9.3만원</strong></td></tr>
+    <tr><td><strong>생활보조금</strong></td><td>아동복지시설 퇴소 한부모<br>(기준 중위소득 52% 이하)</td><td>월 <strong>5만원</strong></td></tr>
+    <tr><td><strong>검정고시 지원</strong></td><td>청소년한부모(24세 이하)</td><td>학습비 <strong>연 154만원</strong></td></tr>
+    <tr><td><strong>자립촉진수당</strong></td><td>청소년한부모(24세 이하, 중위소득 65% 이하)</td><td>월 <strong>10만원</strong></td></tr>
+    <tr><td><strong>의료비</strong></td><td>한부모가족 구성원</td><td>국민건강보험 본인부담금 감면</td></tr>
+  </table>
+
+  <!-- 소득 기준 표 -->
+  <h2>💰 2026년 소득 기준 (기준 중위소득 65%)</h2>
+  <table class="info-table">
+    <tr><th>가구원 수</th><th>기준 중위소득 100%</th><th>65% (한부모 기준)</th></tr>
+    <tr><td>2인 가구</td><td>385만 3,032원</td><td><strong>250만 4,471원</strong></td></tr>
+    <tr><td>3인 가구</td><td>494만 8,506원</td><td><strong>321만 6,529원</strong></td></tr>
+    <tr><td>4인 가구</td><td>649만 4,738원</td><td><strong>422만 1,580원</strong></td></tr>
+    <tr><td>5인 가구</td><td>742만 7,780원</td><td><strong>482만 8,057원</strong></td></tr>
+  </table>
+
+  <!-- SVG 인포그래픽 -->
+  <div class="svg-wrap">
+    <svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;">
+      <text x="350" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#ad1457">2026년 한부모·조손가족 지원금 구조</text>
+
+      <!-- 중심 -->
+      <circle cx="350" cy="175" r="55" fill="#ad1457"/>
+      <text x="350" y="168" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">한부모</text>
+      <text x="350" y="186" text-anchor="middle" font-size="13" font-weight="bold" fill="#fff">지원 패키지</text>
+
+      <!-- 카드1: 아동양육비 -->
+      <rect x="30" y="50" width="150" height="64" rx="10" fill="#fce4ec" stroke="#ad1457" stroke-width="2"/>
+      <text x="105" y="73" text-anchor="middle" font-size="13" font-weight="bold" fill="#880e4f">아동양육비</text>
+      <text x="105" y="91" text-anchor="middle" font-size="20" font-weight="900" fill="#c62828">23만원</text>
+      <text x="105" y="107" text-anchor="middle" font-size="11" fill="#555">아동 1인당/월</text>
+      <line x1="180" y1="82" x2="295" y2="155" stroke="#ad1457" stroke-width="1.5" stroke-dasharray="4"/>
+
+      <!-- 카드2: 청소년한부모 -->
+      <rect x="30" y="200" width="150" height="64" rx="10" fill="#fce4ec" stroke="#ad1457" stroke-width="2"/>
+      <text x="105" y="222" text-anchor="middle" font-size="13" font-weight="bold" fill="#880e4f">청소년한부모</text>
+      <text x="105" y="240" text-anchor="middle" font-size="20" font-weight="900" fill="#c62828">40만원</text>
+      <text x="105" y="256" text-anchor="middle" font-size="11" fill="#555">0~1세 영아/월</text>
+      <line x1="180" y1="232" x2="295" y2="190" stroke="#ad1457" stroke-width="1.5" stroke-dasharray="4"/>
+
+      <!-- 카드3: 검정고시 -->
+      <rect x="520" y="50" width="150" height="64" rx="10" fill="#fce4ec" stroke="#ad1457" stroke-width="2"/>
+      <text x="595" y="73" text-anchor="middle" font-size="13" font-weight="bold" fill="#880e4f">검정고시지원</text>
+      <text x="595" y="91" text-anchor="middle" font-size="20" font-weight="900" fill="#c62828">154만원</text>
+      <text x="595" y="107" text-anchor="middle" font-size="11" fill="#555">연간 학습비</text>
+      <line x1="520" y1="82" x2="405" y2="155" stroke="#ad1457" stroke-width="1.5" stroke-dasharray="4"/>
+
+      <!-- 카드4: 자립촉진수당 -->
+      <rect x="520" y="200" width="150" height="64" rx="10" fill="#fce4ec" stroke="#ad1457" stroke-width="2"/>
+      <text x="595" y="222" text-anchor="middle" font-size="13" font-weight="bold" fill="#880e4f">자립촉진수당</text>
+      <text x="595" y="240" text-anchor="middle" font-size="20" font-weight="900" fill="#c62828">10만원</text>
+      <text x="595" y="256" text-anchor="middle" font-size="11" fill="#555">청소년한부모/월</text>
+      <line x1="520" y1="232" x2="405" y2="190" stroke="#ad1457" stroke-width="1.5" stroke-dasharray="4"/>
+
+      <!-- 소득기준 -->
+      <rect x="220" y="285" width="260" height="40" rx="8" fill="#f8bbd0"/>
+      <text x="350" y="308" text-anchor="middle" font-size="13" font-weight="bold" fill="#880e4f">소득기준: 기준 중위소득 65% 이하 (3인 月 321만원↓)</text>
+
+      <text x="350" y="338" text-anchor="middle" font-size="11" fill="#9e9e9e">※ 2026년 기준 | 청소년한부모(24세 이하) 추가 혜택 별도</text>
+    </svg>
+  </div>
+
+  <!-- 신청 방법 -->
+  <h2>🏃 신청 방법 (4단계)</h2>
+  <ul class="step-list">
+    <li>
+      <span class="step-num">1</span>
+      <span class="step-text"><strong>자격 확인</strong> — 18세 미만 자녀를 혼자 양육 중이며 기준 중위소득 65% 이하인지 확인. 복지로(bokjiro.go.kr) → '복지서비스 모의계산'으로 5분 안에 확인 가능합니다.</span>
+    </li>
+    <li>
+      <span class="step-num">2</span>
+      <span class="step-text"><strong>서류 준비</strong> — 가족관계증명서, 주민등록등본, 건강보험료 납부확인서, 금융정보 제공동의서. 인터넷 신청 시 공인인증서만 있으면 대부분 자동 조회됩니다.</span>
+    </li>
+    <li>
+      <span class="step-num">3</span>
+      <span class="step-text"><strong>신청 접수</strong> — ① 주민등록 소재지 읍·면·동 행정복지센터 방문 접수 ② 복지로 홈페이지(bokjiro.go.kr) 온라인 신청 ③ 여성가족부 한부모가족지원 포털 이용</span>
+    </li>
+    <li>
+      <span class="step-num">4</span>
+      <span class="step-text"><strong>급여 수령</strong> — 소득·재산 조사 후 자격 확정. 통상 신청 후 30일 이내 결정. 승인 시 신청한 달부터 소급 지급됩니다.</span>
+    </li>
+  </ul>
+
+  <!-- 시행 일정 박스 -->
+  <div class="deadline-box">
+    <h3>⏰ 2026년 변경 일정 및 신청 기한</h3>
+    <p>✅ <strong>2026년 1월 1일부터</strong> — 기준 중위소득 6.51% 인상 적용 (새 기준으로 자격 재검토 필요)</p>
+    <p>✅ <strong>2026년 상시 신청</strong> — 연중 어느 때든 신청 가능 (마감 없음)</p>
+    <p>⚠️ <strong>소급 적용 주의</strong> — 신청한 달부터만 지원. 알고도 늦게 신청하면 그만큼 손해</p>
+    <p>🔔 <strong>기존 수급자</strong> — 소득·재산 변동 없으면 자동 연장. 변동 있으면 즉시 신고</p>
+  </div>
+
+  <!-- 자가 진단 체크리스트 -->
+  <div class="checklist">
+    <h3>✅ 나 또는 주변 분이 해당되면 즉시 신청하세요</h3>
+    <ul>
+      <li>이혼·사별·미혼으로 18세 미만 자녀를 혼자 양육하고 있다</li>
+      <li>부모로부터 연락이 끊긴 손자·손녀를 (외)조부모가 키우고 있다 (조손가족)</li>
+      <li>24세 이하인데 아이가 생겨 혼자 키우고 있다 (청소년한부모)</li>
+      <li>가구 소득이 기준 중위소득 65% 이하다 (3인 가구 기준 월 321만 원 이하)</li>
+      <li>기존에 신청했다 탈락했지만 2026년 소득 기준이 오른 것을 아직 모르고 있다</li>
+    </ul>
+  </div>
+
+  <!-- 주의사항 -->
+  <div class="caution-box">
+    <h3>⚠️ 반드시 알아야 할 주의사항</h3>
+    <p>① <strong>재산도 소득으로 환산</strong> — 금융재산·자동차 등이 소득에 합산됩니다. 단, 2026년부터 소형 노후 차량 기준이 완화되었습니다.</p>
+    <p>② <strong>부양의무자 기준 폐지</strong> — 2023년부터 부양의무자가 있어도 수급이 가능합니다. "부모님이 있어서 안 된다"는 것은 구시대 정보입니다.</p>
+    <p>③ <strong>아동양육비 중복 제한</strong> — 아동수당·아동급여 등과는 중복 수령 가능하나, 기초생활수급자 생계급여 수급 중인 경우 아동양육비는 지급되지 않습니다.</p>
+    <p>④ <strong>변동 신고 의무</strong> — 소득·재산·가구 변동이 생기면 30일 이내 신고 의무. 미신고 시 수급 취소 및 환수 가능.</p>
+  </div>
+
+  <!-- 담당 기관 -->
+  <div class="contact-box">
+    <h3>📞 담당 기관 및 문의처</h3>
+    <p>🏛 <strong>거주지 읍·면·동 행정복지센터</strong> — 방문 또는 전화 신청</p>
+    <p>☎ <strong>여성가족부 한부모가족지원 상담전화</strong>: 1644-6621</p>
+    <p>☎ <strong>보건복지부 콜센터</strong>: 129</p>
+    <p>🌐 <strong>복지로</strong>: <a href="https://www.bokjiro.go.kr">www.bokjiro.go.kr</a> (온라인 신청 가능)</p>
+    <p>🌐 <strong>여성가족부 한부모가족지원 포털</strong>: <a href="https://www.mogef.go.kr">www.mogef.go.kr</a></p>
+  </div>
+
+  <!-- 찬반 론평 -->
+  <h2>💬 전문가 찬반 론평</h2>
+  <div class="opinion-section">
+    <div class="opinion-grid">
+      <div class="opinion-pro">
+        <h3>🟢 찬성</h3>
+        <div class="opinion-card">
+          <p class="quote">"기준 중위소득 인상으로 실질 지원 대상이 넓어진 점은 환영할 만합니다. 특히 2026년부터 적용되는 청소년한부모 영아 40만원 지원은 초기 육아 비용 부담을 실질적으로 줄여 주는 조치입니다."</p>
+          <p class="author">— 아동·가족 복지 연구자</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"한부모가족 지원은 단순 생계 지원을 넘어, 아동 빈곤 대물림을 끊는 사회투자입니다. 지원금 한 푼이 아이의 교육 기회로 이어진다는 장기적 효과를 고려하면 예산 확대는 정당합니다."</p>
+          <p class="author">— 사회복지학과 교수</p>
+        </div>
+      </div>
+      <div class="opinion-con">
+        <h3>🔴 반대 / 우려</h3>
+        <div class="opinion-card">
+          <p class="quote">"아동양육비 월 23만원은 2026년 물가 수준을 감안하면 실질적인 생활 지원이 되기에 턱없이 부족합니다. 지원 금액 인상 없이 기준만 완화하는 것은 '보여 주기 행정'에 그칠 수 있습니다."</p>
+          <p class="author">— 한부모가족 권리단체 활동가</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"한부모가족 지원이 여전히 '저소득층 구제' 틀에 갇혀 있습니다. 중산층 한부모가족은 기준을 넘어 지원에서 소외되면서도 이혼·사별로 인한 급격한 소득 감소를 감당해야 합니다."</p>
+          <p class="author">— 가족 정책 전문 연구자</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 해시태그 -->
+  <div class="hashtags">
+    <span>#한부모가족</span>
+    <span>#조손가족</span>
+    <span>#아동양육비</span>
+    <span>#청소년한부모</span>
+    <span>#복지로신청</span>
+    <span>#2026복지</span>
+    <span>#한부모지원금</span>
+    <span>#기준중위소득</span>
+    <span>#여성가족부</span>
+    <span>#아동복지</span>
+  </div>
+
+  <!-- 면책조항 -->
+  <div class="disclaimer">
+    이 기사는 공개된 정보를 바탕으로 작성되었습니다. 정확한 지원 여부 및 금액은 담당 기관(여성가족부 1644-6621, 복지로 bokjiro.go.kr)에 직접 확인하시기 바랍니다. 지원 기준은 연도별, 지자체별로 다를 수 있습니다.
+  </div>
+  <div class="meta">작성일: 2026년 5월 14일 | 오늘의 복지 뉴스</div>
+
+</div>
+</body>
+</html>
