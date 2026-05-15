@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"최대 1,000만원인데 신청 안 했다고요?" — 2026년 다문화가족 지원 총정리, 자녀 교육활동비부터 한국어 바우처까지 지금 당장 챙기세요 | 오늘의 복지 뉴스</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans KR', Apple SD Gothic Neo, sans-serif; background: #f5f7fa; color: #222; line-height: 1.7; font-size: 15px; }
+  .container { max-width: 780px; margin: 0 auto; padding: 20px 16px 60px; }
+
+  /* 헤더 */
+  .top-header { background: linear-gradient(135deg, #ad1457, #880e4f); color: #fff; padding: 14px 20px; border-radius: 10px 10px 0 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .top-header .date-tag { font-size: 13px; background: rgba(255,255,255,0.2); padding: 4px 10px; border-radius: 20px; }
+  .top-header .edition-tag { font-size: 13px; font-weight: 700; }
+
+  /* 배지 */
+  .section-badge { display: inline-block; background: #ad1457; color: #fff; font-size: 12px; font-weight: 700; padding: 5px 14px; border-radius: 20px; margin: 18px 0 10px; letter-spacing: 1px; }
+  .sub-title { font-size: 15px; color: #666; margin-bottom: 8px; }
+
+  /* 메인 제목 */
+  h1 { font-size: 28px; font-weight: 900; color: #3e0028; line-height: 1.4; margin-bottom: 20px; word-break: keep-all; }
+  h1 em { color: #ad1457; font-style: normal; }
+  @media(max-width:600px){ h1 { font-size: 22px; } }
+
+  /* 훅 */
+  .hook { border-left: 6px solid #ad1457; padding: 14px 18px; background: #fce4ec; border-radius: 0 10px 10px 0; margin-bottom: 24px; font-size: 16px; color: #1a1a1a; }
+  .highlight { background: #fff176; padding: 1px 5px; font-weight: 700; border-radius: 3px; }
+
+  /* 핵심 요약 박스 */
+  .summary-box { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); border-left: 6px solid #2e7d32; border-radius: 10px; padding: 18px 22px; margin-bottom: 28px; }
+  .summary-box h2 { font-size: 15px; color: #1b5e20; font-weight: 900; margin-bottom: 10px; }
+  .summary-box p { font-size: 14px; color: #2e7d32; margin-bottom: 6px; font-weight: 600; }
+  .summary-box p:last-child { margin-bottom: 0; }
+
+  /* 섹션 제목 */
+  h2 { font-size: 19px; font-weight: 900; color: #3e0028; margin: 28px 0 12px; border-bottom: 2px solid #ad1457; padding-bottom: 6px; }
+  h3 { font-size: 16px; font-weight: 700; color: #333; margin: 16px 0 8px; }
+
+  p { margin-bottom: 14px; }
+
+  /* 표 */
+  table { width: 100%; border-collapse: collapse; margin-bottom: 24px; font-size: 14px; }
+  th { background: #ad1457; color: #fff; padding: 10px 12px; text-align: center; }
+  td { border: 1px solid #e0e0e0; padding: 10px 12px; text-align: center; background: #fff; }
+  tr:nth-child(even) td { background: #fce4ec22; }
+
+  /* SVG 래퍼 */
+  .svg-wrap { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); overflow-x: auto; }
+  .svg-wrap h3 { font-size: 15px; color: #555; margin-bottom: 14px; text-align: center; }
+
+  /* 신청 단계 */
+  .steps { list-style: none; padding: 0; margin-bottom: 24px; }
+  .steps li { display: flex; align-items: flex-start; gap: 14px; padding: 14px 16px; background: #fff; border-radius: 10px; margin-bottom: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .step-num { flex-shrink: 0; width: 32px; height: 32px; background: #ad1457; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 15px; }
+  .step-text { font-size: 14px; line-height: 1.6; }
+  .step-text strong { display: block; font-size: 15px; margin-bottom: 3px; color: #222; }
+
+  /* 시행일정 박스 */
+  .deadline-box { border: 2px dashed #f57c00; border-radius: 12px; padding: 18px 22px; margin-bottom: 28px; background: #fff8f0; }
+  .deadline-box h2 { font-size: 16px; color: #e65100; border: none; padding: 0; margin: 0 0 10px; }
+  .deadline-box p { font-size: 14px; color: #555; margin-bottom: 6px; }
+  .deadline-box p:last-child { margin-bottom: 0; }
+  .deadline-box strong { color: #c62828; }
+
+  /* 체크리스트 */
+  .checklist { background: #fff; border-radius: 10px; padding: 18px 22px; margin-bottom: 28px; border: 1px solid #e0e0e0; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+  .checklist h2 { font-size: 16px; color: #333; border: none; padding: 0; margin: 0 0 12px; }
+  .checklist ul { list-style: none; padding: 0; }
+  .checklist li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 14px; display: flex; gap: 10px; align-items: flex-start; }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li span.ck { color: #2e7d32; font-size: 17px; font-weight: 900; flex-shrink: 0; }
+
+  /* 주의사항 */
+  .caution-box { background: #fff3e0; border-left: 5px solid #f57c00; border-radius: 0 10px 10px 0; padding: 16px 20px; margin-bottom: 28px; }
+  .caution-box h2 { font-size: 16px; color: #e65100; border: none; padding: 0; margin: 0 0 10px; }
+  .caution-box ol { padding-left: 20px; font-size: 14px; color: #444; }
+  .caution-box ol li { margin-bottom: 6px; }
+
+  /* 담당기관 */
+  .contact-box { background: linear-gradient(135deg, #fce4ec, #f8bbd0); border: 1px solid #f48fb1; border-radius: 12px; padding: 18px 22px; margin-bottom: 28px; }
+  .contact-box h2 { font-size: 16px; color: #880e4f; border: none; padding: 0; margin: 0 0 12px; }
+  .contact-box p { font-size: 14px; color: #444; margin-bottom: 6px; }
+  .contact-box strong { color: #ad1457; }
+
+  /* 전문가 찬반 론평 */
+  .opinion-section { margin: 30px 0; }
+  .opinion-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .opinion-pro, .opinion-con { border-radius: 12px; padding: 20px; }
+  .opinion-pro { background: #e8f5e9; border-left: 5px solid #2e7d32; }
+  .opinion-con { background: #fff3e0; border-left: 5px solid #c62828; }
+  .opinion-pro h3 { color: #1b5e20; margin-bottom: 14px; font-weight: 900; font-size: 17px; border: none; padding: 0; }
+  .opinion-con h3 { color: #b71c1c; margin-bottom: 14px; font-weight: 900; font-size: 17px; border: none; padding: 0; }
+  .opinion-card { background: #fff; padding: 14px 16px; border-radius: 8px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+  .opinion-card:last-child { margin-bottom: 0; }
+  .opinion-card .quote { font-size: 14px; line-height: 1.7; color: #333; font-style: italic; margin-bottom: 8px; }
+  .opinion-card .author { font-size: 12px; color: #777; text-align: right; font-weight: 700; margin: 0; }
+  @media(max-width:600px){ .opinion-grid { grid-template-columns: 1fr; } }
+
+  /* 해시태그 */
+  .hashtags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+  .hashtags span { background: #fce4ec; color: #ad1457; border: 1px solid #f48fb1; padding: 5px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; }
+
+  /* 면책조항 */
+  .disclaimer { background: #f5f5f5; border: 1px solid #ddd; border-radius: 8px; padding: 14px 18px; margin-bottom: 20px; font-size: 13px; color: #888; line-height: 1.6; }
+
+  /* 작성일 */
+  .meta { text-align: right; font-size: 12px; color: #aaa; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 상단 헤더 -->
+  <div class="top-header">
+    <span class="date-tag">2026년 5월 15일 금요일</span>
+    <span class="edition-tag">오늘의 복지 뉴스 · 제2보</span>
+  </div>
+
+  <!-- 섹션 배지 -->
+  <div>
+    <span class="section-badge">🌏 다문화가족 지원</span>
+    <p class="sub-title">2026년 전면 확대 — 자녀 교육활동비 · 한국어 바우처 · 정착지원금</p>
+  </div>
+
+  <!-- 메인 제목 -->
+  <h1>"최대 1,000만원인데 신청 안 했다고요?" —<br>
+  <em>2026년 다문화가족 지원 총정리</em>,<br>
+  자녀 교육활동비부터 한국어 바우처까지 지금 당장 챙기세요</h1>
+
+  <!-- 훅 -->
+  <div class="hook">
+    국내 다문화 가정은 이미 100만 세대를 넘었습니다. 그런데 이들을 위한 정부 지원이
+    <span class="highlight">2026년부터 대폭 확대됐다는 사실, 알고 계셨나요?</span>
+    자녀 교육활동비 지원 인원이 5만 명에서 <span class="highlight">10만 명 이상으로 두 배 확대</span>됐고,
+    한국어 교육 바우처에 취업 장려금까지 생겼습니다.
+    모르면 고스란히 국고로 환수되는 지원금, 지금 바로 확인하세요.
+  </div>
+
+  <!-- 핵심 요약 박스 -->
+  <div class="summary-box">
+    <h2>📌 이것만 알면 됩니다</h2>
+    <p>✅ 자녀 교육활동비 2026년 5만→10만명 두 배 확대, 고등학생 연 60만원</p>
+    <p>✅ 한국어 교육 바우처 + TOPIK 4급 이상 취득 시 취업장려금 50~100만원</p>
+    <p>✅ 정착지원금·다문화가정 종합 혜택 최대 1,000만원 — 다누리포털(www.liveinkorea.kr) 신청</p>
+  </div>
+
+  <!-- 배경 섹션 -->
+  <h2>📋 왜 이 정책이 생겼나</h2>
+  <p>
+    2026년 현재 국내 다문화가족 수는 약 113만 세대로, 전체 가구의 5%를 넘어섰습니다.
+    그러나 다문화가족 자녀의 학업중단율은 일반 학생 대비 약 3배 높고, 결혼이민자의 취업률은 내국인의 절반 수준에 머물고 있습니다.
+    이에 여성가족부와 교육부는 2026년부터 다문화가족 자녀 교육활동비 지원 인원을 5만 명에서 10만 명 이상으로 대폭 확대하고,
+    소득 기준도 기존 중위소득 100% 이하에서 실질적으로 더 많은 가정이 혜택을 받을 수 있도록 완화했습니다.
+    또한 한국어 교육 바우처 전면 시행과 함께 TOPIK 취득 시 취업 장려금을 지급하는 지자체가 급속히 늘고 있습니다.
+  </p>
+
+  <!-- 상세 정보 표 -->
+  <h2>📊 2026년 다문화가족 주요 지원 한눈에 보기</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>지원 항목</th>
+        <th>지원 대상</th>
+        <th>지원 금액</th>
+        <th>신청처</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>자녀 교육활동비</td>
+        <td>중위소득 100% 이하 7~18세 자녀</td>
+        <td>초 40만 / 중 50만 / 고 <strong>60만원</strong></td>
+        <td>가족센터·다문화지원센터</td>
+      </tr>
+      <tr>
+        <td>한국어 교육 바우처</td>
+        <td>결혼이민자·귀화자</td>
+        <td>수강료·교재비 전액 지원</td>
+        <td>다누리포털</td>
+      </tr>
+      <tr>
+        <td>TOPIK 취업장려금</td>
+        <td>TOPIK 4급 이상 취득자</td>
+        <td>50만~100만원 (지자체별 상이)</td>
+        <td>지역 가족센터</td>
+      </tr>
+      <tr>
+        <td>다문화 정착지원금</td>
+        <td>결혼이민자 (입국 5년 이내 우선)</td>
+        <td>최대 1,000만원 (누적)</td>
+        <td>읍면동 행정복지센터</td>
+      </tr>
+      <tr>
+        <td>다문화가족 상담·통역</td>
+        <td>모든 다문화가족</td>
+        <td>무료 (13개 언어)</td>
+        <td>다누리콜센터 1577-1366</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SVG 인포그래픽 -->
+  <div class="svg-wrap">
+    <h3>📊 2026년 다문화가족 자녀 교육활동비 지원 현황 비교</h3>
+    <svg viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:680px;display:block;margin:0 auto;">
+      <rect width="680" height="280" fill="#fff8fc" rx="12"/>
+      <!-- 제목 영역 -->
+      <text x="340" y="30" text-anchor="middle" font-size="14" fill="#880e4f" font-weight="bold">연간 지원금 및 지원 인원 변화 (2025 → 2026)</text>
+
+      <!-- 왼쪽: 지원금 막대그래프 -->
+      <!-- 축 -->
+      <line x1="60" y1="220" x2="360" y2="220" stroke="#ddd" stroke-width="1.5"/>
+      <line x1="60" y1="60" x2="60" y2="220" stroke="#ddd" stroke-width="1.5"/>
+      <!-- Y 라벨 -->
+      <text x="54" y="225" text-anchor="end" font-size="11" fill="#999">0</text>
+      <text x="54" y="185" text-anchor="end" font-size="11" fill="#999">20만</text>
+      <text x="54" y="145" text-anchor="end" font-size="11" fill="#999">40만</text>
+      <text x="54" y="105" text-anchor="end" font-size="11" fill="#999">60만</text>
+      <line x1="60" y1="185" x2="360" y2="185" stroke="#f0dce8" stroke-width="1" stroke-dasharray="4"/>
+      <line x1="60" y1="145" x2="360" y2="145" stroke="#f0dce8" stroke-width="1" stroke-dasharray="4"/>
+      <line x1="60" y1="105" x2="360" y2="105" stroke="#f0dce8" stroke-width="1" stroke-dasharray="4"/>
+      <!-- 초등 40만 = 80px, h=80, y=140 -->
+      <rect x="85" y="140" width="50" height="80" fill="#f48fb1" rx="4"/>
+      <text x="110" y="135" text-anchor="middle" font-size="12" fill="#880e4f" font-weight="bold">40만원</text>
+      <text x="110" y="238" text-anchor="middle" font-size="12" fill="#666">초등</text>
+      <!-- 중학 50만 = 100px -->
+      <rect x="165" y="120" width="50" height="100" fill="#ec407a" rx="4"/>
+      <text x="190" y="115" text-anchor="middle" font-size="12" fill="#880e4f" font-weight="bold">50만원</text>
+      <text x="190" y="238" text-anchor="middle" font-size="12" fill="#666">중학</text>
+      <!-- 고등 60만 = 120px -->
+      <rect x="245" y="100" width="50" height="120" fill="#ad1457" rx="4"/>
+      <text x="270" y="95" text-anchor="middle" font-size="13" fill="#880e4f" font-weight="bold">60만원</text>
+      <text x="270" y="238" text-anchor="middle" font-size="12" fill="#666">고등</text>
+      <text x="195" y="260" text-anchor="middle" font-size="11" fill="#aaa">▲ 학급별 연간 지원금</text>
+
+      <!-- 오른쪽: 지원 인원 비교 -->
+      <text x="500" y="80" text-anchor="middle" font-size="14" fill="#880e4f" font-weight="bold">지원 인원 확대</text>
+      <!-- 2025: 5만명 -->
+      <rect x="420" y="115" width="60" height="100" fill="#f8bbd0" rx="6"/>
+      <text x="450" y="110" text-anchor="middle" font-size="13" fill="#880e4f" font-weight="bold">5만명</text>
+      <text x="450" y="238" text-anchor="middle" font-size="13" fill="#666">2025년</text>
+      <!-- 화살표 -->
+      <text x="506" y="170" text-anchor="middle" font-size="22" fill="#ad1457">→</text>
+      <!-- 2026: 10만명 -->
+      <rect x="535" y="65" width="60" height="150" fill="#ad1457" rx="6"/>
+      <text x="565" y="60" text-anchor="middle" font-size="14" fill="#7f0036" font-weight="900">10만명</text>
+      <text x="565" y="238" text-anchor="middle" font-size="13" fill="#666">2026년</text>
+      <text x="555" y="155" text-anchor="middle" font-size="13" fill="#fff" font-weight="900">2배</text>
+      <text x="500" y="260" text-anchor="middle" font-size="11" fill="#aaa">▲ 교육활동비 지원 인원 비교</text>
+    </svg>
+  </div>
+
+  <!-- 신청 방법 -->
+  <h2>📝 신청 방법 (단계별)</h2>
+  <ul class="steps">
+    <li>
+      <span class="step-num">1</span>
+      <div class="step-text">
+        <strong>자녀 교육활동비 신청 (연 1회, 연초 집중 신청 기간)</strong>
+        주소지 가족센터 또는 다문화가족지원센터 방문 → 신청서 제출 → NH농협카드(채움) 포인트로 지급
+      </div>
+    </li>
+    <li>
+      <span class="step-num">2</span>
+      <div class="step-text">
+        <strong>한국어 교육 바우처 신청</strong>
+        다누리포털(www.liveinkorea.kr) 또는 가족센터 방문 → 온·오프라인 수강 선택 → 바우처 지급
+      </div>
+    </li>
+    <li>
+      <span class="step-num">3</span>
+      <div class="step-text">
+        <strong>TOPIK 취업장려금 (지자체별 상이)</strong>
+        TOPIK 4급 이상 합격증 지참 → 거주 지역 가족센터 또는 여성새로일하기센터 문의 후 신청
+      </div>
+    </li>
+    <li>
+      <span class="step-num">4</span>
+      <div class="step-text">
+        <strong>정착지원금 및 기타 혜택</strong>
+        읍·면·동 행정복지센터 방문 → 복지로(www.bokjiro.go.kr) 통합 조회 후 개인 맞춤 지원 확인
+      </div>
+    </li>
+    <li>
+      <span class="step-num">5</span>
+      <div class="step-text">
+        <strong>통역·상담 (무료 · 13개 언어)</strong>
+        다누리콜센터 ☎ 1577-1366 (24시간) — 한국어 외 영어·중국어·베트남어 등 13개 언어 상담 가능
+      </div>
+    </li>
+  </ul>
+
+  <!-- 시행일정 박스 -->
+  <div class="deadline-box">
+    <h2>⏰ 신청 기한 및 주요 일정</h2>
+    <p>📅 자녀 교육활동비 : <strong>2026년 상반기 신청 진행 중 — 마감 전 즉시 신청 필수</strong></p>
+    <p>📅 한국어 교육 바우처 : 연중 상시 신청 가능</p>
+    <p>📅 TOPIK 취업장려금 : 합격 후 3개월 이내 신청 (지자체별 기한 상이)</p>
+    <p>📅 정착지원금 : <strong>입국 5년 이내 우선 지원 — 기간 초과 시 감액 또는 지원 불가</strong></p>
+  </div>
+
+  <!-- 자가진단 체크리스트 -->
+  <div class="checklist">
+    <h2>✅ 우리 가정이 받을 수 있을까? 자가진단 체크리스트</h2>
+    <ul>
+      <li><span class="ck">✓</span> 결혼이민자·귀화자 또는 그 자녀가 가족 구성원이다</li>
+      <li><span class="ck">✓</span> 가구 소득이 기준 중위소득 100% 이하이다 (4인 가족 월 약 609만원 이하)</li>
+      <li><span class="ck">✓</span> 만 7~18세 자녀가 있으며, 교육활동비 지원을 아직 받지 않았다</li>
+      <li><span class="ck">✓</span> 한국어가 서툰 결혼이민자 가족이 있어 한국어 교육이 필요하다</li>
+      <li><span class="ck">✓</span> 입국 5년 이내이며 정착지원금 혜택을 아직 신청하지 않았다</li>
+    </ul>
+  </div>
+
+  <!-- 주의사항 -->
+  <div class="caution-box">
+    <h2>⚠️ 꼭 알아야 할 주의사항</h2>
+    <ol>
+      <li>① 교육활동비는 <strong>NH농협카드(채움) 포인트로 지급</strong>되므로 카드 발급 여부를 먼저 확인하세요.</li>
+      <li>② 지원 사업은 <strong>지자체별로 독립 운영</strong>되므로 동일 혜택이라도 금액·기한이 다를 수 있습니다. 반드시 거주 지역 가족센터에 먼저 문의하세요.</li>
+      <li>③ TOPIK 취업장려금은 <strong>모든 지자체에서 시행하지 않습니다.</strong> 내 지역 시행 여부부터 확인하세요.</li>
+      <li>④ 정착지원금은 <strong>입국 연도가 기록</strong>되므로 5년 초과 전에 반드시 신청하세요. 소급 적용되지 않습니다.</li>
+    </ol>
+  </div>
+
+  <!-- 담당기관 -->
+  <div class="contact-box">
+    <h2>📞 담당 기관 및 문의처</h2>
+    <p>🏛 <strong>여성가족부 다문화가족과</strong> — ☎ 02-2100-6000</p>
+    <p>🏛 <strong>다누리콜센터</strong> — ☎ 1577-1366 (24시간, 13개 언어)</p>
+    <p>🏛 <strong>다누리포털 (온라인 신청)</strong> — www.liveinkorea.kr</p>
+    <p>🏛 <strong>복지로 (통합 지원 조회)</strong> — www.bokjiro.go.kr</p>
+    <p>🏛 <strong>지역 가족센터</strong> — 거주 지역 읍·면·동 행정복지센터 안내</p>
+  </div>
+
+  <!-- 전문가 찬반 론평 -->
+  <h2>💬 전문가 찬반 론평</h2>
+  <div class="opinion-section">
+    <div class="opinion-grid">
+      <div class="opinion-pro">
+        <h3>🟢 찬성</h3>
+        <div class="opinion-card">
+          <p class="quote">"다문화가족 자녀 교육활동비 지원 인원을 10만 명으로 확대한 것은 사각지대를 좁히는 의미 있는 조치다. 교육 격차는 성인이 된 후 소득 격차로 이어지므로, 조기 개입이 장기적 재정 절약 효과도 있다."</p>
+          <p class="author">— 다문화교육 정책 연구자</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"한국어 교육 바우처에 TOPIK 취득 장려금을 연계한 것은 단순 지원을 넘어 자립 동기를 부여하는 설계다. 언어 능력이 향상되면 취업률도 자연히 오를 것이다."</p>
+          <p class="author">— 이민자 취업지원 전문가</p>
+        </div>
+      </div>
+      <div class="opinion-con">
+        <h3>🔴 반대 / 우려</h3>
+        <div class="opinion-card">
+          <p class="quote">"지원 대상은 늘었지만 가족센터 인력은 그대로다. 상담 대기 시간이 2~3개월에 달하는 현장도 있다. 예산 확대가 인프라 확충 없이 이뤄지면 '선거용 수치 부풀리기'에 그칠 수 있다."</p>
+          <p class="author">— 다문화지원 현장 사회복지사</p>
+        </div>
+        <div class="opinion-card">
+          <p class="quote">"지자체별 사업이 분산·중복 운영되면서 혜택을 이중으로 받는 가정과 전혀 못 받는 가정이 공존한다. 통합 플랫폼 구축 없이는 형평성 문제가 반복될 것이다."</p>
+          <p class="author">— 재정정책 연구자</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 해시태그 -->
+  <div class="hashtags">
+    <span>#다문화가족</span>
+    <span>#교육활동비</span>
+    <span>#한국어바우처</span>
+    <span>#TOPIK장려금</span>
+    <span>#다문화정착지원금</span>
+    <span>#결혼이민자</span>
+    <span>#다누리포털</span>
+    <span>#복지로신청</span>
+    <span>#가족센터</span>
+    <span>#1000만원지원</span>
+  </div>
+
+  <!-- 면책조항 -->
+  <div class="disclaimer">
+    ※ 이 기사는 공개된 정보를 바탕으로 작성되었습니다. 지원 요건·금액은 지자체 및 시행 시기에 따라 다를 수 있으며, 정확한 지원 여부는 담당 기관(다누리콜센터 ☎1577-1366 또는 주소지 가족센터)에 직접 확인하시기 바랍니다.
+  </div>
+
+  <!-- 작성일 -->
+  <p class="meta">작성일: 2026년 5월 15일 | 오늘의 복지뉴스 편집팀</p>
+
+</div>
+</body>
+</html>
