@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>드디어 쉰다! 사회복지사에게 '유급병가' 생긴다 — 기본급도 3.5% 올랐다</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    background: #e3f2fd;
+    color: #333;
+    line-height: 1.8;
+  }
+  .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+  /* 상단 헤더 */
+  .top-header {
+    background: linear-gradient(135deg, #1565c0, #1976d2);
+    color: #fff;
+    padding: 18px 24px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .date-tag {
+    background: rgba(255,255,255,0.25);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .series-tag { font-size: 13px; opacity: 0.9; }
+
+  .card {
+    background: #fff;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    padding: 32px 28px;
+  }
+
+  .section-badge {
+    display: inline-block;
+    background: #e3f2fd;
+    color: #1565c0;
+    border: 1.5px solid #1565c0;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 4px 14px;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 900;
+    color: #0d47a1;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 600px) { h1 { font-size: 22px; } }
+
+  .hook {
+    border-left: 5px solid #1565c0;
+    background: #e3f2fd;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 24px;
+    font-size: 15px;
+  }
+  .highlight {
+    background: linear-gradient(transparent 55%, #bbdefb 55%);
+    font-weight: 800;
+    color: #0d47a1;
+  }
+
+  .summary-box {
+    background: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    border-radius: 0 10px 10px 0;
+    padding: 18px 22px;
+    margin-bottom: 28px;
+  }
+  .summary-box h3 {
+    color: #1b5e20;
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
+  .summary-box li {
+    font-size: 14px;
+    color: #2e7d32;
+    font-weight: 700;
+    list-style: none;
+    padding: 3px 0;
+  }
+  .summary-box li::before { content: "✅ "; }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #1565c0;
+    margin: 30px 0 14px;
+    border-bottom: 2px solid #bbdefb;
+    padding-bottom: 8px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  th {
+    background: #1565c0;
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 800;
+  }
+  td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #bbdefb;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: #e3f2fd; }
+  tr:hover td { background: #bbdefb; }
+
+  .svg-wrap {
+    background: #fff;
+    border: 1.5px solid #bbdefb;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 28px;
+    overflow-x: auto;
+  }
+  .svg-title {
+    font-size: 14px;
+    font-weight: 800;
+    color: #1565c0;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .step-list { margin-bottom: 28px; }
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .step-num {
+    background: #1565c0;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+  .step-content { font-size: 14px; line-height: 1.7; }
+  .step-content strong { color: #1565c0; }
+
+  .deadline-box {
+    border: 2.5px dashed #1565c0;
+    border-radius: 12px;
+    padding: 18px 22px;
+    background: #e3f2fd;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+  .deadline-box .deadline-title {
+    font-size: 16px;
+    font-weight: 900;
+    color: #1565c0;
+    margin-bottom: 8px;
+  }
+  .deadline-box .deadline-date {
+    font-size: 22px;
+    font-weight: 900;
+    color: #0d47a1;
+  }
+  .deadline-box p { font-size: 13px; color: #666; margin-top: 6px; }
+
+  .checklist {
+    background: #e3f2fd;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 28px;
+  }
+  .checklist h3 { font-size: 15px; font-weight: 900; color: #1565c0; margin-bottom: 12px; }
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .check-icon {
+    background: #1565c0;
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .caution-list { margin-bottom: 28px; }
+  .caution-item {
+    font-size: 14px;
+    padding: 8px 0;
+    border-bottom: 1px dashed #90caf9;
+    color: #555;
+  }
+  .caution-num {
+    color: #1565c0;
+    font-weight: 900;
+    margin-right: 6px;
+  }
+
+  .contact-box {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+  }
+  .contact-box h3 { font-size: 15px; font-weight: 900; color: #1565c0; margin-bottom: 12px; }
+  .contact-item { font-size: 14px; color: #555; margin-bottom: 6px; }
+  .contact-item strong { color: #1565c0; }
+
+  /* 전문가 찬반 론평 */
+  .opinion-section { margin: 30px 0; }
+  .opinion-section h2 { color: #555; border-bottom-color: #ddd; }
+  .opinion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .opinion-pro, .opinion-con {
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .opinion-pro {
+    background: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+  }
+  .opinion-con {
+    background: #fff3e0;
+    border-left: 5px solid #c62828;
+  }
+  .opinion-pro h3 { color: #1b5e20; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-con h3 { color: #b71c1c; margin-bottom: 14px; font-weight: 900; font-size: 17px; }
+  .opinion-card {
+    background: #fff;
+    padding: 14px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .opinion-card:last-child { margin-bottom: 0; }
+  .opinion-card .quote {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+  .opinion-card .author {
+    font-size: 12px;
+    color: #777;
+    text-align: right;
+    font-weight: 700;
+    margin: 0;
+  }
+  @media (max-width: 600px) {
+    .opinion-grid { grid-template-columns: 1fr; }
+  }
+
+  .hashtags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+  .hashtag {
+    background: #e3f2fd;
+    color: #1565c0;
+    border: 1.5px solid #90caf9;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .disclaimer {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+  .meta { text-align: right; font-size: 12px; color: #aaa; }
+
+  /* 비교 카드 */
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .compare-card {
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+  .compare-before {
+    background: #ffebee;
+    border: 2px solid #e57373;
+  }
+  .compare-after {
+    background: #e8f5e9;
+    border: 2px solid #66bb6a;
+  }
+  .compare-label {
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .compare-value {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 4px;
+  }
+  .compare-desc { font-size: 12px; color: #666; }
+  @media (max-width: 600px) { .compare-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <!-- 상단 헤더 -->
+  <div class="top-header">
+    <span class="date-tag">📅 2026년 5월 16일</span>
+    <span class="series-tag">오늘의 복지 뉴스 · 제2보</span>
+  </div>
+
+  <div class="card">
+    <!-- 섹션 배지 -->
+    <span class="section-badge">👷 복지 현장 처우개선</span>
+
+    <!-- 메인 제목 -->
+    <h1>드디어 쉰다! 사회복지사에게 '유급병가' 생긴다 — 기본급 3.5%·급식비·수당도 줄줄이 올랐다</h1>
+
+    <!-- 훅 -->
+    <div class="hook">
+      아파도 연차를 써야 했던 사회복지사들, 이제 달라집니다.<br>
+      <span class="highlight">2026년부터 연 60일 유급병가가 신설</span>되고 기본급도 최대 19만 원 이상 오릅니다.<br>
+      서울시 <strong>1,932개 시설 1만 6,533명</strong>에게 실질적인 혜택이 돌아갑니다.
+    </div>
+
+    <!-- 핵심 요약 박스 -->
+    <div class="summary-box">
+      <h3>📌 이것만 알면 됩니다</h3>
+      <ul>
+        <li>기본급 3.5% 인상 — 직위에 따라 월 7만~19만 원 추가</li>
+        <li>유급병가 연 60일 신설 — 아파도 임금 삭감 없이 쉴 수 있다</li>
+        <li>급식비·관리자 수당·자녀수당 일제히 인상, 장기근속 휴가도 신설</li>
+      </ul>
+    </div>
+
+    <!-- 배경/문제 -->
+    <h2>📖 왜 이 변화가 필요했나요?</h2>
+    <p style="font-size:14px; margin-bottom:16px; color:#555;">
+      사회복지사는 노인, 아동, 장애인 등 가장 취약한 사람들의 삶을 직접 지원하는 핵심 인력입니다. 그러나 오랫동안 낮은 임금과 열악한 근로조건 탓에 이직률이 높고 번아웃이 만연한 직군으로 꼽혀 왔습니다. 특히 병가를 연차로 대체할 수밖에 없어 아픈 상태로 현장을 지키는 일이 비일비재했습니다. 2026년 서울시는 공무원 보수 인상률(3.5%) 수준으로 기본급을 올리고, 유급병가를 신설하는 등 <strong>"공무원 수준 처우"</strong>를 목표로 대대적인 처우개선 계획을 시행했습니다.
+    </p>
+
+    <!-- 비교 카드 (2025→2026) -->
+    <h2>📊 2025년 vs 2026년 주요 변화 비교</h2>
+    <div class="compare-grid">
+      <div class="compare-card compare-before">
+        <div class="compare-label" style="color:#c62828;">🔴 2025년 (이전)</div>
+        <div class="compare-value" style="color:#c62828;">유급병가 없음</div>
+        <div class="compare-desc">아프면 연차 소진<br>근무 의무 or 무급</div>
+      </div>
+      <div class="compare-card compare-after">
+        <div class="compare-label" style="color:#2e7d32;">🟢 2026년 (현재)</div>
+        <div class="compare-value" style="color:#2e7d32;">연 60일 유급병가</div>
+        <div class="compare-desc">임금 삭감 없이 치료·휴식 가능</div>
+      </div>
+      <div class="compare-card compare-before">
+        <div class="compare-label" style="color:#c62828;">🔴 기본급 (이전)</div>
+        <div class="compare-value" style="color:#c62828;">기준 대비 낮음</div>
+        <div class="compare-desc">공무원과 처우 격차 심각</div>
+      </div>
+      <div class="compare-card compare-after">
+        <div class="compare-label" style="color:#2e7d32;">🟢 기본급 (2026)</div>
+        <div class="compare-value" style="color:#2e7d32;">3.5% 인상</div>
+        <div class="compare-desc">직위별 월 7만~19만 원↑</div>
+      </div>
+    </div>
+
+    <!-- 상세 정보 표 -->
+    <h2>📋 처우개선 세부 항목 일람표</h2>
+    <table>
+      <tr>
+        <th>항목</th>
+        <th>변경 전</th>
+        <th>변경 후 (2026)</th>
+      </tr>
+      <tr>
+        <td><strong>기본급</strong></td>
+        <td>기존 호봉</td>
+        <td><strong>3.5% 인상</strong> (월 7만4,300원~19만1,100원↑)</td>
+      </tr>
+      <tr>
+        <td><strong>유급병가</strong></td>
+        <td>없음 (연차 대체)</td>
+        <td><strong>연 60일 이내 유급병가 신설</strong></td>
+      </tr>
+      <tr>
+        <td><strong>장기근속 휴가</strong></td>
+        <td>없음</td>
+        <td>근속 5년 이상 최대 10일 유급휴가</td>
+      </tr>
+      <tr>
+        <td><strong>퇴직준비 휴가</strong></td>
+        <td>없음</td>
+        <td>근속 30년 이상 정년 예정자 10일</td>
+      </tr>
+      <tr>
+        <td><strong>정액급식비</strong></td>
+        <td>월 13만 원</td>
+        <td><strong>월 14만 원</strong> (+1만 원)</td>
+      </tr>
+      <tr>
+        <td><strong>관리자 수당</strong></td>
+        <td>월 20만 원</td>
+        <td><strong>월 22만 원</strong> (+2만 원)</td>
+      </tr>
+      <tr>
+        <td><strong>첫째 자녀 수당</strong></td>
+        <td>월 3만 원</td>
+        <td><strong>월 5만 원</strong> (+2만 원)</td>
+      </tr>
+      <tr>
+        <td><strong>둘째 자녀 수당</strong></td>
+        <td>월 7만 원</td>
+        <td><strong>월 8만 원</strong> (+1만 원)</td>
+      </tr>
+      <tr>
+        <td><strong>셋째 이상 수당</strong></td>
+        <td>월 11만 원</td>
+        <td><strong>월 12만 원</strong> (+1만 원)</td>
+      </tr>
+      <tr>
+        <td><strong>적용 대상</strong></td>
+        <td>—</td>
+        <td>서울시 1,932개 시설 <strong>1만 6,533명</strong></td>
+      </tr>
+    </table>
+
+    <!-- SVG 인포그래픽 -->
+    <h2>📊 처우개선 항목별 인상폭 시각화</h2>
+    <div class="svg-wrap">
+      <div class="svg-title">2026년 서울시 사회복지시설 종사자 처우개선 핵심 수치</div>
+      <svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:700px;display:block;margin:0 auto;">
+        <rect x="0" y="0" width="700" height="280" fill="#f8fbff" rx="10"/>
+
+        <!-- 제목 -->
+        <text x="350" y="32" text-anchor="middle" fill="#1565c0" font-size="14" font-weight="bold">처우개선 항목별 인상 금액 (월 기준)</text>
+
+        <!-- 막대 배경 -->
+        <rect x="160" y="50" width="500" height="210" fill="#e3f2fd" rx="6"/>
+
+        <!-- 막대 1: 기본급 최고 (19만1천) -->
+        <rect x="160" y="60" width="478" height="28" rx="4" fill="#1565c0"/>
+        <text x="150" y="79" text-anchor="end" fill="#333" font-size="12">기본급 최고</text>
+        <text x="645" y="79" fill="#1565c0" font-size="12" font-weight="bold">+19만원</text>
+
+        <!-- 막대 2: 기본급 최저 (7만4천) -->
+        <rect x="160" y="96" width="185" height="28" rx="4" fill="#1976d2"/>
+        <text x="150" y="115" text-anchor="end" fill="#333" font-size="12">기본급 최저</text>
+        <text x="350" y="115" fill="#0d47a1" font-size="12" font-weight="bold">+7.4만원</text>
+
+        <!-- 막대 3: 관리자 수당 (2만) -->
+        <rect x="160" y="132" width="50" height="28" rx="4" fill="#42a5f5"/>
+        <text x="150" y="151" text-anchor="end" fill="#333" font-size="12">관리자수당</text>
+        <text x="215" y="151" fill="#1565c0" font-size="12" font-weight="bold">+2만원</text>
+
+        <!-- 막대 4: 첫째 자녀 수당 (2만) -->
+        <rect x="160" y="168" width="50" height="28" rx="4" fill="#64b5f6"/>
+        <text x="150" y="187" text-anchor="end" fill="#333" font-size="12">자녀수당(첫)</text>
+        <text x="215" y="187" fill="#1565c0" font-size="12" font-weight="bold">+2만원</text>
+
+        <!-- 막대 5: 급식비 (1만) -->
+        <rect x="160" y="204" width="25" height="28" rx="4" fill="#90caf9"/>
+        <text x="150" y="223" text-anchor="end" fill="#333" font-size="12">정액급식비</text>
+        <text x="190" y="223" fill="#1565c0" font-size="12" font-weight="bold">+1만원</text>
+
+        <!-- 유급병가 강조 -->
+        <rect x="160" y="242" width="500" height="10" rx="3" fill="#2e7d32"/>
+        <text x="350" y="255" text-anchor="middle" fill="#1b5e20" font-size="12" font-weight="bold">🎉 유급병가 연 60일 신설 — 처음 생긴 권리!</text>
+      </svg>
+    </div>
+
+    <!-- 적용 범위 -->
+    <h2>🏛️ 누가, 언제부터 적용받나요?</h2>
+    <div class="step-list">
+      <div class="step">
+        <div class="step-num">✓</div>
+        <div class="step-content">
+          <strong>적용 대상:</strong> 서울시가 예산 지원하는 <strong>1,932개 사회복지시설 종사자 전원</strong><br>
+          <small style="color:#888;">(종합사회복지관, 노인복지관, 장애인복지관, 아동복지시설, 지역아동센터 등)</small>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">✓</div>
+        <div class="step-content">
+          <strong>적용 시기:</strong> 2026년 1월 1일부터 소급 적용 (연간 인건비 가이드라인 기준)
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">✓</div>
+        <div class="step-content">
+          <strong>수혜 인원:</strong> 1만 6,533여 명 — 서울시 사회복지 인력의 대다수
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">✓</div>
+        <div class="step-content">
+          <strong>추가 논의 중:</strong> 서울시사회복지사협회는 2026년 5월 16일 26개 직능단체 워크숍을 통해 추가 처우개선 건의서 마련 중
+        </div>
+      </div>
+    </div>
+
+    <!-- 시행 일정 박스 -->
+    <div class="deadline-box">
+      <div class="deadline-title">📅 적용 기준일</div>
+      <div class="deadline-date">2026년 1월 1일부터 소급 적용</div>
+      <p>아직 반영되지 않은 시설은 즉시 가이드라인 적용 요청 가능합니다.</p>
+    </div>
+
+    <!-- 자가 진단 체크리스트 -->
+    <div class="checklist">
+      <h3>✅ 우리 시설은 처우개선이 잘 됐나요? 체크해보세요</h3>
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <span>2026년 1월부터 기본급이 3.5% 이상 인상됐는가?</span>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <span>유급병가 규정이 취업규칙 또는 내부 지침에 반영됐는가?</span>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <span>정액급식비가 월 14만 원으로 인상됐는가?</span>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <span>관리자 수당이 월 22만 원으로 변경됐는가?</span>
+      </div>
+      <div class="check-item">
+        <div class="check-icon">✓</div>
+        <span>5년 이상 장기근속자에게 별도 유급휴가가 부여됐는가?</span>
+      </div>
+    </div>
+
+    <!-- 주의사항 -->
+    <h2>⚠️ 꼭 확인하세요 — 주의사항</h2>
+    <div class="caution-list">
+      <div class="caution-item"><span class="caution-num">①</span> 서울시 예산 지원 시설이 아닌 민간 사회복지 법인 및 시설은 이 가이드라인 적용 대상이 아닐 수 있습니다.</div>
+      <div class="caution-item"><span class="caution-num">②</span> 유급병가는 진단서 등 의료 증빙이 필요하며, 시설별 내규에 따라 세부 절차가 다를 수 있습니다.</div>
+      <div class="caution-item"><span class="caution-num">③</span> 자녀수당은 자녀 수를 증빙하는 서류를 시설장에게 제출해야 적용됩니다.</div>
+      <div class="caution-item"><span class="caution-num">④</span> 각 시설이 자체적으로 가이드라인을 반영하지 않을 경우 서울시 또는 협회에 이의 제기가 가능합니다.</div>
+    </div>
+
+    <!-- 담당 기관 및 문의처 박스 -->
+    <div class="contact-box">
+      <h3>📞 담당 기관 및 문의처</h3>
+      <div class="contact-item">🏛️ <strong>서울시 복지정책실:</strong> 02-2133-7300</div>
+      <div class="contact-item">👤 <strong>서울시사회복지사협회:</strong> sasw.or.kr / 02-2279-3514</div>
+      <div class="contact-item">📄 <strong>보건복지부 인건비 가이드라인:</strong> mohw.go.kr (공지사항 검색)</div>
+      <div class="contact-item">🏢 <strong>시설 소속 법인 또는 운영위원회</strong> 문의 가능</div>
+    </div>
+
+    <!-- 전문가 찬반 론평 -->
+    <h2>💬 전문가 찬반 론평</h2>
+    <div class="opinion-section">
+      <div class="opinion-grid">
+        <div class="opinion-pro">
+          <h3>🟢 찬성</h3>
+          <div class="opinion-card">
+            <p class="quote">"사회복지사의 소진 예방은 서비스 품질 유지의 전제 조건이다. 유급병가 신설은 종사자 보호를 넘어 수급자 돌봄의 연속성을 지키는 제도적 장치로서 평가받아야 한다."</p>
+            <p class="author">— 사회복지인력 정책 연구자</p>
+          </div>
+          <div class="opinion-card">
+            <p class="quote">"3.5% 기본급 인상은 공무원 수준과의 격차를 좁히는 최소한의 조치이며, 장기적으로 사회복지 분야 우수 인력 유입에도 긍정적 신호가 될 것이다."</p>
+            <p class="author">— 노동복지 현장 활동가</p>
+          </div>
+        </div>
+        <div class="opinion-con">
+          <h3>🔴 반대 / 우려</h3>
+          <div class="opinion-card">
+            <p class="quote">"가이드라인은 권고 수준에 머물러 있어, 예산이 부족한 소규모 시설은 실질 적용이 어렵다. 강제성 없는 처우개선 정책은 현장 격차를 오히려 심화시킬 수 있다."</p>
+            <p class="author">— 사회복지시설 운영 연구자</p>
+          </div>
+          <div class="opinion-card">
+            <p class="quote">"연 60일 유급병가가 신설됐으나, 인력 여유가 없는 소규모 시설에서는 병가를 사용하면 남은 직원에게 업무가 가중되는 악순환이 생길 수 있다. 대체 인력 지원 체계가 병행되어야 한다."</p>
+            <p class="author">— 사회복지 현장 종사자 대표</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 해시태그 -->
+    <div class="hashtags">
+      <span class="hashtag">#사회복지사처우개선</span>
+      <span class="hashtag">#유급병가신설</span>
+      <span class="hashtag">#서울복지시설</span>
+      <span class="hashtag">#기본급인상3.5</span>
+      <span class="hashtag">#사회복지사권리</span>
+      <span class="hashtag">#복지현장이슈</span>
+      <span class="hashtag">#종사자처우</span>
+      <span class="hashtag">#1만6천명수혜</span>
+      <span class="hashtag">#복지사근로조건</span>
+      <span class="hashtag">#서울시복지정책</span>
+    </div>
+
+    <!-- 면책조항 -->
+    <div class="disclaimer">
+      ※ 이 기사는 공개된 정보를 바탕으로 작성되었습니다. 각 시설별 실제 적용 여부 및 세부 내용은 소속 기관, 서울시사회복지사협회 또는 서울시 복지정책실에 직접 확인하시기 바랍니다.
+    </div>
+
+    <!-- 작성일 메타 -->
+    <div class="meta">✍️ 작성일: 2026년 5월 16일 | 복지뉴스 아티클</div>
+  </div>
+</div>
+</body>
+</html>
